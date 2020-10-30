@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <!--제이쿼리 라이브러리-->
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/typed.min.js"></script>
 
@@ -32,14 +34,14 @@
                 <nav>
                     <ul class="lnb" id="menu">
                         <li><a href="#home">HOME</a></li>
-                        <li><a href="#about" >ABOUT</a></li>
-                        <li><a href="#skill" >SKILL</a></li>
-                        <li><a href="#portfolio" >PORTFOLIO</a></li>
-                        <li><a href="#contact" >CONTACT</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#skill">SKILL</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
                 <div class="scrollIcon">
-                    <a href="#">
+                    <a href="#about">
                         <span></span>
                         <p>Scroll Down</p>
                     </a>
@@ -175,7 +177,7 @@
                         </div>
                         <span class="skill_desc jqt">제이쿼리 라이브러리를 활용하여<br> 기능을 구현하고 유용한 플러그인을 적용합니다.</span>
                     </div>
-                    
+
                 </div>
 
                 <div class="right_wrap">
@@ -206,10 +208,10 @@
                         <div class="graph stack5">
                             <span style="width: 80%;">80%</span>
                         </div>
-                        <span class="skill_desc">인터페이스(UI)와 사용자경험(UX)를 고려한 모바일앱 & 웹 
-디자인을 합니다.</span>
+                        <span class="skill_desc">인터페이스(UI)와 사용자경험(UX)를 고려한 모바일앱 & 웹
+                            디자인을 합니다.</span>
                     </div>
-                    
+
                     <div class="right_sub">
                         <div class="skill_title">
                             <h3>.....STUDYING</h3>
@@ -230,18 +232,78 @@
 
             </div>
         </div>
-        <!--portfolio 영역-->
+            <!--portfolio 영역-->
         <div class="section sec4">
             <h2>PORTFOLIO</h2>
-            
+            <!-- 슬라이드 스와이퍼 -->
+            <div class="portfolio_box">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide cf">
+                                <div class="left">
+                                    <img src="images/porfol1.png" alt="잠실자동차극장사이트">
+                                    <a href="#"></a>
+                                </div>
+                                <div class="right">
+                                    <div class="detailTxt_box">
+                                        <span class="tit">web renewal</span>
+                                        <a class="project" href="#" target="_blank">잠실 자동차극장</a>
+                                        <p class="desc">CAR THEATER JAMSIL</p>
+                                        <div class="color_box point1">
+                                            <span class="color1"></span>
+                                            <span class="color2"></span>
+                                            <span class="color3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="detailBtn_box">
+                                        <a class="detail_btn" href="#">
+                                            <p>Detail</p>
+                                            <img src="images/detail_arrow.png" alt="detail">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="slide cf">
+                                <div class="left">
+                                    <img src="images/porfol1.png" alt="잠실자동차극장사이트">
+                                    <a href="#"></a>
+                                </div>
+                                <div class="right">
+                                    <div class="detailTxt_box">
+                                        <span class="tit">web renewal</span>
+                                        <a class="project" href="#" target="_blank">잠실 자동차극장</a>
+                                        <p class="desc">CAR THEATER JAMSIL</p>
+                                        <div class="color_box point1">
+                                            <span class="color1"></span>
+                                            <span class="color2"></span>
+                                            <span class="color3"></span>
+                                        </div>
+                                    </div>
+                                    <div class="detailBtn_box">
+                                        <a class="detail_btn" href="#">
+                                            <p>Detail</p>
+                                            <img src="images/detail_arrow.png" alt="detail">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Add Pagination -->
+                
+                </div>
+            </div>
+           <div class="swiper-pagination"></div>
+
         </div>
         <!--contact 영역-->
         <div class="section sec5">
             <h2>CONTACT</h2>
             <!--스크롤탑아이콘-->
-            <div id="btn_top"></div>
+            <a href="#home" id="btn_top"></a>
         </div>
+
     </div>
-
-
 </body></html>

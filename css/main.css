@@ -21,7 +21,7 @@
     position: relative;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
-    
+
 }
 
 .wave {
@@ -412,7 +412,7 @@ nav {
 /*skill영역*/
 #skill_wrap {
     display: flex;
-justify-content: center;
+    justify-content: center;
 
 }
 
@@ -427,7 +427,7 @@ justify-content: center;
     height: 64px;
     position: relative;
     margin-bottom: 15%;
-/*    outline: 1px solid #000;*/
+    /*    outline: 1px solid #000;*/
 }
 
 .skill_box img {
@@ -554,7 +554,7 @@ justify-content: center;
     }
 }
 
-.skill_desc{
+.skill_desc {
     display: block;
     position: absolute;
     bottom: 0;
@@ -562,28 +562,157 @@ justify-content: center;
     line-height: 120%;
     font-size: 0.9375rem;
 }
-.jqt{
+
+.jqt {
     bottom: -10px;
 }
-.skill_title h3{
+
+.skill_title h3 {
     color: #A2A1A1;
     font-size: 2.1875rem;
     margin-bottom: 33px;
 }
-.skill_list ul{
+
+.skill_list ul {
     display: flex;
 }
-.skill_list ul li{
+
+.skill_list ul li {
     margin-right: 70px;
 }
+
+
+/*portfolio영역****************************************/
+.sec4{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.portfolio_box {
+    position: relative;
+    width: 80%;
+    height: 800px;
+    background-color: #F5F6F6;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);;
+border-radius: 30px;
+    padding: 2% 6%;
+}
+
+
+
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.slide .left {
+    float: left;
+width: 70%;
+height: 100%;
+}
+
+.slide .left img {
+    width: 70%;
+    
+}
+
+.slide .right {
+    float: left;
+    width: 30%;
+height: 100%;
+    text-align: right;
+    position: relative;
+}
+
+.slide .right .detailTxt_box {
+    position: absolute;
+    right: 30px;
+    top: 10%;
+}
+
+.slide .right .tit {
+    display: block;
+    font-size: 24px;
+    color: #777;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+.slide .right a.project {
+    display: block;
+    font-size: 64px;
+    color: #3d3d3d;
+    letter-spacing: -3px;
+    font-weight: 500;
+    line-height: 64px;
+    padding: 30px 0;
+}
+
+.slide .right .desc {
+    font-size: 24px;
+    color: #777;
+    text-transform: uppercase;
+    line-height: 24px;
+}
+
+/*컬러박스*/
+.swiper-pagination {
+    bottom: 10%;
+    left: 50%;
+}
+.slide .right .color_box {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+/*컬러공통*/
+.slide .right .color_box span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.slide .right .color_box span:last-child {
+    margin-right: 0;
+}
+
+.slide .right .point1 span.color1 {
+    background: #e60a11;
+}
+
+.slide .right .point1 span.color2 {
+    background: #fe7c0b;
+}
+
+.slide .right .point1 span.color3 {
+    background: #222;
+}
+
+
+
+/*슬라이드 블릿*/
+.swiper-pagination {
+    bottom: 10%;
+}
+
+
+
+
 /*section5 영역**************************/
 /*스크롤탑아이콘*/
 #btn_top {
     width: 80px;
-    height: 90px;
+    height: 95px;
     background: url(../images/btn_top.png)no-repeat;
     background-size: cover;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -17px;
+    cursor: pointer;
 }
