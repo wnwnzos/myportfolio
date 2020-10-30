@@ -1,0 +1,588 @@
+@charset "utf-8";
+/* athe 메인 페이지 CSS - main.css */
+
+/*파일머징(합치기)*/
+@import url(jquery.fullPage.css);
+@import url(reset.css);
+@import url(core.css);
+
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*HOME영역******************************************/
+.box {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 30px rgba(black, .2);
+    background: lighten(#f0f4c3, 10%);
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave {
+    opacity: .4;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    background: #0af;
+    width: 900px;
+    height: 900px;
+    margin-left: -16%;
+    margin-top: -13%;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+    animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+    animation: drift 7000ms infinite linear;
+    opacity: .1;
+    background: yellow;
+}
+
+.box:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+}
+
+.title {
+    position: absolute;
+    left: 2%;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    line-height: 300px;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: .4em;
+    font-size: 24px;
+    text-shadow: 0 1px 0 rgba(black, .1);
+    text-indent: .3em;
+}
+
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+/*메뉴*/
+nav {
+    position: absolute;
+    right: 41%;
+    top: 32%;
+    z-index: 10;
+}
+
+.lnb {
+    display: flex;
+    flex: 1;
+}
+
+.lnb a {
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    transition: .3s;
+    transform: scale(1);
+    font-family: 'Playfair Display', serif;
+}
+
+.lnb a:hover {
+    transform: scale(1.1);
+}
+
+.lnb li {
+    margin-right: 10%;
+}
+
+/*스크롤아이콘***********/
+.scrollIcon {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scrollIcon span {
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #1d1d1d;
+    border-radius: 20px;
+    position: relative;
+}
+
+.scrollIcon span:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background: #000000;
+    margin-left: -3px;
+    border-radius: 100%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+}
+
+.scrollIcon p {
+    display: block;
+    color: #000000;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+
+/*section5*/
+.sec5 {
+    position: relative;
+}
+
+
+/*ection h2공통*/
+.section h2 {
+    font-size: 2.75rem;
+    color: #1C1C1C;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 125px;
+}
+
+/*ABOUT 영역******************************/
+.about_box {
+    /*    outline: 1px solid red;*/
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about_area {
+    display: flex;
+    justify-content: space-between;
+    height: 813px;
+}
+
+.myphoto {
+    background: url(../images/myphoto.jpg)no-repeat;
+    background-size: 100% 100%;
+}
+
+.about_area li {
+    width: 50%;
+    margin-right: 80px;
+}
+
+.about_area b {
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+
+.colorbar {
+    width: 296px;
+    height: 13px;
+    background: linear-gradient(to right, #305CF1, #1E2E63);
+    display: block;
+    margin-top: 27px;
+}
+
+/*타이핑효과*/
+.about_typing {
+    font-size: 1.8125rem;
+    font-weight: 600;
+    padding: 30px 0 0 0;
+}
+
+/*detail화살표*/
+.detail_btn {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 70px;
+    height: 21px;
+    margin-top: 20px;
+}
+
+.detail_btn p {
+    position: absolute;
+    font-size: 20px;
+    right: 80px;
+    line-height: 21px;
+    color: #707070;
+    cursor: pointer;
+    transition: all .4s ease-out;
+}
+
+.detail_btn:hover p {
+    right: 15px;
+}
+
+.detail_btn img {
+    position: absolute;
+    left: 0;
+    transition: all .4s ease-out;
+}
+
+.detail_btn:hover img {
+    left: 100%;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.perbar {
+    overflow: hidden;
+    display: inline-block;
+    width: 180px;
+    height: 13px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    position: relative;
+}
+
+.perbar:after {
+    content: "";
+    background-color: #9DCEFE;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65%;
+    height: 100%;
+}
+
+.pert_box small {
+    border: 1px solid #000;
+    font-size: 10px;
+
+}
+
+.pert h3 {
+    padding: 57px 0 20px 0;
+    font-size: 1.8125rem;
+    color: #707070;
+}
+
+.pert_box {
+    /*    border: 1px solid #000;*/
+    padding: 0 10%
+}
+
+.pert_box h4 {
+    width: 128%;
+    text-align: center;
+}
+
+.mind,
+.eng {
+    width: 100%;
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    position: relative;
+}
+
+.bar_txt {
+    font-size: 10px;
+    width: 30px;
+}
+
+.left_txt {
+    position: absolute;
+    left: -30%;
+    top: 3px;
+}
+
+.right_txt {
+    position: absolute;
+    right: -120%;
+    top: 3px;
+    text-align: right;
+}
+
+
+/*에너지*/
+.ebar:after {
+    width: 51%;
+}
+
+/*본성*/
+.hnbar:after {
+    width: 65%;
+}
+
+/*전술*/
+.tacbar:after {
+    width: 76%;
+    left: 0;
+}
+
+/*자아*/
+.selfbar:after {
+    width: 65%;
+}
+
+.pert_box > li > ul {
+    margin-bottom: 20px;
+}
+
+
+/*mbti*/
+.mbti {
+    width: 50%;
+    text-align: center;
+}
+
+.mbti h3,
+.mbti b {
+    font-size: 1.8125rem;
+    color: #707070;
+    padding: 57px 0 20px 0;
+}
+
+.mbti h3 {
+    font-weight: 100;
+}
+
+.mbti b {
+    font-weight: bold;
+}
+
+.mbti_img {
+    width: 100%;
+    height: 147px;
+    background: url(../images/mbtiimg.png)no-repeat;
+}
+
+.mbti_txt {
+    padding-top: 10%
+}
+
+.mbti_txt li {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #707070;
+    font-size: 0.9375rem;
+}
+
+/*skill영역*/
+#skill_wrap {
+    display: flex;
+justify-content: center;
+
+}
+
+.left_wrap {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5vw;
+}
+
+.skill_box {
+    width: 516px;
+    height: 64px;
+    position: relative;
+    margin-bottom: 15%;
+/*    outline: 1px solid #000;*/
+}
+
+.skill_box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.graph {
+    /*    outline: 1px solid #000;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 443px;
+    background-color: #ccc;
+    height: 30px;
+    border-radius: 40px;
+}
+
+.graph span {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    background-color: #9DCEFE;
+    border-radius: 40px;
+    padding: 0 10px;
+    color: #fff;
+
+}
+
+.graph.stack1 span {
+    animation: stack1 2s 1;
+}
+
+.graph.stack2 span {
+    animation: stack2 2s 1;
+}
+
+.graph.stack3 span {
+    animation: stack3 2s 1;
+}
+
+.graph.stack4 span {
+    animation: stack4 2s 1;
+}
+
+.graph.stack5 span {
+    animation: stack5 2s 1;
+}
+
+@keyframes stack1 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes stack2 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes stack3 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes stack4 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes stack5 {
+    0% {
+        width: 0;
+        color: rgba(255, 255, 255, 0);
+    }
+
+    40% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+.skill_desc{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 76px;
+    line-height: 120%;
+    font-size: 0.9375rempx;
+}
+.jqt{
+    bottom: -10px;
+}
+.skill_title h3{
+    color: #A2A1A1;
+    font-size: 2.1875rem;
+    margin-bottom: 33px;
+}
+.skill_list ul{
+    display: flex;
+}
+.skill_list ul li{
+    margin-right: 70px;
+}
+/*section5 영역**************************/
+/*스크롤탑아이콘*/
+#btn_top {
+    width: 80px;
+    height: 90px;
+    background: url(../images/btn_top.png)no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
