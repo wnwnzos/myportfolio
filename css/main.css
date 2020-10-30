@@ -583,11 +583,12 @@ nav {
 
 
 /*portfolio영역****************************************/
-.sec4{
+.sec4 {
     position: relative;
     width: 100%;
     height: 100%;
 }
+
 .portfolio_box {
     position: relative;
     width: 80%;
@@ -595,8 +596,9 @@ nav {
     background-color: #F5F6F6;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);;
-border-radius: 30px;
+    transform: translateX(-50%);
+    ;
+    border-radius: 30px;
     padding: 2% 6%;
 }
 
@@ -610,19 +612,19 @@ border-radius: 30px;
 
 .slide .left {
     float: left;
-width: 70%;
-height: 100%;
+    width: 70%;
+    height: 100%;
 }
 
 .slide .left img {
     width: 70%;
-    
+
 }
 
 .slide .right {
     float: left;
     width: 30%;
-height: 100%;
+    height: 100%;
     text-align: right;
     position: relative;
 }
@@ -631,6 +633,14 @@ height: 100%;
     position: absolute;
     right: 30px;
     top: 10%;
+}
+
+/*디테일아이콘*/
+.detailBtn_box {
+    position: absolute;
+    right: 6%;
+    top: 26%;
+
 }
 
 .slide .right .tit {
@@ -663,6 +673,7 @@ height: 100%;
     bottom: 10%;
     left: 50%;
 }
+
 .slide .right .color_box {
     display: flex;
     justify-content: flex-end;
