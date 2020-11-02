@@ -234,6 +234,7 @@ nav {
     font-size: 1.5rem;
     font-weight: 600;
     padding: 30px 0 0 0;
+    color: #707070;
 }
 
 /*detail화살표*/
@@ -270,11 +271,88 @@ nav {
     left: 100%;
 }
 
-.bottom {
+
+.bottom {/*팝업으로 띄우기*/
+    position: relative;
+    right: -150%;
+/*    outline: 1px solid red;*/
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
 }
 
+
+/*mbti버튼*************************************/
+@-webkit-keyframes sheen {
+  0% {
+   transform: skewY(-45deg) translateX(0);
+            transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+            transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+@keyframes sheen {
+  0% {
+   transform: skewY(-45deg) translateX(0);
+            transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    transform: skewY(-45deg) translateX(12.5em);
+            transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+.show {
+  display: block;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+}
+
+.button {
+  padding: 0.75em 2em;
+  text-align: center;
+  text-decoration: none;
+  color: #305CF1;
+  border: 2px solid #305CF1;
+  font-size: 1.5rem;
+  display: inline-block;
+  border-radius: 0.3em;
+ transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+
+}
+.button:before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  transform: skewX(-45deg) translateX(0);
+          transform: skewX(-45deg) translateX(0);
+  transition: none;
+  transition: none;
+}
+.button:hover {
+  background-color: #305CF1;
+  color: #fff;
+  border-bottom: 4px solid #305CF1;
+}
+.button:hover:before {
+  transform: skewX(-45deg) translateX(13.5em);
+          transform: skewX(-45deg) translateX(13.5em);
+  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/*mbti그래프*****************/
 .perbar {
     overflow: hidden;
     display: inline-block;

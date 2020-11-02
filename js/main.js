@@ -36,6 +36,16 @@ $(function () { // jQB ///////////////////////////
         smartBackspace: false,
         loop: true
     });
+    
+    /*mbti클릭시 보이기*/
+    $(".show").click(function(){
+        $(this).next(".bottom").animate({
+            left:"0"
+        },500)
+    });// click /////////////////////
+    
+    
+    
 
 
     /*포트폴리오 스와이퍼 영역************************************/
