@@ -392,7 +392,7 @@ nav {
 }
 
 .mbti_img {
-        width: 123%;
+    width: 123%;
     height: 148px;
     background: url(../images/mbtiimg.png)no-repeat center;
 }
@@ -450,6 +450,12 @@ nav {
 
 .graph span {
     display: block;
+    width: 0%;
+   opacity: 0;
+
+}
+
+.graph span.active {
     height: 30px;
     line-height: 30px;
     text-align: right;
@@ -457,8 +463,99 @@ nav {
     border-radius: 40px;
     padding: 0 10px;
     color: #fff;
+    opacity: 1;
+    
+}
+
+
+#bar1 span.active {
+    width: 90%;
+    animation: bar1 2s ease;
 
 }
+@keyframes bar1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+#bar2 span.active {
+    width: 30%;
+    animation: bar2 2s ease;
+
+}
+@keyframes bar2{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+
+#bar3 span.active {
+    width: 50%;
+    animation: bar3 2s ease;
+}
+@keyframes bar3{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+
+#bar4 span.active {
+    width: 70%;
+animation: bar4 2s ease;
+
+}
+@keyframes bar4{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+
+#bar5 span.active {
+    width: 40%;
+animation: bar5 2s ease;
+
+}
+@keyframes bar5{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+
+#bar6 span.active {
+    width: 80%;
+animation: bar6 2s ease;
+
+}
+@keyframes bar6{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+
 
 
 
@@ -506,11 +603,11 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 30px;
-/*    padding: 2% 6%;*/
+    /*    padding: 2% 6%;*/
 }
 
 .swiper-container {
-/*    outline: 1px solid red;*/
+    /*    outline: 1px solid red;*/
     top: 0;
     left: 0;
     width: 100%;
@@ -645,12 +742,12 @@ nav {
 
 .slidewr .right .point3 span.color3 {
 
-background: linear-gradient(to right,  #305cf1 0%,#1e2e63 100%); 
+    background: linear-gradient(to right, #305cf1 0%, #1e2e63 100%);
 
 
 }
 
-.slide3 .right .desc{
+.slide3 .right .desc {
     font-size: 1.68rem;
 }
 
@@ -663,10 +760,11 @@ background: linear-gradient(to right,  #305cf1 0%,#1e2e63 100%);
 
 }
 
-.swiper-pagination span{
+.swiper-pagination span {
     margin-right: 12px;
 }
-.swiper-pagination span:last-child{
+
+.swiper-pagination span:last-child {
     margin-right: 0;
 }
 
@@ -683,16 +781,19 @@ background: linear-gradient(to right,  #305cf1 0%,#1e2e63 100%);
     right: 0;
     bottom: -13px;
     cursor: pointer;
-    
+
 }
-#btn_top:hover{
-    animation: btntop 1s ease-in infinite ;
+
+#btn_top:hover {
+    animation: btntop 1s ease-in infinite;
 }
-@keyframes btntop{
-    0%{
-       bottom: -13px; 
+
+@keyframes btntop {
+    0% {
+        bottom: -13px;
     }
-    50%{
+
+    50% {
         bottom: 0;
     }
 }
