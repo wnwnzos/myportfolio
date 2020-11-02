@@ -46,6 +46,55 @@ $(function () { // jQB ///////////////////////////
 
     }); /*swiper플러그인*/
 
+    
+    
+    
+     /*스크롤액션 텍스트보이기*****************************/
+    var tpos = [];
+    var tg = $(".sec3");
+   
+
+    console.log("타겟위치:" + tpos);
+
+
+/// 스크롤 액션 타겟 셋팅 ///
+    tg.find("#bar1 span").animate({
+        width:"90%",
+        opacity:"1"
+        
+    },3000);
+    
+    tg.find("#bar2 span").animate({
+        width:"30%",
+        opacity:"1"
+    },3000);
+    
+    tg.find("#bar3 span").animate({
+        width:"50%",
+        opacity:"1"
+    },3000);
+    
+    tg.find("#bar4 span").animate({
+        width:"70%",
+        opacity:"1"
+    },3000);
+    
+    tg.find("#bar5 span").animate({
+        width:"40%",
+        opacity:"1"
+    },3000);
+    
+    tg.find("#bar6 span").animate({
+        width:"80%",
+        opacity:"1"
+    },3000);
+    
+    
+
+
+
+  
+
 
 
 }); //////////////// jQB ////////////////////////

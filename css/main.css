@@ -74,7 +74,7 @@
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
     letter-spacing: .4em;
-    font-size: 24px;
+    font-size: 1.75rem;
     text-shadow: 0 1px 0 rgba(black, .1);
     text-indent: .3em;
     font-weight: bold;
@@ -93,8 +93,8 @@
 /*메뉴*/
 nav {
     position: absolute;
-    right: 31%;
-    top: 37%;
+    right: 32%;
+    top: 30%;
     z-index: 10;
 }
 
@@ -191,7 +191,8 @@ nav {
     color: #1C1C1C;
     letter-spacing: 5px;
     text-align: center;
-    margin: 125px 0;
+    margin-bottom: 10%;
+    margin-top: -10%;
 }
 
 /*ABOUT 영역******************************/
@@ -459,100 +460,7 @@ nav {
 
 }
 
-.graph.stack1 span {
-    animation: stack1 5s 1;
-}
 
-.graph.stack2 span {
-    animation: stack2 5s 1;
-}
-
-.graph.stack3 span {
-    animation: stack3 5s 1;
-}
-
-.graph.stack4 span {
-    animation: stack4 5s 1;
-}
-
-.graph.stack5 span {
-    animation: stack5 5s 1;
-}
-
-@keyframes stack1 {
-    0% {
-        width: 0;
-        color: rgba(255, 255, 255, 0);
-    }
-
-    40% {
-        color: rgba(255, 255, 255, 1);
-    }
-
-    100% {
-        width: 90%;
-    }
-}
-
-@keyframes stack2 {
-    0% {
-        width: 0;
-        color: rgba(255, 255, 255, 0);
-    }
-
-    40% {
-        color: rgba(255, 255, 255, 1);
-    }
-
-    100% {
-        width: 30%;
-    }
-}
-
-@keyframes stack3 {
-    0% {
-        width: 0;
-        color: rgba(255, 255, 255, 0);
-    }
-
-    40% {
-        color: rgba(255, 255, 255, 1);
-    }
-
-    100% {
-        width: 50%;
-    }
-}
-
-@keyframes stack4 {
-    0% {
-        width: 0;
-        color: rgba(255, 255, 255, 0);
-    }
-
-    40% {
-        color: rgba(255, 255, 255, 1);
-    }
-
-    100% {
-        width: 40%;
-    }
-}
-
-@keyframes stack5 {
-    0% {
-        width: 0;
-        color: rgba(255, 255, 255, 0);
-    }
-
-    40% {
-        color: rgba(255, 255, 255, 1);
-    }
-
-    100% {
-        width: 45%;
-    }
-}
 
 .skill_desc {
     display: block;
@@ -773,7 +681,7 @@ background: linear-gradient(to right,  #305cf1 0%,#1e2e63 100%);
     background-size: cover;
     position: absolute;
     right: 0;
-    bottom: -42px;
+    bottom: -13px;
     cursor: pointer;
     
 }
@@ -782,9 +690,9 @@ background: linear-gradient(to right,  #305cf1 0%,#1e2e63 100%);
 }
 @keyframes btntop{
     0%{
-       bottom: -42px; 
+       bottom: -13px; 
     }
     50%{
-        bottom: -18px;
+        bottom: 0;
     }
 }
