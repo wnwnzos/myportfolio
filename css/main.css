@@ -63,7 +63,7 @@
 
 .title {
     position: absolute;
-    left: 2%;
+    left: 6%;
     top: 0;
     width: 100%;
     z-index: 1;
@@ -93,8 +93,8 @@
 /*메뉴*/
 nav {
     position: absolute;
-    right: 41%;
-    top: 32%;
+    right: 31%;
+    top: 37%;
     z-index: 10;
 }
 
@@ -123,7 +123,7 @@ nav {
 /*스크롤아이콘***********/
 .scrollIcon {
     position: absolute;
-    bottom: 50px;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -195,21 +195,19 @@ nav {
 }
 
 /*ABOUT 영역******************************/
-.about_box {
-    /*    outline: 1px solid red;*/
-    width: 70%;
-    margin: 0 auto;
-}
+
 
 .about_area {
     display: flex;
     justify-content: space-between;
     height: 813px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .myphoto {
     background: url(../images/myphoto.jpg)no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .about_area li {
@@ -218,8 +216,8 @@ nav {
 }
 
 .about_area b {
-    font-size: 4rem;
-    letter-spacing: 3px;
+    font-size: 3rem;
+    letter-spacing: 6px;
 }
 
 .colorbar {
@@ -232,7 +230,7 @@ nav {
 
 /*타이핑효과*/
 .about_typing {
-    font-size: 1.8125rem;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 30px 0 0 0;
 }
@@ -393,19 +391,20 @@ nav {
 }
 
 .mbti_img {
-    width: 100%;
-    height: 147px;
-    background: url(../images/mbtiimg.png)no-repeat;
+        width: 123%;
+    height: 148px;
+    background: url(../images/mbtiimg.png)no-repeat center;
 }
 
+
 .mbti_txt {
-    padding-top: 10%
+    padding-top: 6%
 }
 
 .mbti_txt li {
     width: 100%;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #707070;
     font-size: 0.9375rem;
 }
@@ -593,7 +592,7 @@ nav {
 .portfolio_box {
     position: relative;
     width: 70%;
-    height: 800px;
+    height: 50%;
     background-color: #F5F6F6;
     top: 0;
     left: 50%;
@@ -646,9 +645,8 @@ nav {
 /*디테일아이콘*/
 .detailBtn_box {
     position: absolute;
-    right: 6%;
-    bottom: 0;
-
+    right: 7%;
+    bottom: 14%;
 }
 
 .slidewr .right .tit {
@@ -661,7 +659,7 @@ nav {
 
 .slidewr .right a.project {
     display: block;
-    font-size: 64px;
+    font-size: 2.875rem;
     color: #3d3d3d;
     letter-spacing: -3px;
     font-weight: 500;
@@ -671,7 +669,7 @@ nav {
 }
 
 .slidewr .right .desc {
-    font-size: 2.5rem;
+    font-size: 2.06rem;
     color: #777;
     text-transform: uppercase;
     line-height: 24px;
@@ -745,7 +743,7 @@ background: linear-gradient(to right,  #305cf1 0%,#1e2e63 100%);
 }
 
 .slide3 .right .desc{
-    font-size: 2.1875rem;
+    font-size: 1.68rem;
 }
 
 
@@ -770,11 +768,23 @@ background: linear-gradient(to right,  #305cf1 0%,#1e2e63 100%);
 /*스크롤탑아이콘*/
 #btn_top {
     width: 80px;
-    height: 95px;
+    height: 80px;
     background: url(../images/btn_top.png)no-repeat;
     background-size: cover;
     position: absolute;
     right: 0;
-    bottom: -17px;
+    bottom: -42px;
     cursor: pointer;
+    
+}
+#btn_top:hover{
+    animation: btntop 1s ease-in infinite ;
+}
+@keyframes btntop{
+    0%{
+       bottom: -42px; 
+    }
+    50%{
+        bottom: -18px;
+    }
 }
