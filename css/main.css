@@ -77,6 +77,7 @@
     font-size: 24px;
     text-shadow: 0 1px 0 rgba(black, .1);
     text-indent: .3em;
+    font-weight: bold;
 }
 
 @keyframes drift {
@@ -190,7 +191,7 @@ nav {
     color: #1C1C1C;
     letter-spacing: 5px;
     text-align: center;
-    margin-bottom: 125px;
+    margin: 125px 0;
 }
 
 /*ABOUT 영역******************************/
@@ -423,7 +424,7 @@ nav {
 }
 
 .skill_box {
-    width: 516px;
+    width: 530px;
     height: 64px;
     position: relative;
     margin-bottom: 15%;
@@ -558,7 +559,7 @@ nav {
     display: block;
     position: absolute;
     bottom: 0;
-    left: 76px;
+    left: 94px;
     line-height: 120%;
     font-size: 0.9375rem;
 }
@@ -591,59 +592,66 @@ nav {
 
 .portfolio_box {
     position: relative;
-    width: 80%;
+    width: 70%;
     height: 800px;
     background-color: #F5F6F6;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    ;
     border-radius: 30px;
-    padding: 2% 6%;
+/*    padding: 2% 6%;*/
+}
+
+.swiper-container {
+/*    outline: 1px solid red;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slidewr {
+    width: 95%;
+    height: 700px;
 }
 
 
-
-.cf:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.slide .left {
+.slidewr .left {
     float: left;
     width: 70%;
     height: 100%;
 }
 
-.slide .left img {
-    width: 70%;
-
+.slidewr .left img {
+    width: 76%;
+    padding-left: 11%;
+    padding-top: 11%;
 }
 
-.slide .right {
+.slidewr .right {
     float: left;
     width: 30%;
     height: 100%;
     text-align: right;
     position: relative;
+    padding-top: 7%;
 }
 
-.slide .right .detailTxt_box {
+.slidewr .right .detailTxt_box {
     position: absolute;
     right: 30px;
-    top: 10%;
+
 }
 
 /*디테일아이콘*/
 .detailBtn_box {
     position: absolute;
     right: 6%;
-    top: 26%;
+    bottom: 0;
 
 }
 
-.slide .right .tit {
+.slidewr .right .tit {
     display: block;
     font-size: 24px;
     color: #777;
@@ -651,7 +659,7 @@ nav {
     line-height: 24px;
 }
 
-.slide .right a.project {
+.slidewr .right a.project {
     display: block;
     font-size: 64px;
     color: #3d3d3d;
@@ -659,29 +667,27 @@ nav {
     font-weight: 500;
     line-height: 64px;
     padding: 30px 0;
+    font-weight: bold;
 }
 
-.slide .right .desc {
-    font-size: 24px;
+.slidewr .right .desc {
+    font-size: 2.5rem;
     color: #777;
     text-transform: uppercase;
     line-height: 24px;
 }
 
-/*컬러박스*/
-.swiper-pagination {
-    bottom: 10%;
-    left: 50%;
-}
 
-.slide .right .color_box {
+/*컬러박스*/
+
+.slidewr .right .color_box {
     display: flex;
     justify-content: flex-end;
-    margin-top: 16px;
+    margin-top: 30px;
 }
 
 /*컬러공통*/
-.slide .right .color_box span {
+.slidewr .right .color_box span {
     display: block;
     width: 20px;
     height: 20px;
@@ -689,29 +695,74 @@ nav {
     margin-right: 16px;
 }
 
-.slide .right .color_box span:last-child {
+.slidewr .right .color_box span:last-child {
     margin-right: 0;
 }
 
-.slide .right .point1 span.color1 {
-    background: #e60a11;
+/*슬라이드1*/
+.slidewr .right .point1 span.color1 {
+    background: #FFDF50;
 }
 
-.slide .right .point1 span.color2 {
-    background: #fe7c0b;
+.slidewr .right .point1 span.color2 {
+    background: #4FCBF7;
 }
 
-.slide .right .point1 span.color3 {
-    background: #222;
+.slidewr .right .point1 span.color3 {
+    background: #041F54;
+}
+
+
+/*슬라이드2*/
+.slidewr .right .point2 span.color1 {
+    background: #AF655A;
+}
+
+.slidewr .right .point2 span.color2 {
+    background: #F0F1F1;
+}
+
+.slidewr .right .point2 span.color3 {
+    background: #FEE5E1;
+}
+
+
+
+/*슬라이드3*/
+.slidewr .right .point3 span.color1 {
+    background: #9DCEFE;
+}
+
+.slidewr .right .point3 span.color2 {
+    background: #fff;
+}
+
+.slidewr .right .point3 span.color3 {
+
+background: linear-gradient(to right,  #305cf1 0%,#1e2e63 100%); 
+
+
+}
+
+.slide3 .right .desc{
+    font-size: 2.1875rem;
 }
 
 
 
 /*슬라이드 블릿*/
 .swiper-pagination {
-    bottom: 10%;
+    bottom: 2%;
+    width: 100%;
+
 }
 
+.swiper-pagination span{
+    margin-right: 12px;
+}
+.swiper-pagination span:last-child{
+    margin-right: 0;
+}
 
 
 
