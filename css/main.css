@@ -6,6 +6,20 @@
 @import url(reset.css);
 @import url(core.css);
 
+@font-face {
+
+    font-family: hs;
+    src: url('../fonts/high_summit/High Summit.woff') format('woff'),
+        url('../fonts/high_summit/High Summit.ttf') format('truetype');
+}
+
+@font-face {
+
+    font-family: pd;
+    src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.otf') format('truetype'),
+        url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff') format('woff');
+}
+
 .section {
     width: 100vw;
     height: 100vh;
@@ -72,8 +86,8 @@
     transform: translate3d(0, 0, 0);
     color: white;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: .4em;
+    font-family: pd;
+    letter-spacing: 15px;
     font-size: 1.75rem;
     text-shadow: 0 1px 0 rgba(black, .1);
     text-indent: .3em;
@@ -105,11 +119,12 @@ nav {
 
 .lnb a {
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
     display: block;
     transition: .3s;
     transform: scale(1);
-    font-family: 'Playfair Display', serif;
+    font-family: pd;
 }
 
 .lnb a:hover {
@@ -470,7 +485,7 @@ nav {
 }
 
 .mbti h3 {
-    font-weight: 100;
+    font-weight: normal;
 }
 
 .mbti b {
@@ -894,7 +909,7 @@ nav {
     background: url(../images/contact_img.png)no-repeat;
     background-size: cover;
     font-size: 5.375rem;
-    font-family: High Summit;
+    font-family: hs;
     margin-bottom: 5%;
 }
 

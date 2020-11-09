@@ -57,6 +57,7 @@ $(function () { // jQB ///////////////////////////
         loop: true,
         pagination: {
             el: '.swiper-pagination',
+            clickable:true,
 
         },
 
