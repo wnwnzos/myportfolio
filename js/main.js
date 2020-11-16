@@ -8,7 +8,7 @@ $(function () { // jQB ///////////////////////////
         anchors: ['home', 'about', 'skill', 'portfolio', 'contact'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Page1', 'Page2', 'Page3', 'Page4', 'Page5'],
+        navigationTooltips: ['home', 'about', 'skill', 'portfolio', 'contact'],
         'afterLoad': function (anchorLink, index) {
             if (index == 3) {
                 $('.graph span')
@@ -22,7 +22,7 @@ $(function () { // jQB ///////////////////////////
 
     
     /*about영역*****************************/
-    var aboutbtn = $(".licencse").find(".detail_btn p")
+    var aboutbtn = $(".licencse").find(".detail_btn")
     
     aboutbtn.click(function(e){
        e.preventDefault();
@@ -53,6 +53,12 @@ $(function () { // jQB ///////////////////////////
         },500)
     });// click /////////////////////
     
+    $(".cbtn").click(function(){
+        $(this).parent(".bottom").animate({
+            left:"200%"
+        },500)
+    });// click /////////////////////
+    
     
     
 
@@ -62,7 +68,7 @@ $(function () { // jQB ///////////////////////////
 
     new Swiper('.swiper-container', {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 40,
         loop: true,
         pagination: {
             el: '.swiper-pagination',

@@ -23,6 +23,7 @@
 .section {
     width: 100vw;
     height: 100vh;
+    position: relative;
 }
 
 /*HOME영역******************************************/
@@ -77,7 +78,7 @@
 
 .title {
     position: absolute;
-    left: 6%;
+    left: 0;
     top: 0;
     width: 100%;
     z-index: 1;
@@ -107,8 +108,8 @@
 /*메뉴*/
 nav {
     position: absolute;
-    right: 32%;
-    top: 30%;
+    right: 41%;
+    top: 31%;
     z-index: 10;
 }
 
@@ -195,9 +196,7 @@ nav {
 
 
 /*section5*/
-.sec5 {
-    position: relative;
-}
+
 
 
 /*ection h2공통*/
@@ -207,20 +206,21 @@ nav {
     letter-spacing: 5px;
     text-align: center;
     margin-bottom: 10%;
-    margin-top: -10%;
 }
 
 /*ABOUT 영역******************************/
 /*디테일 클릭시 보이는 창*/
-.lishow{
+.lishow {
     display: none;
 }
-.lishow h4{
+
+.lishow h4 {
     margin-bottom: 15px;
     font-size: 1.5625rem;
     color: #4e4e4e;
 }
-.lishow p{
+
+.lishow p {
     line-height: 2;
     color: #707070;
     margin-bottom: 10px;
@@ -230,7 +230,7 @@ nav {
     display: flex;
     justify-content: space-between;
     height: 813px;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -243,12 +243,20 @@ nav {
     width: 50%;
     margin-right: 80px;
 }
-.about_area li:last-child{
+
+.about_area li:last-child {
     margin-right: 0;
 }
-.about_area b {
+
+.licencse b {
     font-size: 3rem;
     letter-spacing: 6px;
+    font-style: italic;
+}
+
+.licencse b i {
+
+    margin-left: 10px;
 }
 
 .colorbar {
@@ -305,11 +313,24 @@ nav {
 .bottom {
     /*팝업으로 띄우기*/
     position: relative;
-    right: -150%;
+    z-index: 10;
+    right: -173%;
+    top: 21px;
     /*    outline: 1px solid red;*/
-    background-color: #fff;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 15px;
+
+}
+
+.cbtn {
+    position: absolute;
+    right: 14px;
+    top: 0;
+    font-size: 20px;
 }
 
 
@@ -341,9 +362,9 @@ nav {
 .show {
     display: block;
     position: absolute;
-    top: 50%;
-    left: 52%;
-        margin-left: 2px;
+    top: 60%;
+    left: 51.5%;
+    margin-left: 2px;
 }
 
 .button {
@@ -412,6 +433,11 @@ nav {
     height: 100%;
 }
 
+.pert {
+    padding-left: 14px;
+    padding-bottom: 10px;
+}
+
 .pert_box small {
     border: 1px solid #000;
     font-size: 10px;
@@ -419,7 +445,7 @@ nav {
 }
 
 .pert h3 {
-        width: 87%;
+    width: 87%;
     padding: 57px 0 20px 0;
     font-size: 1.8125rem;
     color: #707070;
@@ -438,9 +464,10 @@ nav {
     color: #4e4e4e;
 }
 
-.pert_box li{
+.pert_box li {
     margin-right: 50px;
 }
+
 .mind,
 .eng {
     width: 100%;
@@ -516,15 +543,16 @@ nav {
 }
 
 .mbti_img {
-    width: 109%;
+    width: 100%;
     height: 148px;
-    background: url(../images/mbtiimg.png)no-repeat center;
+    background: url(../images/mbtiimg.png)no-repeat top;
+    background-size: 100%
 }
 
 
 .mbti_txt {
     padding-top: 6%;
-        padding-left: 6%;
+    padding-left: 6%;
 }
 
 .mbti_txt li {
@@ -539,6 +567,8 @@ nav {
 #skill_wrap {
     display: flex;
     justify-content: center;
+    width: 80%;
+    margin: 0 auto;
 
 }
 
@@ -746,7 +776,7 @@ nav {
 
 .portfolio_box {
     position: relative;
-    width: 70%;
+    width: 60%;
     height: 50%;
     background-color: #F5F6F6;
     top: 0;
@@ -814,7 +844,7 @@ nav {
 
 .slidewr .right a.project {
     display: block;
-    font-size: 2.875rem;
+    font-size: 2.8125rem;
     color: #3d3d3d;
     letter-spacing: -3px;
     font-weight: 500;
@@ -905,7 +935,7 @@ nav {
 
 /*슬라이드 블릿*/
 .swiper-pagination {
-    bottom: 2%;
+    bottom: 10%;
     width: 100%;
 
 }
@@ -939,7 +969,7 @@ nav {
 }
 
 
-.cont_img p{
+.cont_img p {
     /*글씨 흐르게*/
     position: absolute;
     top: 50%;
@@ -993,10 +1023,9 @@ nav {
 }
 
 
-
-
-
-
+.half_line:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FFD0AE 50%);
+}
 
 
 
@@ -1006,12 +1035,12 @@ nav {
 /*스크롤탑아이콘*/
 #btn_top {
     width: 80px;
-    height: 80px;
+    height: 95px;
     background: url(../images/btn_top.png)no-repeat;
     background-size: cover;
     position: absolute;
     right: 0;
-    bottom: -13px;
+    bottom: -30px;
     cursor: pointer;
 
 }
@@ -1021,11 +1050,7 @@ nav {
 }
 
 @keyframes btntop {
-    0% {
-        bottom: -13px;
-    }
-
     50% {
-        bottom: 0;
+        bottom: -17px;
     }
 }
