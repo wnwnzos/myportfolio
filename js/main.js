@@ -8,7 +8,9 @@ $(function () { // jQB ///////////////////////////
         anchors: ['home', 'about', 'skill', 'portfolio', 'contact'],
         navigation: true,
         navigationPosition: 'right',
+        /*네비블릿 오버시 나타나는 글씨*/
         navigationTooltips: ['home', 'about', 'skill', 'portfolio', 'contact'],
+        /*스킬페이지 도착했을때 그래프채우기*/
         'afterLoad': function (anchorLink, index) {
             if (index == 3) {
                 $('.graph span')

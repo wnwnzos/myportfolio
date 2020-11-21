@@ -1,7 +1,7 @@
 /*메인 미디어쿼리 - media.css*/
 
 /*피시*/
-@media only screen and (max-width: 2300px) {
+@media only screen and (max-width: 1920px) {
     html {
         font-size: 15px;
     }
@@ -17,18 +17,37 @@
 
     /*어바웃영역*******/
 
+    .section h2 {
+        margin-bottom: 5%;
+
+    }
+
     .about_area {
         width: 80%;
     }
 
+    .myphoto {
+
+        background-size: 100%;
+    }
+
     .show {
-        left: 53%;
+        left: 52%;
         top: 58%;
     }
 
     .bottom {
 
-        top: 21px;
+        top: -1%;
+    }
+
+    .pert h3 {
+        padding: 20px 0 20px 0;
+    }
+
+    .mbti h3 {
+        padding: 20px 0 20px 0;
+
     }
 
     /*포트폴리오 영역*******/
@@ -37,6 +56,12 @@
 
     }
 
+
+    .slidewr {
+        height: 600px;
+    }
+
+
     .slidewr .right a.project {
         font-size: 40px;
     }
@@ -44,9 +69,20 @@
     .detailBtn_box {
         bottom: 20%;
     }
+
+    /*컨텍트영역*/
+    .cont_img {
+        margin-bottom: 1%;
+    }
+
+    .cont_wrap > h2 {
+        margin: 0;
+    }
+
+
+
 }
 
-/*피시*/
 @media only screen and (max-width: 1700px) {
 
     html {
@@ -154,6 +190,7 @@
 
 }
 
+/*아이패드프로*/
 @media only screen and (max-width: 1024px) {
 
     /*홈영역**********/
@@ -167,13 +204,13 @@
     }
 
     nav {
-        top: 28%;
+        top: 20%;
     }
 
+
     /*어바웃영역********/
-    .section h2 {
-        margin-bottom: 5%;
-        margin-top: 5%;
+    .about_wrap {
+        height: 50%;
     }
 
     .myphoto {
@@ -194,6 +231,7 @@
         font-size: 15px;
     }
 
+
     .lishow h4 {
         font-size: 25px;
 
@@ -201,11 +239,16 @@
 
     .lishow p {
         margin-bottom: 3px;
+        font-size: 17px;
     }
 
     .show {
         left: 9%;
-        top: 60%;
+        top: 62%;
+    }
+
+    .pert {
+        padding-left: 6%;
     }
 
     .pert_box h4 {
@@ -213,44 +256,57 @@
         font-size: 9px;
     }
 
+    .pert h3 {
+        width: 120%;
+        font-size: 20px;
+        padding: 0;
+        padding-bottom: 2%;
+    }
+
+
     .right_txt {
         right: -182%;
+        padding-right: 6%;
     }
 
     .mbti {
-        width: 48%;
+        width: 50%;
     }
 
     .mbti h3 {
-        padding: 46px 0 20px 0;
-        font-size: 17px;
+        padding: 0;
+        padding-bottom: 2%;
+        font-size: 20px;
     }
 
     .about_area b {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .mbti_img {
         height: 72px;
     }
 
+    .mbti_img img {
+        width: 80%;
+    }
+
     .mbti_txt {
         padding-left: 12%;
+        margin-top: 9%;
     }
 
     .mbti_txt li {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .bottom {
-        top:42px;
+        position: absolute;
+        top: 61.5%;
+        width: 66%;
+        margin-left: 9%;
     }
 
-    .pert h3 {
-        width: 107%;
-        font-size: 17px;
-        padding: 46px 0 20px 0;
-    }
 
 
     /*스킬영역**********/
@@ -282,8 +338,12 @@
     }
 
     /*포트폴리오 영역*************/
+    .port_wrap {
+        height: 50%;
+    }
+
     .portfolio_box {
-        height: 30%;
+        height: 60%;
         width: 75%;
     }
 
@@ -315,7 +375,13 @@
         height: 15px;
     }
 
+
+
     /*컨텍트영역*************/
+    .cont_wrap {
+        height: 50%;
+    }
+
     .cont_img {
         height: 317px;
     }
@@ -332,41 +398,51 @@
 
     #btn_top {
         background-size: 90%;
-        bottom: -30px;
+        bottom: -55%;
+/*        pointer-events: none;*/
     }
+
+
 }
 
-/*피시*/
 
 
 
 
 
 
-/*태블릿*/
+
+/*태블릿-아이패드*/
 @media only screen and (max-width:820px) {
 
     /*홈영역************/
     .wave {
         width: 500px;
         height: 500px;
-        top: 0;
-        left: 39%;
+        left: 35%;
+        top: 30%;
     }
 
     .title {
+        position: absolute;
         font-size: 17px;
         letter-spacing: 8px;
-        top: 0;
-        left: 8%;
+        top: 25%;
+        left: 2%;
     }
 
     .lnb a {
         font-size: 12px;
     }
 
-    
+    nav {
+        top: 50%;
+        right: 36%;
+    }
 
+    .scrollIcon {
+        display: none;
+    }
 
 
     /*어바웃영역************/
@@ -385,12 +461,13 @@
 
     .about_area {
 
+        width: 100%;
         height: 626px;
 
     }
 
     .about_area b {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .about_area li {
@@ -424,7 +501,7 @@
     .about_typing {
         text-align: left;
         padding: 18px 0 0 0;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .detail_btn {
@@ -433,11 +510,11 @@
 
     .show {
         left: 45%;
-        top: 43%;
+        top: 55%;
     }
 
     .button {
-        font-size: 10px;
+        font-size: 15px;
         border: 1px solid #305cf1;
     }
 
@@ -450,15 +527,47 @@
     }
 
     .lishow h4 {
-        font-size: 16px;
+        font-size: 17px;
         margin-bottom: 5px;
     }
 
     .lishow p {
         line-height: 1.5;
-        font-size: 10px;
+        font-size: 12px;
     }
-   
+
+
+    .bottom {
+        top: 61%;
+
+        width: 85%;
+        margin-left: 7%;
+
+    }
+    .pert h3 {
+ 
+    padding-bottom: 5%;
+}
+
+    .pert_box > li > ul {
+        margin-bottom: 10px;
+    }
+
+    .mbti_txt {
+
+        margin-top: 5%;
+    }
+
+    .mbti_txt li {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.5;
+
+    }
+    .mbti h3{
+        margin-bottom: 5%;
+    }
+
     /*스킬영역**********/
     .skill_box {
         width: 338px;
@@ -524,7 +633,7 @@
     /*포트폴리오 영역**********/
 
     .portfolio_box {
-        height: 66%;
+        height: 62%;
         width: 83%;
     }
 
@@ -551,10 +660,12 @@
     }
 
     .swiper-pagination {
-        bottom: 5%;
+        bottom: 15%;
     }
 
     /*컨텍트영역****************/
+
+
     .cont_img {
         height: 159px;
         margin-bottom: 0;
@@ -568,12 +679,12 @@
 
     .cont_wrap ul {
         width: 40%;
-        font-size: 12px;
-        padding: 8px 0;
+        font-size: 15px;
+        padding: 20px 0;
     }
 
     .redtxt {
-       position: absolute;
+        position: absolute;
         bottom: 4%;
         left: 50%;
         font-size: 10px;
@@ -582,47 +693,40 @@
 
 
     #btn_top {
-        bottom: -51px;
+        bottom: -58%;
         background-size: 65%;
-
     }
 
-    @keyframes btntop {
-        0% {
-            bottom: -64px;
-        }
-
-        50% {
-            bottom: -56px;
-        }
-    }
-
+   
 
 }
 
-/*태블릿*/
 
 
+/*모바일-아이폰X*/
 @media only screen and (max-width:480px) {
 
     /*홈영역**************/
     .wave {
         width: 500px;
         height: 500px;
-        top: -6%;
-        left: 8%;
+        top: -10%;
+        left: 0%;
     }
 
     .title {
-        font-size: 17px;
-        top: 17%;
+  
         line-height: 2;
         letter-spacing: 5px;
+          font-size: 14px;
+        top: 16%;
+        left: 0;
     }
 
+  
     nav {
-        right: 18%;
-        top: 30%;
+        right: 23%;
+        top: 36%;
     }
 
     .lnb li {
@@ -630,14 +734,17 @@
     }
 
     .lnb a {
-
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /*어바웃영역************/
-    .myphoto {
+    .about_wrap {
+        height: 75%;
+    }
 
-        background-size: 83%;
+    .myphoto {
+        background-size: 90%;
+        background-position: top;
     }
 
     .about_area {
@@ -645,43 +752,59 @@
         align-content: center;
     }
 
+      .about_area li {
+        margin: 0 auto;
+        width: 100%;
+        height: 310px;
+    }
+    
 
     .about_area b {
-        font-size: 23px;
+        font-size: 15px;
     }
 
-    .licencse b i {
-        margin-left: 0;
+  
+    .licencse {
+        text-align: left;
+        left: 4%;
     }
-
+    
     .colorbar {
 
         margin-top: 10px;
     }
 
     .about_typing {
-        font-size: 14px;
-        padding: 18px 0 0 0%;
+        font-size: 12px;
     }
 
-    .detail_btn {
-        left: 0;
-    }
+  
 
+    .lishow h4 {
+    font-size: 20px;
+
+}
+    
     .lishow {
         position: absolute;
-        left: 41.5%;
+        top: 58%;
+        left: 37%;
         transform: translateX(-50%);
     }
 
-
-
+    .lishow p {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
 
     .show,
     .bottom {
         display: none;
 
     }
+    
+    
+    
 
     /*스킬영역*************/
 
@@ -690,114 +813,7 @@
         width: 100%;
         padding: 0 4%;
     }
-
-
-    /*포트폴리오영역*************/
-    .portfolio_box {
-        height: 23%;
-        margin-top: 27%;
-    }
-
-    .slidewr .right .tit {
-        font-size: 12px;
-        padding-bottom: 5px;
-    }
-
-    .slidewr .right a.project {
-        font-size: 13px;
-    }
-
-    .slidewr .right .desc {
-        font-size: 10px;
-        line-height: 15px;
-    }
-
-    .slidewr .right .color_box {
-        margin-top: 12px;
-    }
-
-    .slidewr {
-        height: 278px;
-    }
-
-}
-
-
-
-
-
-
-
-
-/*모바일*/
-@media only screen and (max-width:380px){
-    html {
-        font-size: 10px;
-    }
-
-    /*홈영역**************/
-    .wave {
-        top: -10%;
-        left: 0%;
-    }
-
-    .title {
-        font-size: 14px;
-        top: 16%;
-    }
-
-    nav {
-        right: 23%;
-        top: 36%;
-    }
-
-    .lnb a {
-        font-size: 10px;
-    }
-
-    /*어바웃영역*******************/
-    .myphoto {
-        background-size: 100%;
-        background-position: top;
-    }
-
-
-
-    .about_area li {
-        margin: 0 auto;
-        width: 100%;
-        height: 310px;
-    }
-
-    .licencse {
-        text-align: left;
-        left: 4%;
-    }
-
-    .about_area b {
-
-        font-size: 15px;
-    }
-
-.lishow p {
-   
-    font-size: 14px;
-}
-
-    .about_typing {
-        font-size: 12px;
-
-    }
-
-    .lishow {
-        left: 36.5%;
-        top: 56%;
-    }
-
-
-
-
-    /*스킬영역*************/
+    
     .skill_box {
         width: 318px;
         margin-left: 10px;
@@ -811,7 +827,7 @@
 
     .skill_box img {
         width: 10%;
-         left: 0;
+        left: 0;
     }
 
     .graph {
@@ -848,7 +864,7 @@
 
     .skill_list ul li img {
         width: 35px;
-       
+
     }
 
     .skill_title h3 {
@@ -856,18 +872,40 @@
         margin-bottom: 9px;
         padding-left: 0;
     }
-    .skill_list{
+
+    .skill_list {
         padding-left: 0;
     }
 
 
-    /*포트폴리오 영역***************/
+    /*포트폴리오영역*************/
     .portfolio_box {
         width: 95%;
-       min-height: 40%;
-        margin-top: 15%;
+        height: 80%;
     }
 
+
+    .slidewr .right .tit {
+        padding-bottom: 5px;
+         font-size: 15px;
+    }
+
+    
+    .slidewr .right .desc {
+        font-size: 10px;
+        line-height: 15px;
+        font-size: 17px;
+    }
+
+    .slidewr .right .color_box {
+        margin-top: 12px;
+    }
+
+    .slidewr {
+        height: 278px;
+    }
+    
+    
     .slidewr .left {
         float: none;
         width: 100%;
@@ -892,17 +930,8 @@
         left: 12%;
     }
 
-    .slidewr .right .tit {
-        font-size: 15px;
-    }
-
     .slidewr .right a.project {
         font-size: 23px;
-    }
-
-    .slidewr .right .desc {
-        font-size: 17px;
-
     }
 
 
@@ -911,14 +940,22 @@
         display: none;
     }
 
+    
+     .swiper-pagination {
+        bottom: -10%;
 
-    /*컨텍트영역********/
+    }
+    
+    
+    
+    
+     /*컨텍트영역********/
     .cont_img {
-        height: 150px;
+        height: 100px;
         margin-bottom: 5%;
     }
 
-    /*컨텍트영역***********/
+
     .cont_wrap ul {
         width: 50%;
         margin: 0 auto;
@@ -934,13 +971,33 @@
     }
 
     .redtxt {
-        position:static;
+        position: static;
         padding-top: 16%;
         font-size: 10px;
     }
 
+    .dbtn {
+        padding-left: 20%;
+    }
 
-
-
+    .cta span {
+        font-size: 12px;
+    }
+    
+    .cta::before {
+    width: 45px;
+    height: 45px;
 
 }
+
+    #btn_top {
+        bottom: -61%;
+    }
+
+    
+
+}
+
+
+
+
