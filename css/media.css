@@ -137,7 +137,7 @@
     }
 
     nav {
-        right: 35%;
+        right: 45%;
         top: 39%;
     }
 
@@ -175,6 +175,9 @@
     }
 
     /*포트폴리오 영역********/
+    .portfolio_box {
+    height: 55%;
+}
     .slidewr .right a.project {
         font-size: 31px;
 
