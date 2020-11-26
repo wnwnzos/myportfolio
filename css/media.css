@@ -1,7 +1,7 @@
 /*메인 미디어쿼리 - media.css*/
 
 /*피시*/
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1980px) {
     html {
         font-size: 15px;
     }
@@ -111,7 +111,7 @@
 
     /*포트폴리오 영역********/
     .portfolio_box {
-        height: 40%;
+        height: 62%;
 
     }
 
@@ -784,20 +784,20 @@
   
 
     .lishow h4 {
-    font-size: 20px;
+    font-size: 17px;
 
 }
     
     .lishow {
         position: absolute;
-        top: 58%;
+        top: 66%;
         left: 37%;
         transform: translateX(-50%);
     }
 
     .lishow p {
-        margin-bottom: 12px;
-        font-size: 14px;
+        margin-bottom: 8px;
+        font-size: 11px;
     }
 
     .show,
@@ -884,7 +884,7 @@
     /*포트폴리오영역*************/
     .portfolio_box {
         width: 95%;
-        height: 80%;
+        height: 96%;
     }
 
 
@@ -945,7 +945,7 @@
 
     
      .swiper-pagination {
-        bottom: -10%;
+        bottom: -20%;
 
     }
     
@@ -994,7 +994,9 @@
 }
 
     #btn_top {
-        bottom: -61%;
+        background-size: 50%;
+        bottom: -66%;
+        right: -10%;
     }
 
     

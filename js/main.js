@@ -16,19 +16,19 @@ $(function () { // jQB ///////////////////////////
             if (index == 2) {
                 $('.about_wrap').fadeIn(500);
             }
-            else if (index == 3) {
+            else if (index == 3) {//스킬부분
                 $(".sec3").animate({
                     opacity:"1"
                 },500);
                 $('.graph span')
                     .addClass('active');
             }
-            else if (index == 4) {
+            else if (index == 4) {//포트폴리오부분
                 $(".port_wrap").animate({
                   opacity:"1"   
                 },500);
             }
-            else if (index == 5) {
+            else if (index == 5) {//컨텍트부분
                 $(".cont_wrap").animate({
                     opacity:"1"
                 },500);
