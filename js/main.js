@@ -1,5 +1,6 @@
 $(function () { // jQB ///////////////////////////
 
+    
 
     // 풀페이지 플러그인 호출
     $("#fullpage").fullpage({
@@ -12,15 +13,32 @@ $(function () { // jQB ///////////////////////////
         navigationTooltips: ['home', 'about', 'skill', 'portfolio', 'contact'],
         /*스킬페이지 도착했을때 그래프채우기*/
         'afterLoad': function (anchorLink, index) {
-            if (index == 3) {
+            if (index == 2) {
+                $('.about_wrap').fadeIn(500);
+            }
+            else if (index == 3) {
+                $(".sec3").animate({
+                    opacity:"1"
+                },500);
                 $('.graph span')
                     .addClass('active');
+            }
+            else if (index == 4) {
+                $(".port_wrap").animate({
+                  opacity:"1"   
+                },500);
+            }
+            else if (index == 5) {
+                $(".cont_wrap").animate({
+                    opacity:"1"
+                },500);
             }
          
         },
 
     });
 
+   
 
     
     /*about영역*****************************/

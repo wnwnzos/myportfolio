@@ -28,6 +28,8 @@
     position: relative;
 }
 
+
+
 /*HOME영역******************************************/
 .box {
     width: 100%;
@@ -213,6 +215,9 @@ nav {
 /*ABOUT 영역******************************/
 .about_wrap{
     height: 80%;
+    display: none;
+}
+.about_tit{
 }
 /*디테일 클릭시 보이는 창*/
 .lishow {
@@ -649,14 +654,18 @@ nav {
 }
 
 /*skill영역*******************************************************************/
+
 #skill_wrap {
     display: flex;
     justify-content: center;
     width: 80%;
     margin: 0 auto;
+/*    display: none;*/
 
 }
-
+.sec3{
+    opacity: 0;
+}
 .left_wrap {
     display: flex;
     flex-direction: column;
@@ -857,7 +866,10 @@ nav {
     position: relative;
     width: 100%;
     height: 80%;
+    opacity: 0;
 }
+
+
 
 .portfolio_box {
     position: relative;
@@ -1042,6 +1054,7 @@ nav {
 /*    outline: 1px solid #000;*/
     position: relative;
     height: 100vh;
+    opacity: 0;
 }
 
 .cont_wrap > h2 {
