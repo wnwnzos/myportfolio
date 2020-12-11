@@ -6,15 +6,6 @@
         font-size: 15px;
     }
 
-    /*홈영역**********/
-    .title {
-        left: 5%;
-    }
-
-    nav {
-        right: 32%;
-    }
-
     /*어바웃영역*******/
 
     .section h2 {
@@ -28,7 +19,7 @@
 
     .myphoto {
 
-        background-size: 100%;
+        background-size: 90%;
     }
 
     .show {
@@ -36,10 +27,6 @@
         top: 58%;
     }
 
-    .bottom {
-
-        top: -1%;
-    }
 
     .pert h3 {
         padding: 20px 0 20px 0;
@@ -89,24 +76,36 @@
         font-size: 13px;
     }
 
-    /*홈영역**********/
-    .wave {
-        width: 800px;
-        height: 800px;
+    .logo {
+        width: 75px;
+
     }
 
+    /*홈영역**********/
+    nav {
+        width: 40%;
+    }
 
     /*어바웃영역*******/
     .show {
         left: 52.5%;
     }
 
-    .bottom {
-        top: 15px;
-    }
 
     .mbti_img {
-        width: 123%;
+        width: 100%;
+    }
+
+    .cbtn {
+
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        top: 10px;
+    }
+
+    .mbti_txt li {
+        font-size: 0.9375rem;
     }
 
     /*포트폴리오 영역********/
@@ -128,18 +127,10 @@
 @media only screen and (max-width: 1500px) {
 
     /*홈영역***************/
-    .wave {
-        left: 39%;
+    .logo {
+        width: 65px;
     }
 
-    .title {
-        left: 3%;
-    }
-
-    nav {
-        right: 45%;
-        top: 39%;
-    }
 
     /*어바웃영역********/
     .about_area {
@@ -151,9 +142,7 @@
         margin-right: 40px;
     }
 
-    .myphoto {
-        background-size: 100%;
-    }
+
 
     .show {
         left: 51.5%;
@@ -164,9 +153,8 @@
 
     }
 
-    .mbti_img {
-        width: 100%;
-        background-size: 75%;
+    .mbti_img img {
+        width: 79%;
     }
 
     .mbti_txt {
@@ -176,8 +164,9 @@
 
     /*포트폴리오 영역********/
     .portfolio_box {
-    height: 55%;
-}
+        height: 55%;
+    }
+
     .slidewr .right a.project {
         font-size: 31px;
 
@@ -197,19 +186,9 @@
 @media only screen and (max-width: 1024px) {
 
     /*홈영역**********/
-    .wave {
-        top: -14%;
-        left: 29%;
-    }
-
-    .title {
-        left: 0%;
-    }
-
     nav {
-        top: 20%;
+        width: 55%;
     }
-
 
     /*어바웃영역********/
     .about_wrap {
@@ -247,11 +226,12 @@
 
     .show {
         left: 9%;
-        top: 62%;
+        top: 72%;
     }
 
     .pert {
         padding-left: 6%;
+        padding-top: 8%;
     }
 
     .pert_box h4 {
@@ -274,6 +254,7 @@
 
     .mbti {
         width: 50%;
+        padding-top: 8%;
     }
 
     .mbti h3 {
@@ -304,10 +285,7 @@
     }
 
     .bottom {
-        position: absolute;
-        top: 61.5%;
-        width: 66%;
-        margin-left: 9%;
+        width: 70%;
     }
 
 
@@ -346,7 +324,7 @@
     }
 
     .portfolio_box {
-        height: 60%;
+        height: 65%;
         width: 75%;
     }
 
@@ -401,8 +379,8 @@
 
     #btn_top {
         background-size: 90%;
-        bottom: -55%;
-/*        pointer-events: none;*/
+        bottom: -54%;
+
     }
 
 
@@ -419,34 +397,11 @@
 @media only screen and (max-width:820px) {
 
     /*홈영역************/
-    .wave {
-        width: 500px;
-        height: 500px;
-        left: 35%;
-        top: 30%;
-    }
-
-    .title {
-        position: absolute;
-        font-size: 17px;
-        letter-spacing: 8px;
-        top: 25%;
-        left: 2%;
-    }
-
-    .lnb a {
-        font-size: 12px;
-    }
-
     nav {
-        top: 50%;
+        top: 55%;
         right: 36%;
+        width: 65%;
     }
-
-    .scrollIcon {
-        display: none;
-    }
-
 
     /*어바웃영역************/
 
@@ -516,9 +471,8 @@
         top: 55%;
     }
 
-    .button {
-        font-size: 15px;
-        border: 1px solid #305cf1;
+    .show a {
+        font-size: 23px;
     }
 
     .lishow {
@@ -541,16 +495,13 @@
 
 
     .bottom {
-        top: 61%;
-
-        width: 85%;
-        margin-left: 7%;
-
+        width: 90%;
     }
+
     .pert h3 {
- 
-    padding-bottom: 5%;
-}
+
+        padding-bottom: 5%;
+    }
 
     .pert_box > li > ul {
         margin-bottom: 10px;
@@ -558,7 +509,7 @@
 
     .mbti_txt {
 
-        margin-top: 5%;
+        margin-top: 9%;
     }
 
     .mbti_txt li {
@@ -567,9 +518,8 @@
         line-height: 1.5;
 
     }
-    .mbti h3{
-        margin-bottom: 5%;
-    }
+
+
 
     /*스킬영역**********/
     .skill_box {
@@ -688,8 +638,8 @@
 
     .redtxt {
         position: absolute;
-        bottom: 4%;
-        left: 50%;
+        bottom: -5%;
+        left: 0;
         font-size: 10px;
     }
 
@@ -700,7 +650,7 @@
         background-size: 65%;
     }
 
-   
+
 
 }
 
@@ -710,34 +660,31 @@
 @media only screen and (max-width:480px) {
 
     /*홈영역**************/
-    .wave {
-        width: 500px;
-        height: 500px;
-        top: -10%;
-        left: 0%;
+    .logo {
+    width: 55px;
+    height: 136px;
+    font-size: 15px;
+}
+    .content {
+        width: 75%;
+        font-size: 18px;
     }
 
-    .title {
-  
-        line-height: 2;
-        letter-spacing: 5px;
-          font-size: 14px;
-        top: 16%;
-        left: 0;
+    .content__container:after,
+    .content__container:before {
+        font-size: 25px;
     }
 
-  
     nav {
-        right: 23%;
-        top: 36%;
+        margin-top: 10%;
+    }
+
+    .lnb {
+        display: block;
     }
 
     .lnb li {
-        margin-right: 5%;
-    }
-
-    .lnb a {
-        font-size: 10px;
+        margin-bottom: 5%;
     }
 
     /*어바웃영역************/
@@ -755,23 +702,24 @@
         align-content: center;
     }
 
-      .about_area li {
+    .about_area li {
         margin: 0 auto;
-        width: 100%;
+        width: 65%;
         height: 310px;
     }
-    
+
 
     .about_area b {
         font-size: 15px;
     }
 
-  
+
     .licencse {
         text-align: left;
-        left: 4%;
+        left: 7%;
+        top: 50%;
     }
-    
+
     .colorbar {
 
         margin-top: 10px;
@@ -781,23 +729,27 @@
         font-size: 12px;
     }
 
-  
+
 
     .lishow h4 {
-    font-size: 17px;
+        font-size: 17px;
 
-}
-    
+    }
+
     .lishow {
         position: absolute;
-        top: 66%;
-        left: 37%;
-        transform: translateX(-50%);
+        top: 50%;
+        left: 47%;
+    }
+
+    .lishow h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .lishow p {
         margin-bottom: 8px;
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .show,
@@ -805,9 +757,9 @@
         display: none;
 
     }
-    
-    
-    
+
+
+
 
     /*스킬영역*************/
 
@@ -816,7 +768,7 @@
         width: 100%;
         padding: 0 4%;
     }
-    
+
     .skill_box {
         width: 318px;
         margin-left: 10px;
@@ -884,16 +836,16 @@
     /*포트폴리오영역*************/
     .portfolio_box {
         width: 95%;
-        height: 96%;
+        height: 83%;
     }
 
 
     .slidewr .right .tit {
         padding-bottom: 5px;
-         font-size: 15px;
+        font-size: 15px;
     }
 
-    
+
     .slidewr .right .desc {
         font-size: 10px;
         line-height: 15px;
@@ -907,8 +859,8 @@
     .slidewr {
         height: 278px;
     }
-    
-    
+
+
     .slidewr .left {
         float: none;
         width: 100%;
@@ -943,16 +895,16 @@
         display: none;
     }
 
-    
-     .swiper-pagination {
-        bottom: -20%;
+
+    .swiper-pagination {
+        bottom: -7%;
 
     }
-    
-    
-    
-    
-     /*컨텍트영역********/
+
+
+
+
+    /*컨텍트영역********/
     .cont_img {
         height: 100px;
         margin-bottom: 5%;
@@ -986,23 +938,19 @@
     .cta span {
         font-size: 12px;
     }
-    
-    .cta::before {
-    width: 45px;
-    height: 45px;
 
-}
+    .cta::before {
+        width: 45px;
+        height: 45px;
+
+    }
 
     #btn_top {
         background-size: 50%;
-        bottom: -66%;
+        bottom: -63%;
         right: -10%;
     }
 
-    
+
 
 }
-
-
-
-
