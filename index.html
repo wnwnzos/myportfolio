@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/swiper.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--제이쿼리 라이브러리-->
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.fullPage.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="js/typed.min.js"></script>
 
@@ -25,48 +23,106 @@
 </head>
 
 <body>
-   <header>
-        <h1 class="logo">PARKHYEJU.</h1>
-   </header>
+    <header>
+        <a href="#home" class="logo">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 304.59 304.6" style="enable-background:new 0 0 304.59 304.6;" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill: #f2f2f2;
+                    }
+
+                    .st1 {
+                        fill: #f2f2f2;
+                        stroke: #333;
+                        stroke-miterlimit: 10;
+                    }
+
+                    .st2 {
+                        stroke: #333;
+                    }
+
+                </style>
+                <g id="Layer_2">
+                    <rect x="0.5" class="st0" width="304.1" height="304.1" />
+                </g>
+                <g id="Layer_1">
+                    <g>
+                        <circle class="st1" cx="152.3" cy="152.3" r="151.8" />
+                        <path class="st1" d="M152.3,304.6C68.32,304.6,0,236.27,0,152.3C0,68.32,68.32,0,152.3,0s152.3,68.32,152.3,152.3
+                        C304.59,236.27,236.27,304.6,152.3,304.6z M152.3,1C68.87,1,1,68.87,1,152.3s67.87,151.3,151.3,151.3s151.3-67.87,151.3-151.3
+                        S235.72,1,152.3,1z" />
+                    </g>
+                    <g>
+                        <path class="st2" d="M87.35,82.95v12.69h14.66V82.95h3.96v30.32h-3.96V99.06H87.35v14.21h-3.91V82.95H87.35z" />
+                    </g>
+                    <g>
+                        <path class="st2" d="M99.14,212.25H87.35v10.93h13.14v3.28H83.44v-30.32h16.37v3.28H87.35v9.58h11.79V212.25z" />
+                    </g>
+                    <g>
+                        <path class="st2" d="M166.75,99.06h-11.79v10.93h13.14v3.28h-17.05V82.95h16.37v3.28h-12.46v9.58h11.79V99.06z" />
+                    </g>
+                    <g>
+                        <path class="st2" d="M204,113.27V82.95h4.27l9.72,15.34c2.25,3.55,4,6.75,5.44,9.85l0.09-0.04c-0.36-4.05-0.45-7.74-0.45-12.46
+                        V82.95h3.69v30.32h-3.96l-9.63-15.38c-2.11-3.37-4.14-6.84-5.67-10.12l-0.13,0.04c0.23,3.82,0.31,7.47,0.31,12.51v12.96H204z" />
+                    </g>
+                    <g>
+                        <path class="st2" d="M204,226.46v-30.32h4.27l9.72,15.34c2.25,3.55,4,6.75,5.44,9.85l0.09-0.04c-0.36-4.05-0.45-7.74-0.45-12.46
+                        v-12.69h3.69v30.32h-3.96l-9.63-15.38c-2.11-3.37-4.14-6.84-5.67-10.12l-0.13,0.04c0.23,3.82,0.31,7.47,0.31,12.51v12.96H204z" />
+                    </g>
+                </g>
+            </svg>
+        </a>
+
+    </header>
     <div id="fullpage">
 
         <!--home 영역-->
-        <div class="section sec1">
-            <div class="content">
-                <div class="content__container">
-                    <p class="content__container__text">
-                        Hello
-                    </p>
-
-                    <ul class="content__container__list">
-                        <li class="content__container__list__item">world !</li>
-                        <li class="content__container__list__item">hyeju !</li>
-                        <li class="content__container__list__item">users !</li>
-                        <li class="content__container__list__item">everybody !</li>
-                    </ul>
+        <div class="section">
+            <div class="tit_wrap">
+                <div class="toptit">HYE JU
+                    <!--별모양회전애니-->
+                    <span class="icon_star"><svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.9226 0L8.49996 8.49999L3.60495 1.37419L1.37416 3.60497L8.49996 8.49999L0 6.9226V10.0774L8.49996 8.49999L1.37424 13.395L3.60502 15.6258L8.49996 8.49999L6.9226 17H10.0774L8.49996 8.49999L13.3951 15.6258L15.6258 13.395L8.49996 8.49999L17 10.0774V6.9226L8.49996 8.49999L15.6258 3.605L13.395 1.37421L8.49996 8.49999L10.0774 0H6.9226Z" fill="black"></path>
+                        </svg>
+                    </span>
                 </div>
+                <div class="bottomtit">WEB PUBLISHER</div>
+                <nav>
+                    <ul class="lnb">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#skill">SKILL</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul class="lnb">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skill">SKILL</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
+
+            <!--동그라미애니메이션-->
+            <div class="double-circles shown animate">
+                <svg viewBox="0 0 31 21" fill="none">
+                    <circle class="circle circle--1" cx="10.5" cy="10.5" r="10" stroke="black"></circle>
+                    <circle class="circle circle--2" cx="20.5" cy="10.5" r="10" stroke="black"></circle>
+                </svg>
+            </div>
+
         </div>
         <!--about 영역-->
-        <div class="section sec2">
-            <div class="about_wrap">
+        <div class="section">
 
-                <h2 class="about_tit">ABOUT</h2>
+            <h2 class="about_tit">ABOUT</h2>
+            <div id="about_wrap">
+                <div class="atit">
+                    <div class="topshow">
+                        <b>&quot;</b> HENEN 해낸 <b>&rdquo;</b>
+                    </div>
+                    <small>해낼수 있는 끈기와 노력을 갖춘 웹퍼블리셔 준비생 출발합니다.<a href="#" class="plusbtn">click</a></small>
+                </div>
+                <div class="mypic">
+                    <div class="myinfo_modal">
+                        <div class="infotit">MY INTRO</div>
 
-
-                <ul class="about_area">
-                    <li class="myphoto"></li>
-                    <li>
-                        <div class="lishow">
+                        <div class="infobox">
                             <h4>Profile</h4>
                             <p>
                                 박혜주&emsp;PARK HYE JU<br>
@@ -82,104 +138,30 @@
                                 2019.12.13&emsp;GTQ그래픽기술자격 1급<br>
                                 2020.10.18&emsp;웹디자인기능사 필기
                             </p>
+                        </div>
+                    </div>
 
-                        </div>
-                        <div class="licencse">
-                            <b>Front-End Engineer<br>
-                                <i>Web Content Publisher</i>
-                                <span class="colorbar"></span>
-                            </b>
-                            <div class="greetings_text2 type-wrap about_typing">
-                                <span id="typed5" style="white-space:pre;"></span>
-                            </div>
-                            <a class="detail_btn" href="#">
-                                <p>Detail</p>
-                                <img src="images/detail_arrow.png" alt="detail">
-                            </a>
-                        </div>
-                       
-                        <div class="show">
-                            <a class="btn-draw" href="#"><span>MY MBTI ?</span></a>
-                        </div>
-                         <!--modal-->
-                         <div class="modal_overlay">
-                                   <div class="bottom">
-                            <a href="#" class="cbtn">
-                                <em></em>
-                            </a>
-                            <div class="pert">
-                                <h3>Personality Type</h3>
-                                <ul class="pert_box">
-                                    <li>
-                                        <h4>마음</h4>
-                                        <ul class="mind">
-                                            <li class="bar_txt left_txt">35%<br>외향성</li>
-                                            <li><span class="perbar"></span></li>
-                                            <li class="bar_txt right_txt">65%<br>내향성</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h4>에너지</h4>
-                                        <ul class="eng">
-                                            <li class="bar_txt left_txt">49%<br>직관형</li>
-                                            <li><span class="perbar ebar"></span></li>
-                                            <li class="bar_txt right_txt">51%<br>현실주의형</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h4>본성</h4>
-                                        <ul class="eng">
-                                            <li class="bar_txt left_txt">35%<br>이성적사고형</li>
-                                            <li><span class="perbar hnbar"></span></li>
-                                            <li class="bar_txt right_txt">65%<br>원칙주의형</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h4>전술</h4>
-                                        <ul class="eng">
-                                            <li class="bar_txt left_txt">76%<br>계획적</li>
-                                            <li><span class="perbar tacbar"></span></li>
-                                            <li class="bar_txt right_txt">24%<br>탐색형</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h4>자아</h4>
-                                        <ul class="eng">
-                                            <li class="bar_txt left_txt">35%<br>자기주장형</li>
-                                            <li><span class="perbar selfbar"></span></li>
-                                            <li class="bar_txt right_txt">65%<br>신중형</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="mbti">
-                                <h3>MBTI - <b>ISFJ</b></h3>
-                                <div class="mbti_img">
-                                    <img class="mbti_img_tg" src="images/mbtiimg.png" alt="mbti이미지">
-                                </div>
-                                <ul class="mbti_txt">
-                                    <li>- 끈기 있고 성실하며, 안정감이있다.</li>
-                                    <li>- 조직에 안정감을 준다.</li>
-                                    <li>- 맡은 바 책임감을 가지고 업무에 임한다.</li>
-                                    <li>- 주위 사람들을 만족시키고자 최선을 다한다.
-                                    </li>
-                                    <li>- 신중한 성향이므로 세심하고 꼼꼼하다.</li>
-                                    <li>- 배려심이 깊고, 주위사람 챙기는 걸 좋아한다.</li>
-                                </ul>
-                            </div>
-                        </div>
-                         </div>
-                  
+                    <div class="minfo_img">
+                        <img src="images/selfie.png" alt="내사진">
+                    </div>
+                </div>
+                <div class="info">
+                    <i>Front-End Engineer, Web Content Publisher</i><br>
+                    <div class="info_tit">안녕하세요. 웹세상에서 소통할수 있는 웹 퍼블리셔, 박혜주입니다.<br>
+                        저는 어려서부터 웹세상에 관심이 많은 아이였고, 6개월 과정의 컴퓨터학원에서 웹퍼블리셔의 기초핵심들과
+                        실무적인 코딩법을 배웠습니다. 새로운 기능들을 배우고 직접 제가 만드는 사이트에 적용하고 구현할때마다
+                        더욱 재미를 느꼈고, 간혹가다 오류가 생기면 제손으로 직접 찾아보고 오류들을 수정하여 완성시키는 저를 보면서 노력하면 해낼수 있다는 것을 배웠습니다. <b>이 경험을 바탕으로 저는 더욱 더 발전 해 나가는 웹퍼블리셔가 되겠습니다!</b>
 
-                    </li>
-                </ul>
 
+                    </div>
+
+                </div>
 
             </div>
         </div>
         <!--skill 영역-->
         <div class="section sec3">
-            <h2>SKILL</h2>
+            <h2 class="skill_tit">SKILL</h2>
             <div id="skill_wrap">
                 <div class="left_wrap">
 
@@ -272,116 +254,190 @@
                 </div>
 
 
-
-
-
             </div>
         </div>
         <!--portfolio 영역-->
         <div class="section sec4">
             <div class="port_wrap">
-                <h2>PORTFOLIO</h2>
+                <h2 class="portfolio_tit">PORTFOLIO</h2>
+                <big>
+                    #HTML<br>
+                    #CSS<br>
+                    #J-QUUERY
+                </big>
                 <!-- 슬라이드 스와이퍼 -->
-                <div class="portfolio_box">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <!--슬라이드1-->
-                            <div class="swiper-slide">
-                                <div class="slidewr cf">
-                                    <div class="left">
-                                        <img src="images/portfolio1.png" alt="잠실자동차극장사이트">
-                                    </div>
-                                    <div class="right">
-                                        <div class="detailTxt_box">
-                                            <span class="tit">web renewal</span>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--슬라이드1-->
+                        <div class="swiper-slide">
+                            <div class="slidewr cf">
+
+
+                                <div class="left">
+                                    <img src="images/portfolio1.png" alt="잠실자동차극장사이트">
+                                    <div class="detailTxt_box">
+                                        <div class="dtxt_box"><span class="tit">web renewal</span>
                                             <a class="project" href="https://wnwnzos.github.io/jamsilCarMovie/" target="_blank">잠실 자동차극장</a>
-                                            <p class="desc">CAR THEATER JAMSIL</p>
+                                            <p class="desc">CAR THEATER JAMSIL
+
+                                            </p>
+                                        </div>
+
+                                        <div class="sitetxt">
+                                            <a class="detail_btn" href="https://wnwnzos.github.io/jamsilCarMovie/">view site</a>
                                             <div class="color_box point1">
                                                 <span class="color1"></span>
                                                 <span class="color2"></span>
                                                 <span class="color3"></span>
                                             </div>
+                                            <p>
+                                                <span>#planning</span><br>
+                                                잠실 자동차극장의 반응형웹&amp;모바일사이트입니다.
+                                                기존 사이트에서 새롭게 디자인하였고, 영화를 찾는 사용자들이 쉽고 빠르게
+                                                정보전달 할 수 있도록 영화 포스터를 메인 화면에 배치하여 리뉴얼 하였습니다.
+
+                                            </p>
                                         </div>
-                                        <div class="detailBtn_box">
-                                            <a class="detail_btn" href="https://wnwnzos.github.io/jamsilCarMovie/">
-                                                <p>Detail</p>
-                                                <img src="images/detail_arrow.png" alt="detail">
-                                            </a>
-                                        </div>
+
+
+
+
                                     </div>
                                 </div>
+
                             </div>
-                            <!--슬라이드2-->
-                            <div class="swiper-slide">
-                                <div class="slidewr cf">
-                                    <div class="left">
-                                        <img src="images/portfolio2.png" alt="아떼뷰티사이트">
-                                    </div>
-                                    <div class="right">
-                                        <div class="detailTxt_box">
+                        </div>
+                        <!--슬라이드2-->
+                        <div class="swiper-slide">
+                            <div class="slidewr cf">
+                                <div class="left">
+                                    <img src="images/portfolio2.png" alt="아떼뷰티사이트">
+                                    <div class="detailTxt_box">
+                                        <div class="dtxt_box">
                                             <span class="tit">web Desgin</span>
                                             <a class="project" href="https://wnwnzos.github.io/athe/" target="_blank">아떼 뷰티브랜드</a>
                                             <p class="desc">ATHE BEAUTY BRAND</p>
+                                        </div>
+                                        <div class="sitetxt">
+                                            <a class="detail_btn" href="https://wnwnzos.github.io/athe/">view site</a>
                                             <div class="color_box point2">
                                                 <span class="color1"></span>
                                                 <span class="color2"></span>
                                                 <span class="color3"></span>
                                             </div>
-                                        </div>
-                                        <div class="detailBtn_box">
-                                            <a class="detail_btn" href="https://wnwnzos.github.io/athe/">
-                                                <p>Detail</p>
-                                                <img src="images/detail_arrow.png" alt="detail">
-                                            </a>
+                                            <p>
+                                                <span>#planning</span><br>
+                                                아떼뷰티 브랜드의 반응형웹&amp;모바일사이트입니다.기존사이트가 없었고,디자인부터 기능적인부분까지 제손으로 직접 코딩하였습니다. 화장품 브랜드에 대해 궁금증을 가지고있는 사용자들이 쉽고 빠르게 상품 정보를 전달 할 수 있도록 복잡하지 않으면서도 가독성 향상하기 쉬운 글씨체와 색을 사용하였습니다.
+
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
-                            <!--슬라이드3-->
-                            <div class="swiper-slide">
-                                <div class="slidewr cf slide3">
-                                    <div class="left">
-                                        <img src="images/HYEJU_portfolio.png" alt="혜주포트폴리오사이트">
-                                        <a href="#"></a>
-                                    </div>
-                                    <div class="right">
-                                        <div class="detailTxt_box">
+                        </div>
+                        <!--슬라이드3-->
+                        <div class="swiper-slide">
+                            <div class="slidewr cf slide3">
+                                <div class="left">
+                                    <img src="images/HYEJU_portfolio.png" alt="혜주포트폴리오사이트">
+                                    <div class="detailTxt_box">
+                                        <div class="dtxt_box">
                                             <span class="tit">web Desgin</span>
                                             <a class="project" href="#" target="_blank">혜주의 포트폴리오</a>
                                             <p class="desc">WELCOME TO MY PORTFOLIO</p>
+                                        </div>
+                                        <div class="color_box point3">
+                                            <span class="color1"></span>
+                                            <span class="color2"></span>
+                                            <span class="color3"></span>
+                                        </div>
+                                        <div class="sitetxt">
+                                            <a class="detail_btn" href="https://wnwnzos.github.io/myportfolio/index.html">view site</a>
                                             <div class="color_box point3">
                                                 <span class="color1"></span>
                                                 <span class="color2"></span>
                                                 <span class="color3"></span>
                                             </div>
-                                        </div>
-                                        <div class="detailBtn_box">
-                                            <a class="detail_btn" href="#">
-                                                <p>Detail</p>
-                                                <img src="images/detail_arrow.png" alt="detail">
-                                            </a>
+                                            <p>
+                                                <span>#planning</span><br>
+                                                제 포트폴리오 소개의 반응형웹&amp;모바일사이트입니다.풀페이지 화면을 이용하여 심플하고 깔끔하게 디자인하였고,스와이프 플러그인을 사용하여 제가 만든포트폴리오들을 보기쉽게 배치하여 
+
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
+
+
                             </div>
 
+                        </div>
+
+                        <!--슬라이드4-->
+                        <div class="swiper-slide">
+                            <div class="slidewr cf slide3">
+                                <div class="left">
+                                    <img src="images/HYEJU_portfolio.png" alt="혜주포트폴리오사이트">
+                                    <div class="detailTxt_box">
+                                        <div class="dtxt_box">
+                                            <span class="tit">imitation</span>
+                                            <a class="project" href="#" target="_blank">카본 뷰티브랜드</a>
+                                            <p class="desc">CARBON BEAUTY</p>
+                                        </div>
+                                        <div class="color_box point4">
+                                            <span class="color1"></span>
+                                            <span class="color2"></span>
+                                            <span class="color3"></span>
+                                        </div>
+                                        <div class="sitetxt">
+                                            <a class="detail_btn" href="https://wnwnzos.github.io/myportfolio/index.html">view site</a>
+                                            <div class="color_box point3">
+                                                <span class="color1"></span>
+                                                <span class="color2"></span>
+                                                <span class="color3"></span>
+                                            </div>
+                                            <p>
+                                                <span>#planning</span><br>
+                                                카본 뷰티브랜드의 반응형웹&amp;모바일사이트입니다.기존 사이트를 따라한 모작사이트입니다.
+                                                
+
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
 
                         </div>
+
+
                     </div>
+
                 </div>
+
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev prevt">Prev</div>
+                <div class="swiper-button-next nextt">Next</div>
             </div>
+
         </div>
 
         <!--contact 영역-->
-        <div class="section sec5">
-
+        <div class="section">
+            <h2 class="contact_tit">CONTACT</h2>
             <div class="cont_wrap">
-                <h2>CONTACT</h2>
                 <div class="cont_img">
-                    <p>Thank You For Visiting My Portfolio Site.
-                    </p>
+
+                    <div class="ctxt">
+                        <span>Thank You For Visiting My Portfolio Site.</span>
+                        <span>Thank You For Visiting My Portfolio Site.</span>
+                        <span>Thank You For Visiting My Portfolio Site.</span>
+
+                        <span>Thank You For Visiting My Portfolio Site.</span>
+                    </div>
                 </div>
                 <ul class="phone">
                     <li>PHONE</li>
@@ -405,17 +461,22 @@
                         </svg>
                     </a>
                 </div>
-                <div class="redtxt">* 이 사이트는 포트폴리오 제작을 위해 제작되었습니다. *</div>
-                <!--스크롤탑아이콘-->
 
-                <a href="#home" id="btn_top"></a>
+                <div class="greetings_text2 type-wrap about_typing redtxt">
+                    <span id="typed5" style="white-space:pre;"></span>
+                </div>
+
+
+
+
+
 
             </div>
-
-
+            <!--스크롤탑아이콘-->
+            <a href="#home" id="btn_top">Scroll Top</a>
         </div>
 
     </div>
+</body>
 
-
-</body></html>
+</html>

@@ -661,17 +661,20 @@
     font-size: 15px;
 }
     .content {
-        width: 75%;
+        width: 67%;
         font-size: 18px;
+        height: 50px;
     }
 
     .content__container:after,
     .content__container:before {
         font-size: 25px;
     }
-
+.content__container__list {
+    padding-left: 80px;
+}
     nav {
-        margin-top: 10%;
+        margin-top: 30%;
     }
 
     .lnb {
@@ -681,6 +684,7 @@
     .lnb li a{
         display: inline-block;
         margin-bottom: 5%;
+        font-size: 15px;
     }
 
     /*어바웃영역************/
