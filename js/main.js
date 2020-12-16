@@ -16,10 +16,10 @@ $(function () { // jQB ///////////////////////////
             if (index == 1) {// 홈영역
 
                 $(".toptit").animate({
-                    top: "1.9%"
+                    top: "0"
                 }, 800);
                 $(".bottomtit").delay(500).animate({
-                    bottom: "-2.5%"
+                    bottom: "0"
                 }, 700);
                 $("nav>ul").delay(1000).animate({
                     bottom: "5%"
@@ -62,26 +62,33 @@ $(function () { // jQB ///////////////////////////
                 $(".portfolio_tit").animate({
                     right: "0"
                 }, 800);
-                $(".slidewr .left").delay(800).animate({
-                    opacity: "1"
-                }, 800);
-                $(".port_wrap > big").delay(1000).animate({
+                $(".port_wrap > big").delay(500).animate({
                     right: "0"
-                }, 800);
-                $(".detailTxt_box svg").delay(1500).animate({
-                     width: "10vw"
-                }, 800);
+                }, 500);
+                $(".slidewr .left").delay(1000).animate({
+                    opacity: "1"
+                }, 1000);
+                
             } else if (index == 5) { //컨텍트부분
                 $(".contact_tit").animate({
                     right: "0"
                 }, 800);
-                $(".cont_wrap").delay(600).animate({
+                $(".cont_img").delay(600).animate({
                     left: 0
+                }, 800);
+                $(".cont_wrap ul").delay(1200).animate({
+                    opacity: 1
+                }, 800);
+                $(".dbtn").delay(1800).animate({
+                    opacity: 1
                 }, 800);
             }
 
         },
 
+        afterResize: function(isResponsive){
+            // 일반형->반응형(또는 반응형->일반형)으로 변경될때 실행
+        }
 
 
 
@@ -148,21 +155,7 @@ $(function () { // jQB ///////////////////////////
     }); /*swiper플러그인*/
 
 
-    // 사이트보기 버튼 마우스 오버/아웃시 class넣기/빼기
-    
-    
-    $(".detail_btn").mouseenter(function () {
-        $(this).addClass("on");
-         $(this).removeClass("off");
-    });
-    
-    $(".detail_btn").mouseleave(function () {
-        console.log("아웃");
-         $(this).removeClass("on");
-         $(this).addClass("off");
-    });
-
-
+ 
 
 
 

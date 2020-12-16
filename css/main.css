@@ -267,11 +267,15 @@ nav li a:hover::after {
 
 /*ABOUT 영역******************************/
 #about_wrap {
+    width: 100vw;
+    height: 100vh;
+}
+.about_inbox{
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-
 .mypic {
 
     position: relative;
@@ -305,36 +309,29 @@ nav li a:hover::after {
     }
 }
 
-/*그림클릭시 나타나는 인포*/
-.myinfo_modal {
-    position: absolute;
-    left: 50%;
-    top: 65%;
-    transform: translate(-50%, -50%);
-    width: 30vw;
-    height: 30vh;
-    text-align: left;
-    padding-bottom: 1%;
-    font-family: cafe24;
-    letter-spacing: 1.5px;
-    /*    overflow: hidden;*/
-}
+
+
 
 .infotit {
     /* display: none; */
-    position: relative;
+    position: absolute;
     color: #6a6a6a;
-    top: 62%;
+    top: 75%;
     font-size: 4vw;
     font-family: GT;
-    left: -28%;
+    left: 27%;
 }
-
+/*그림클릭시 나타나는 인포*/
 .infobox {
     position: absolute;
-    right: -24%;
-    top: 13%;
+    right: 26%;
     opacity: 0;
+    text-align: left;
+    font-family: cafe24;
+    letter-spacing: 1.5px;
+/*    outline: 1px dashed blue;*/
+    width: 20vw;
+    height: 18vh;
 }
 
 .infobox h4 {
@@ -360,7 +357,7 @@ nav li a:hover::after {
     bottom: 1px;
     left: 50%;
     transform: translate(-50%);
-    width: 30%;
+    width: 30vw;
     height: 5px;
     border-radius: 50%;
     background-color: #6a6a6a;
@@ -446,14 +443,13 @@ nav li a:hover::after {
 #skill_wrap {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    min-width: 100vw;
     height: 70vh;
     margin: 0 auto;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    /*outline: 1px dashed blue;*/
-    overflow: hidden;
+/*    outline: 1px dashed blue;*/
 }
 
 
@@ -718,15 +714,15 @@ nav li a:hover::after {
 }
 
 
-.dtxt_box{
-    line-height: 1.8;
+.dtxt_box {
+    line-height: 1.3;
 }
+
 .slidewr .left .tit {
     display: block;
     font-size: 3vmin;
     color: #777;
     text-transform: uppercase;
-    line-height: 24px;
     font-family: cafe24;
 }
 
@@ -745,7 +741,6 @@ nav li a:hover::after {
     color: #777;
     letter-spacing: 2px;
     text-transform: uppercase;
-    line-height: 24px;
     font-family: cafe24;
 }
 
@@ -839,11 +834,9 @@ nav li a:hover::after {
 
 /*사이트설명*/
 .sitetxt {
- 
     position: relative;
- margin-top: 3%;
-  
-    width: 40vw;
+    margin-top: 3%;
+    width: 54vw;
     height: 19vh;
     padding: 5%;
     height: 25vh;
@@ -853,32 +846,35 @@ nav li a:hover::after {
 }
 
 .port_wrap > big {
-     text-align: right;
+    opacity: .3;
+    text-align: right;
     position: absolute;
     z-index: -1;
     top: 20%;
     right: -79%;
     font-size: 7vw;
     color: transparent;
-    -webkit-text-stroke: 1px;
+    -webkit-text-stroke: 2px;
     -webkit-text-stroke-color: rgb(198, 198, 198);
     line-height: 1;
     font-family: be;
 }
 
 
-.sitetxt p{
+.sitetxt p {
     font-family: cafe24;
     font-size: 1.8vmin;
     line-height: 2;
     letter-spacing: 2px;
-    
+
 }
-.sitetxt p span{
+
+.sitetxt p span {
     position: relative;
-    
+
 }
-.sitetxt p span::before{
+
+.sitetxt p span::before {
     content: '';
     display: block;
     position: absolute;
@@ -898,7 +894,7 @@ nav li a:hover::after {
     display: inline-block;
     padding: 10px;
     font-size: 2vmin;
-     border: 1px solid #333;
+    border: 1px solid #333;
     color: #333;
     font-family: cafe24;
     font-weight: normal;
@@ -972,7 +968,7 @@ nav li a:hover::after {
     margin: 0 auto;
     /*    outline: 1px solid #000;*/
     position: relative;
-    right: -100%;
+left: 0;
     top: 50%;
     transform: translateY(-50%);
     height: 50vh;
@@ -984,11 +980,10 @@ nav li a:hover::after {
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 469px;
+    height: 43vh;
     background: url(../images/contact_img.png)no-repeat;
     background-size: cover;
-
-
+    left: -150%;
     line-height: 469px;
 
 }
@@ -1041,14 +1036,14 @@ nav li a:hover::after {
     font-family: mon;
     font-weight: normal;
     letter-spacing: 2px;
-
+    opacity: 0;
 }
 
 .cont_wrap ul li a {
     color: #707070;
 }
 
-/*빨간글씨*/
+/*제작되었습니다 텍스트*/
 .redtxt {
     text-align: center;
     color: #333;
@@ -1056,6 +1051,7 @@ nav li a:hover::after {
     font-family: cafe24;
 }
 
+/*호버시 형광펜*/
 .half_line {
     position: relative;
 }
@@ -1081,7 +1077,7 @@ nav li a:hover::after {
 .dbtn {
     margin-top: 2%;
     font-family: cafe24;
-
+    opacity: 0;
 }
 
 .cta {
@@ -1165,4 +1161,3 @@ nav li a:hover::after {
         bottom: -3%;
     }
 }
-
