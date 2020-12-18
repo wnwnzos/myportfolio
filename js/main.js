@@ -1,7 +1,6 @@
 $(function () { // jQB ///////////////////////////
 
 
-
     // 풀페이지 플러그인 호출
     $("#fullpage").fullpage({
 
@@ -11,23 +10,48 @@ $(function () { // jQB ///////////////////////////
         navigationPosition: 'right',
         /*네비블릿 오버시 나타나는 글씨*/
         navigationTooltips: ['home', 'about', 'skill', 'portfolio', 'contact'],
-
         'afterLoad': function (anchorLink, index) {
-            if (index == 1) {// 홈영역
+            if (index == 1) { // 홈영역
 
-                $(".toptit").animate({
-                    top: "0"
+
+                $("#fp-nav ul li a span, .fp-slidesNav ul li a span").css({
+                    background: "#808080"
+                });
+                $("#fp-nav ul li .fp-tooltip").css({
+                    color: "#9f9f9f"
+                });
+                $(".toptit").stop().animate({
+                    top: "0",
                 }, 800);
-                $(".bottomtit").delay(500).animate({
+                $(".bottomtit").stop().delay(500).animate({
                     bottom: "0"
                 }, 700);
-                $("nav>ul").delay(1000).animate({
+                $("nav>ul").stop().delay(1000).animate({
                     bottom: "5%"
                 }, 600);
-            } else if (index == 2) {// 어바웃영역
-                $(".about_tit").animate({
+            }
+            if (index !== 1) { // 해당영역아닐때 다시 밖으로빼놓기(원상복귀)
+                $(".toptit").stop().animate({
+                    top: "-90%",
+                }, 100);
+                $(".bottomtit").stop().animate({
+                    bottom: "-50%"
+                }, 100);
+                $("nav>ul").stop().animate({
+                    bottom: "-50px"
+                }, 100);
+            }
+            if (index == 2) { // 어바웃영역
+
+                $("#fp-nav ul li a span, .fp-slidesNav ul li a span").css({
+                    background: "#808080"
+                });
+                $("#fp-nav ul li .fp-tooltip").css({
+                    color: "#9f9f9f"
+                });
+                $(".about_tit").stop().animate({
                     right: "0"
-                }, 500);
+                }, 800);
                 $(".topshow").delay(500).animate({
                     opacity: 1
                 }, 800);
@@ -43,8 +67,21 @@ $(function () { // jQB ///////////////////////////
                 $(".info_tit").delay(2500).animate({
                     opacity: 1
                 }, 800);
-            } else if (index == 3) { //스킬부분 그래프채우기
-                $(".skill_tit").animate({
+            }
+            if (index !== 2) { //해당영역아닐때 다시 밖으로빼놓기(원상복귀)
+                $(".about_tit").stop().animate({
+                    right: "-70%"
+                }, 100);
+            }
+            if (index == 3) { //스킬부분 그래프채우기
+
+                $("#fp-nav ul li a span, .fp-slidesNav ul li a span").css({
+                    background: "#808080"
+                });
+                $("#fp-nav ul li .fp-tooltip").css({
+                    color: "#9f9f9f"
+                });
+                $(".skill_tit").stop().animate({
                     right: "0"
                 }, 800);
                 $(".left_wrap").animate({
@@ -58,8 +95,20 @@ $(function () { // jQB ///////////////////////////
                 $(".right_sub").delay(1000).animate({
                     opacity: "1"
                 }, 500);
-            } else if (index == 4) { //포트폴리오부분
-                $(".portfolio_tit").animate({
+            }
+            if (index !== 3) { //해당영역아닐때 다시 밖으로빼놓기(원상복귀)
+                $(".skill_tit").stop().animate({
+                    right: "-70%"
+                }, 100);
+            }
+            if (index == 4) { //포트폴리오부분
+                $("#fp-nav ul li a span, .fp-slidesNav ul li a span").css({
+                    background: "#808080"
+                });
+                $("#fp-nav ul li .fp-tooltip").css({
+                    color: "#9f9f9f"
+                });
+                $(".portfolio_tit").stop().animate({
                     right: "0"
                 }, 800);
                 $(".port_wrap > big").delay(500).animate({
@@ -68,9 +117,21 @@ $(function () { // jQB ///////////////////////////
                 $(".slidewr .left").delay(1000).animate({
                     opacity: "1"
                 }, 1000);
-                
-            } else if (index == 5) { //컨텍트부분
-                $(".contact_tit").animate({
+
+            }
+            if (index !== 4) { //해당영역아닐때 다시 밖으로빼놓기(원상복귀)
+                $(".portfolio_tit").stop().animate({
+                    right: "-100%"
+                }, 100);
+            }
+            if (index == 5) { //컨텍트부분
+                $("#fp-nav ul li a span, .fp-slidesNav ul li a span").css({
+                    background: "#fff"
+                });
+                $("#fp-nav ul li .fp-tooltip").css({
+                    color: "#fff"
+                });
+                $(".contact_tit").stop().animate({
                     right: "0"
                 }, 800);
                 $(".cont_img").delay(600).animate({
@@ -83,22 +144,25 @@ $(function () { // jQB ///////////////////////////
                     opacity: 1
                 }, 800);
             }
+            if (index !== 5) { //해당영역아닐때 다시 밖으로빼놓기(원상복귀)
+                $(".contact_tit").stop().animate({
+                    right: "-80%"
+                }, 100);
+            }
 
         },
-
-        afterResize: function(isResponsive){
-            // 일반형->반응형(또는 반응형->일반형)으로 변경될때 실행
-        }
-
 
 
     });
 
 
 
+
+
+
     /*about영역*****************************/
 
-
+    //클릭버튼 클릭시 스펙보이기 셋팅
     $(".plusbtn").click(function () {
         $(".infobox").animate({
             opacity: 1
@@ -114,7 +178,7 @@ $(function () { // jQB ///////////////////////////
 
     var typed5 = new Typed('#typed5', {
         strings: ['이 사이트는 포트폴리오용으로 제작되었습니다.'],
-        typeSpeed: 65,
+        typeSpeed: 100,
         backSpeed: 0,
         cursorChar: '_',
         shuffle: true,
@@ -155,13 +219,47 @@ $(function () { // jQB ///////////////////////////
     }); /*swiper플러그인*/
 
 
- 
 
 
 
+    /*모바일일때*/
+    $(".menu").click(function () {
+        $(this).fadeOut(300);
+        $(".menu_pop").fadeIn(800);
+        $(".menu_list").animate({
+            left: "50%"
+        }, 500);
+    });
+
+    $(".m_cbtn").click(function () {
+        $(".menu").fadeIn(300);
+        $(".menu_pop").fadeOut(800);
+        $(".menu_list").stop().animate({
+            left: "100%"
+        }, 500);
+
+    });
 
 
+    $(".menu_list ul li").click(function () {
+        $(".menu").fadeIn(300);
+        $(".menu_pop").fadeOut(800);
+        $(".menu_list").stop().animate({
+            left: "100%"
+        }, 600);
+    });
+
+
+    // 모달창 스크롤막기
+    $(document).on('click', '.menu', function () {
+        $.fn.fullpage.setAllowScrolling(false);
+        $.fn.fullpage.setKeyboardScrolling(false);
+    });
+
+    $(document).on('click', '.m_cbtn', function () {
+        $.fn.fullpage.setAllowScrolling(true);
+        $.fn.fullpage.setKeyboardScrolling(true);
+    });
 
 }); //////////////// jQB ////////////////////////
-///////////////////////////////////////////////
 ///////////////////////////////////////////////

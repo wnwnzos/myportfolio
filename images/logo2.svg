@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="304" height="304" viewBox="0 0 304 304">
+  <g id="그룹_8" data-name="그룹 8" transform="translate(-140 -215)">
+    <g id="타원_2" data-name="타원 2" transform="translate(140 215)" fill="none" stroke="#1e1e1c" stroke-width="2">
+      <circle cx="152" cy="152" r="152" stroke="none"/>
+      <circle cx="152" cy="152" r="151" fill="none"/>
+    </g>
+    <g id="그룹_7" data-name="그룹 7" transform="translate(22.025 22.638)">
+      <text id="H" transform="translate(186.975 314.362)" font-size="44" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">H</tspan></text>
+      <text id="E" transform="translate(257.975 314.362)" font-size="44" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">E</tspan></text>
+      <text id="N" transform="translate(318.975 314.362)" font-size="44" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">N</tspan></text>
+      <text id="E-2" data-name="E" transform="translate(186.975 409.362)" font-size="44" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">E</tspan></text>
+      <text id="H-2" data-name="H" transform="translate(318.975 409.362)" font-size="44" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">H</tspan></text>
+    </g>
+  </g>
+</svg>
