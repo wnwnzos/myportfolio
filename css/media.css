@@ -412,6 +412,7 @@
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #ddd;
         -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        font-size: 8.5vw;
     }
 
     nav ul li a::after {
@@ -437,163 +438,199 @@
 
     .infotit {
         top: 88%;
+        font-size: 7vw;
+        left: 14%;
     }
 
+
     .info_tit {
-        width: 91%;
+        width: 92%;
         font-size: 2.9vw;
         letter-spacing: 1px;
+        line-height: 1.5;
     }
 
     .mypic {
-        padding-top: 20%;
+        padding-top: 25%;
     }
 
+    .mypic img {
+        width: 13vw;
+        margin-left: 23%;
+    }
+
+    .info {
+        letter-spacing: 2px;
+        margin-top: 2%;
+    }
+
+    .info i {
+        font-size: 4.5vw;
+    }
+
+
+
+
+
+    /*클릭버튼 클릭시 나오는 창*/
     .infobox {
         letter-spacing: 1px;
         right: 3%;
         width: 93vw;
-        top: -15%;
+        top: -7%;
     }
-    
+
+    .infobox h4 {
+        font-size: 4vmin;
+    }
+
     .infobox p {
-    font-size: 1vw;
+        font-size: 3vw;
+    }
+
+    /*스킬영역*************/
+    /*스킬타이틀*/
+    .skill_tit {
+        padding-right: 30%;
+    }
+
+    .skill_box {
+        width: 290px;
+    }
+
+    .graph {
+        width: 200px;
+        font-size: 10px;
+    }
+
+    .skill_desc {
+        font-size: 3vw;
+    }
+
+    .skill_box img {
+        width: 15%;
+    }
+
+    .skill_list ul li {
+        margin-right: 20px;
+    }
+
+    .skill_title h3 {
+        font-size: 7vw;
+    }
+
+
+
+
+    /*포트폴리오영역*************/
+    /*포트폴리오 타이틀*/
+    .portfolio_tit {
+        padding-right: 14%;
+    }
+
+    .port_wrap > big {
+        font-size: 12vw;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: rgb(198, 198, 198);
+    }
+
+    .slidewr .left img {
+        width: 65vw;
+    }
+
+    .sitetxt {
+        width: 95vw;
+        height: 24vh;
+    }
+
+    .sitetxt .color_box span {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+
+    .sitetxt p {
+        font-size: 2vmin;
+        letter-spacing: 1px;
+    }
+
+    .detail_btn {
+        width: 53px;
+        height: 3px;
+        line-height: 3px;
+        background: #5c5c5c;
+        color: #fff;
+        border: 0;
+    }
+
+
+    /*컨텍트영역********/
+    /*컨텐트 타이틀*/
+    .contact_tit {
+        padding-right: 21%;
+    }
+
+    .cont_img {
+        height: 100px;
+        margin-bottom: 5%;
+    }
+
+    .cont_img span {
+        font-size: 5vw;
+    }
+
+    .cont_wrap ul {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .cont_img p {
+        font-size: 22px;
+    }
+
+    .cont_wrap ul {
+        font-size: 12px;
+        width: 70%;
+    }
+
+    .redtxt {
+        position: static;
+        font-size: 13px;
+    }
+
+    .cta {
+        left: 48%;
+    }
+
+    .cta span {
+        font-size: 12px;
+    }
+
+    .cta::before {
+        width: 35px;
+        height: 35px;
+        top: 11px;
+    }
+
+    #btn_top {
+        font-size: 20vw;
+        bottom: -3%;
+        right: -1%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-
-
-/*스킬영역*************/
-/*스킬타이틀*/
-.skill_tit {
-    padding-right: 30%;
-}
-
-.skill_box {
-    width: 290px;
-}
-
-.graph {
-    width: 200px;
-    font-size: 10px;
-}
-
-.skill_desc {
-    font-size: 3vw;
-}
-
-.skill_box img {
-    width: 15%;
-}
-
-.skill_list ul li {
-    margin-right: 20px;
-}
-
-.skill_title h3 {
-    font-size: 7vw;
-}
-
-
-
-
-/*포트폴리오영역*************/
-/*포트폴리오 타이틀*/
-.portfolio_tit {
-    padding-right: 14%;
-}
-
-.port_wrap > big {
-    font-size: 12vw;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: rgb(198, 198, 198);
-}
-
-.slidewr .left img {
-    width: 65vw;
-}
-
-.sitetxt {
-    width: 95vw;
-    height: 24vh;
-}
-
-.sitetxt .color_box span {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-}
-
-.sitetxt p {
-    font-size: 2vmin;
-    letter-spacing: 1px;
-}
-
-.detail_btn {
-    width: 53px;
-    height: 3px;
-    line-height: 3px;
-    background: #5c5c5c;
-    color: #fff;
-    border: 0;
-}
-
-
-/*컨텍트영역********/
-/*컨텐트 타이틀*/
-.contact_tit {
-    padding-right: 21%;
-}
-
-.cont_img {
-    height: 100px;
-    margin-bottom: 5%;
-}
-
-.cont_img span {
-    font-size: 5vw;
-}
-
-.cont_wrap ul {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.cont_img p {
-    font-size: 22px;
-}
-
-.cont_wrap ul {
-    font-size: 12px;
-    width: 70%;
-}
-
-.redtxt {
-    position: static;
-    font-size: 13px;
-}
-
-.cta {
-    left: 48%;
-}
-
-.cta span {
-    font-size: 12px;
-}
-
-.cta::before {
-    width: 35px;
-    height: 35px;
-    top: 11px;
-}
-
-#btn_top {
-    font-size: 20vw;
-    bottom: -3%;
-    right: -1%;
-}
-
-
-}
-
-
-
-

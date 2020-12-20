@@ -6,27 +6,6 @@
 @import url(reset.css);
 @import url(core.css);
 
-@font-face {
-
-    font-family: hs;
-    src: url('../fonts/high_summit/High Summit.woff') format('woff'),
-        url('../fonts/high_summit/High Summit.ttf') format('truetype');
-}
-
-
-@font-face {
-
-    font-family: mon;
-    src: url('../fonts/monterrat/Montserrat-Thin.ttf') format('truetype'),
-        url('../fonts/monterrat/Montserrat-Thin.woff') format('woff');
-}
-
-@font-face {
-
-    font-family: Lomanos;
-    src: url('../fonts/lomanos/Lomanos.otf') format('truetype');
-
-}
 
 @font-face {
 
@@ -271,7 +250,6 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.12vw;
-    font-family: mon;
     text-align: center;
     overflow: hidden;
 }
@@ -471,7 +449,6 @@ nav li a:hover::after {
     font-size: 1vw;
     letter-spacing: 6px;
     font-style: italic;
-    font-family: mon;
     margin-top: 4%;
 }
 
@@ -1120,7 +1097,6 @@ nav li a:hover::after {
     color: #707070;
     font-size: 1.5vmin;
     padding: 2.5vh 0;
-    font-family: mon;
     font-weight: normal;
     letter-spacing: 2px;
     opacity: 0;
@@ -1136,6 +1112,7 @@ nav li a:hover::after {
     color: #333;
     font-size: 1vw;
     font-family: cafe24;
+    opacity: 0;
 }
 
 

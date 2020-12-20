@@ -12,14 +12,6 @@ $(function () { // jQB ///////////////////////////
         navigationTooltips: ['home', 'about', 'skill', 'portfolio', 'contact'],
         'afterLoad': function (anchorLink, index) {
             if (index == 1) { // 홈영역
-
-
-                $("#fp-nav ul li a span, .fp-slidesNav ul li a span").css({
-                    background: "#808080"
-                });
-                $("#fp-nav ul li .fp-tooltip").css({
-                    color: "#9f9f9f"
-                });
                 $(".toptit").stop().animate({
                     top: "0",
                 }, 800);
@@ -42,13 +34,6 @@ $(function () { // jQB ///////////////////////////
                 }, 100);
             }
             if (index == 2) { // 어바웃영역
-
-                $("#fp-nav ul li a span, .fp-slidesNav ul li a span").css({
-                    background: "#808080"
-                });
-                $("#fp-nav ul li .fp-tooltip").css({
-                    color: "#9f9f9f"
-                });
                 $(".about_tit").stop().animate({
                     right: "0"
                 }, 800);
@@ -74,13 +59,6 @@ $(function () { // jQB ///////////////////////////
                 }, 100);
             }
             if (index == 3) { //스킬부분 그래프채우기
-
-                $("#fp-nav ul li a span, .fp-slidesNav ul li a span").css({
-                    background: "#808080"
-                });
-                $("#fp-nav ul li .fp-tooltip").css({
-                    color: "#9f9f9f"
-                });
                 $(".skill_tit").stop().animate({
                     right: "0"
                 }, 800);
@@ -102,12 +80,7 @@ $(function () { // jQB ///////////////////////////
                 }, 100);
             }
             if (index == 4) { //포트폴리오부분
-                $("#fp-nav ul li a span, .fp-slidesNav ul li a span").css({
-                    background: "#808080"
-                });
-                $("#fp-nav ul li .fp-tooltip").css({
-                    color: "#9f9f9f"
-                });
+        
                 $(".portfolio_tit").stop().animate({
                     right: "0"
                 }, 800);
@@ -125,12 +98,6 @@ $(function () { // jQB ///////////////////////////
                 }, 100);
             }
             if (index == 5) { //컨텍트부분
-                $("#fp-nav ul li a span, .fp-slidesNav ul li a span").css({
-                    background: "#fff"
-                });
-                $("#fp-nav ul li .fp-tooltip").css({
-                    color: "#fff"
-                });
                 $(".contact_tit").stop().animate({
                     right: "0"
                 }, 800);
@@ -143,6 +110,10 @@ $(function () { // jQB ///////////////////////////
                 $(".dbtn").delay(1800).animate({
                     opacity: 1
                 }, 800);
+                $(".redtxt").delay(2000).animate({
+                    opacity: 1
+                }, 800);
+                
             }
             if (index !== 5) { //해당영역아닐때 다시 밖으로빼놓기(원상복귀)
                 $(".contact_tit").stop().animate({
