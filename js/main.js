@@ -16,7 +16,7 @@ $(function () { // jQB ///////////////////////////
                     top: "0",
                 }, 800);
                 $(".bottomtit").stop().delay(500).animate({
-                    bottom: "0"
+                    bottom: "-4%"
                 }, 700);
                 $("nav>ul").stop().delay(1000).animate({
                     bottom: "5%"

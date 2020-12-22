@@ -91,8 +91,6 @@ header {
 }
 
 /*모바일일때 팝업*/
-
-
 .menu_pop {
    display: none;
     position: fixed;
@@ -116,10 +114,6 @@ header {
     transform: translateY(-50%);
     
 /*    outline: 1px dashed blue;*/
-
-
-  
-
 
 }
 
@@ -155,7 +149,7 @@ header {
 .tit_wrap {
     position: relative;
     width: 100%;
-    height: 104vh;
+    height: 100vh;
     top: 50%;
     left: 0;
     transform: translateY(-50%);

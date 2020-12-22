@@ -450,8 +450,8 @@
     font-size: 8vw;
 }
     .menu_list li {
-    margin-bottom: 50%;
-    padding-left: 15%;
+    margin-bottom: 40%;
+    padding-left: 5%;
 }
 
     /*어바웃영역************/
@@ -471,7 +471,7 @@
     }
 
     .infotit {
-        top: 88%;
+        top: 86%;
         font-size: 7vw;
         left: 14%;
     }
