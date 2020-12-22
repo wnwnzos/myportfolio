@@ -231,6 +231,10 @@ $(function () { // jQB ///////////////////////////
         $.fn.fullpage.setAllowScrolling(true);
         $.fn.fullpage.setKeyboardScrolling(true);
     });
+    $(document).on('click', '.menu_list ul li', function () {
+        $.fn.fullpage.setAllowScrolling(true);
+        $.fn.fullpage.setKeyboardScrolling(true);
+    });
 
 }); //////////////// jQB ////////////////////////
 ///////////////////////////////////////////////
