@@ -488,7 +488,7 @@
     }
 
     .about_inbox {
-    top: 40%;
+    top: 38%;
 }
     .atit {
         font-size: 9vw;
@@ -544,9 +544,9 @@
     letter-spacing: 1px;
     right: 7%;
     width: 89vw;
-    top: 32vh;
+    top: 33vh;
         height: 29vh;
-        outline: 1px dashed blue;
+/*        outline: 1px dashed blue;*/
 }
 
     .infobox h4 {
