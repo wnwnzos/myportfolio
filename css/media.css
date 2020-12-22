@@ -1,5 +1,6 @@
 /*메인 미디어쿼리 - media.css*/
 
+
 /*피시*/
 @media only screen and (max-width: 1980px) {
 
@@ -14,6 +15,11 @@
         font-size: 8vw;
         bottom: -4%;
     }
+    
+    /*이력서다운버튼*/
+    .dbtn {
+    margin-top: 1%;
+}
 
 
 
@@ -82,7 +88,7 @@
 
     /*포트폴리오영역**********/
     .sitetxt {
-        height: 27vh;
+        height: 28vh;
     }
 
     .detail_btn {
@@ -90,6 +96,9 @@
     }
 
     /*컨텍트영역*************/
+    .cont_img{
+        height: 40vh;
+    }
     .cont_wrap ul {
         width: 30%;
     }
@@ -103,7 +112,7 @@
 
 /*아이패드프로*/
 @media only screen and (max-width: 1024px) {
-
+    
     /*홈영역*/
     nav {
         font-size: 2vw;
@@ -113,6 +122,10 @@
     .section h2 {
         top: -3%;
     }
+    
+    .bottomtit {
+    padding-bottom: 14%;
+}
 
     /*어바웃영역********/
     .atit {
@@ -164,6 +177,9 @@
 
     }
 
+    .skill_desc {
+    font-size: 1.9vw;
+}
     .graph {
         width: 310px;
         height: 2vh;
@@ -178,7 +194,7 @@
 
     .skill_title h3 {
         /*스터딩*/
-        font-size: 3vw;
+        font-size: 4vw;
 
     }
 
@@ -208,7 +224,7 @@
     /*민트색배경색*/
     .sitetxt {
         width: 78vw;
-        height: 18vh;
+        height: 21vh;
     }
 
     .sitetxt p {
@@ -235,6 +251,7 @@
     .detail_btn {
         width: 11vw;
         height: 1.5vh;
+        line-height: 1.5vh;
     }
 
     /*컨텍트영역*************/
@@ -262,7 +279,11 @@
 
     /*타이핑텍스트*/
     .redtxt {
-        margin-top: 7%;
+        position: absolute;
+        bottom: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+        margin-top: 0;
         font-size: 2vw;
     }
 
@@ -281,6 +302,10 @@
     .tit_wrap {
         height: 102vh;
     }
+    
+    .bottomtit {
+     padding-bottom: 0; 
+}
 
     /*어바웃영역************/
 
@@ -392,6 +417,7 @@
     /*메뉴*/
     nav {
         overflow: inherit;
+        top: 0;
 
     }
 
@@ -412,15 +438,23 @@
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #ddd;
         -webkit-text-fill-color: rgba(0, 0, 0, 0);
-        font-size: 8.5vw;
+        font-size: 12.5vw;
     }
 
     nav ul li a::after {
         display: none;
     }
+    
+        /*오른쪽 상단 메뉴팝업창*/
+.menu_list ul li a {
+    font-size: 8vw;
+}
+    .menu_list li {
+    margin-bottom: 50%;
+    padding-left: 15%;
+}
 
     /*어바웃영역************/
-    /*오른쪽 상단 메뉴팝업창*/
 
 
     /*어바웃 타이틀*/
@@ -445,9 +479,10 @@
 
     .info_tit {
         width: 92%;
-        font-size: 2.9vw;
+        font-size: 4vw;
         letter-spacing: 1px;
         line-height: 1.5;
+        
     }
 
     .mypic {
@@ -468,7 +503,9 @@
         font-size: 4.5vw;
     }
 
-
+    .info_tit b::before{
+        display: none;
+    }
 
 
 
@@ -594,8 +631,7 @@
     }
 
     .redtxt {
-        position: static;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .cta {

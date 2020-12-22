@@ -100,7 +100,7 @@ html.fp-enabled,
     position: fixed;
     z-index: 100;
     margin-top: -32px;
-    top: 50%;
+    top: 17%;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
 }
@@ -165,7 +165,7 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-    background: #333;
+    background: #ddd;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
