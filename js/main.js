@@ -52,6 +52,9 @@ $(function () { // jQB ///////////////////////////
                 $(".info_tit").delay(2500).animate({
                     opacity: 1
                 }, 800);
+                $(".info_tit_m").delay(2500).animate({
+                    opacity: 1
+                }, 800);
             }
             if (index !== 2) { //해당영역아닐때 다시 밖으로빼놓기(원상복귀)
                 $(".about_tit").stop().animate({
@@ -198,7 +201,7 @@ $(function () { // jQB ///////////////////////////
         $(this).fadeOut(300);
         $(".menu_pop").fadeIn(800);
         $(".menu_list").animate({
-            left: "50%"
+            left: "30%"
         }, 500);
     });
 
@@ -207,7 +210,7 @@ $(function () { // jQB ///////////////////////////
         $(".menu").fadeIn(300);
         $(".menu_pop").fadeOut(800);
         $(".menu_list").stop().animate({
-            left: "100%"
+            left: "170%"
         }, 500);
 
     });
@@ -217,7 +220,7 @@ $(function () { // jQB ///////////////////////////
         $(".menu").fadeIn(300);
         $(".menu_pop").fadeOut(800);
         $(".menu_list").stop().animate({
-            left: "100%"
+            left: "170%"
         }, 600);
     });
     
@@ -226,7 +229,7 @@ $(function () { // jQB ///////////////////////////
         $(".menu").fadeIn(300);
         $(".menu_pop").fadeOut(800);
         $(".menu_list").animate({
-            left: "100%"
+            left: "170%"
         }, 500);
     });
 

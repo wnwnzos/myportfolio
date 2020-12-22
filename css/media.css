@@ -82,6 +82,10 @@
 
         top: -24%;
     }
+    
+    .info_tit{
+        display: none;
+    }
 
     .info_tit b::before {
         height: .5vh;
@@ -402,7 +406,7 @@
 
     /*타이틀공통*/
     .section h2 {
-        top: -2%;
+        top: -1%;
     }
 
 
@@ -478,15 +482,21 @@
     }
 
     /*어바웃영역************/
-
+    .info_tit_m{
+        display: block;
+    }
 
     /*어바웃 타이틀*/
     .about_tit {
         padding-right: 28%;
     }
 
+    .about_inbox {
+    top: 40%;
+}
     .atit {
         font-size: 9vw;
+        margin-bottom: 0;
     }
 
     .atit small {
@@ -494,26 +504,17 @@
     }
 
     .infotit {
-        top: 86%;
+        top: 67%;
         font-size: 7vw;
         left: 14%;
     }
-
-
-    .info_tit {
-        width: 92%;
-        font-size: 4vw;
-        letter-spacing: 1px;
-        line-height: 1.5;
-
-    }
-
-    .mypic {
-        padding-top: 25%;
-    }
+    
+    .minfo_img {
+    margin-top: -32px;
+}
 
     .mypic img {
-        width: 13vw;
+        width: 15vw;
         margin-left: 23%;
     }
 
@@ -526,18 +527,14 @@
         font-size: 4.5vw;
     }
 
-    .info_tit b::before {
-        display: none;
-    }
 
     .plusbtn {
         z-index: 10;
         display: block;
-        left: 94%;
+        left: 88%;
         width: 26px;
         height: 26px;
         line-height: 26px;
-        right: 0;
         font-size: 6vw;
         padding: 5px;
 
@@ -547,11 +544,12 @@
 
     /*클릭버튼 클릭시 나오는 창*/
     .infobox {
-        letter-spacing: 1px;
-        right: 8%;
-        width: 89vw;
-        top: -30%;
-    }
+        text-align: right;
+    letter-spacing: 1px;
+    right: 7%;
+    width: 89vw;
+    top: 34vh;
+}
 
     .infobox h4 {
         font-size: 5vmin;
