@@ -235,6 +235,7 @@ $(function () { // jQB ///////////////////////////
         $.fn.fullpage.setAllowScrolling(true);
         $.fn.fullpage.setKeyboardScrolling(true);
     });
+    
 
 }); //////////////// jQB ////////////////////////
 ///////////////////////////////////////////////

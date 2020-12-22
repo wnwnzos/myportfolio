@@ -704,6 +704,15 @@
         height: 35px;
         top: 11px;
     }
+    
+    .cta:hover:before{
+        width: 90%;
+        
+    }
+    
+    .cta svg {
+    transform: translate(-5px,1px);
+}
 
     #btn_top {
         font-size: 20vw;
