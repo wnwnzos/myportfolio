@@ -540,7 +540,7 @@
 
     /*클릭버튼 클릭시 나오는 창*/
     .infobox {
-        text-align: right;
+        text-align: center;
     letter-spacing: 1px;
     right: 7%;
     width: 89vw;
