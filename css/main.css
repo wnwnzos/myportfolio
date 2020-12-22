@@ -496,7 +496,7 @@ nav li a:hover::after {
     display: flex;
     justify-content: center;
     min-width: 100vw;
-    height: 70vh;
+    height: 100vh;
     margin: 0 auto;
     position: relative;
     top: 50%;
