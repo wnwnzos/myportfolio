@@ -430,7 +430,7 @@
         font-family: be;
         font-size: 17vw;
         float: none;
-        margin-bottom: 10%;
+        margin-bottom: 7%;
 
     }
 
@@ -441,10 +441,7 @@
         font-size: 12.5vw;
     }
 
-    nav ul li a::after {
-        display: none;
-    }
-    
+
         /*오른쪽 상단 메뉴팝업창*/
 .menu_list ul li a {
     font-size: 8vw;
@@ -533,6 +530,7 @@
 
     .skill_box {
         width: 290px;
+        height: 7vh;
     }
 
     .graph {
@@ -574,10 +572,17 @@
     .slidewr .left img {
         width: 65vw;
     }
+    
+    .slidewr .left a.project{
+        font-size: 4.6vw;
+    }
+    .slidewr .left .desc{
+        font-size: 3.5vw;
+    }
 
     .sitetxt {
         width: 95vw;
-        height: 24vh;
+        height: 47vh;
     }
 
     .sitetxt .color_box span {
@@ -587,7 +592,7 @@
     }
 
     .sitetxt p {
-        font-size: 2vmin;
+        font-size: 4vmin;
         letter-spacing: 1px;
     }
 
