@@ -223,7 +223,7 @@ $(function () { // jQB ///////////////////////////
     
     /*메뉴창 외 바깥 클릭시 메뉴창 닫기*/
     $(".menu_pop").click(function () {
-        $(".menu").fadeOut(300);
+        $(".menu").fadeIn(300);
         $(".menu_pop").fadeOut(800);
         $(".menu_list").animate({
             left: "100%"

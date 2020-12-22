@@ -564,7 +564,7 @@
     /*스킬영역*************/
     /*스킬타이틀*/
     .skill_tit {
-        padding-right: 30%;
+        padding-right: 31%;
     }
 
     .skill_box {
@@ -603,7 +603,7 @@
     /*포트폴리오영역*************/
     /*포트폴리오 타이틀*/
     .portfolio_tit {
-        padding-right: 14%;
+        padding-right: 15%;
     }
 
     .port_wrap > big {
