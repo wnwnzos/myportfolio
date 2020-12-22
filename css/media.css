@@ -545,6 +545,8 @@
     right: 7%;
     width: 89vw;
     top: 32vh;
+        height: 29vh;
+        outline: 1px dashed blue;
 }
 
     .infobox h4 {
