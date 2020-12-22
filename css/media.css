@@ -449,15 +449,15 @@
 
     nav ul li {
         font-family: be;
-        font-size: 17vw;
+        font-size: 18vw;
         float: none;
-        margin-bottom: 7%;
+        margin-bottom: 12%;
 
     }
 
     nav ul li a {
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #ddd;
+        -webkit-text-stroke-color: #333;
         -webkit-text-fill-color: rgba(0, 0, 0, 0);
         font-size: 12.5vw;
     }
