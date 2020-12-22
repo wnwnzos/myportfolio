@@ -193,7 +193,7 @@ $(function () { // jQB ///////////////////////////
 
 
 
-    /*모바일일때*/
+    /*모바일일때 메뉴창옵션*******************************/
     $(".menu").click(function () {
         $(this).fadeOut(300);
         $(".menu_pop").fadeIn(800);
@@ -202,6 +202,7 @@ $(function () { // jQB ///////////////////////////
         }, 500);
     });
 
+    /*닫기버튼 클릭시 메뉴창 닫기*/
     $(".m_cbtn").click(function () {
         $(".menu").fadeIn(300);
         $(".menu_pop").fadeOut(800);
@@ -211,7 +212,7 @@ $(function () { // jQB ///////////////////////////
 
     });
 
-
+/*메뉴 타이틀 클릭시 메뉴창 닫기*/
     $(".menu_list ul li").click(function () {
         $(".menu").fadeIn(300);
         $(".menu_pop").fadeOut(800);
@@ -220,6 +221,7 @@ $(function () { // jQB ///////////////////////////
         }, 600);
     });
     
+    /*메뉴창 외 바깥 클릭시 메뉴창 닫기*/
     $(".menu_pop").click(function () {
         $(".menu").fadeOut(300);
         $(".menu_pop").fadeOut(800);
