@@ -219,6 +219,15 @@ $(function () { // jQB ///////////////////////////
             left: "100%"
         }, 600);
     });
+    
+    $(".menu_pop").click(function () {
+        $(".menu").fadeOut(300);
+        $(".menu_pop").fadeOut(800);
+        $(".menu_list").animate({
+            left: "100%"
+        }, 500);
+    });
+
 
 
     // 모달창 스크롤막기
@@ -231,7 +240,13 @@ $(function () { // jQB ///////////////////////////
         $.fn.fullpage.setAllowScrolling(true);
         $.fn.fullpage.setKeyboardScrolling(true);
     });
+    
     $(document).on('click', '.menu_list ul li', function () {
+        $.fn.fullpage.setAllowScrolling(true);
+        $.fn.fullpage.setKeyboardScrolling(true);
+    });
+    
+    $(document).on('click', '.menu_pop', function () {
         $.fn.fullpage.setAllowScrolling(true);
         $.fn.fullpage.setKeyboardScrolling(true);
     });
