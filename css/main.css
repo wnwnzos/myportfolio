@@ -274,12 +274,11 @@ nav ul li a::after {
     position: absolute;
     display: block;
     width: 0;
-    height: 10px;
+    height: 15px;
     background: rgba(196, 80, 80, 0.53);
     bottom: 0;
     transition: 0.5s;
     z-index: -1;
-    border-radius: 10px 10px 10px 10px;
 }
 
 /*메뉴오버했을때 밑줄 나오게하기*/
@@ -815,6 +814,14 @@ nav li a:hover::after {
 
 .sitetxt .color_box span:last-child {
     margin-right: 0;
+}
+
+.sitetxt p b{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 2vw;
+    color: #767676;
 }
 
 

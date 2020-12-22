@@ -3,6 +3,11 @@
 
 /*피시*/
 @media only screen and (max-width: 1980px) {
+    
+    /*홈영역***************/
+    nav ul li a::after {
+    height: 10px;
+}
 
     /*어바웃영역*******/
     .infobox {
@@ -230,8 +235,12 @@
     }
 
     .sitetxt p {
-        font-size: 1.58vmin;
+        font-size: 1.8vmin;
     }
+    
+    .sitetxt p b {
+    font-size: 3vw;
+}
 
     .detailTxt_box {
         top: 37%;
@@ -242,6 +251,13 @@
     .slidewr .left .tit {
         font-size: 4vmin;
     }
+    
+    .slidewr .left a.project {
+    font-size: 2.6vw;
+}
+    .slidewr .left .desc {
+    font-size: 2.5vw;
+}
 
     /*슬라이드양쪽버튼글씨*/
     .swiper-button-prev,
@@ -355,6 +371,9 @@
     }
 
     /*포트폴리오 영역**********/
+.sitetxt {
+    height: 23vh;
+}
     .swiper-button-prev,
     .swiper-button-next {
         top: 96%;
@@ -531,7 +550,7 @@
         letter-spacing: 1px;
         right: 8%;
         width: 89vw;
-        top: -17%;
+        top: -30%;
     }
 
     .infobox h4 {
@@ -620,14 +639,21 @@
         font-size: 4vmin;
         letter-spacing: 1px;
     }
+    
+    .sitetxt p b {
+    font-size: 5vw;
+}
 
     .detail_btn {
-        width: 53px;
-        height: 3px;
-        line-height: 3px;
+        width: 60px;
+    height: 10px;
+    line-height: 10px;
         background: #5c5c5c;
         color: #fff;
         border: 0;
+        font-size:4vmin;
+        letter-spacing: 1px;
+        bottom: 3%;
     }
 
 
