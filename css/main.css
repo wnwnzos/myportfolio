@@ -92,28 +92,30 @@ header {
 
 /*모바일일때 팝업*/
 .menu_pop {
-   display: none;
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.55);
 }
-.menu_list{
-/*    display: none;*/
+
+.menu_list {
+    /*    display: none;*/
     position: relative;
-/*    outline: 1px dashed blue;*/
+    /*    outline: 1px dashed blue;*/
     width: 70vw;
     height: 100vh;
-  left: 170%;
- background-color: rgb(157, 153, 153);
-       
+    left: 170%;
+    background-color: rgb(157, 153, 153);
+
 }
-.menu_list ul{
+
+.menu_list ul {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    
-/*    outline: 1px dashed blue;*/
+
+    /*    outline: 1px dashed blue;*/
 
 }
 
@@ -125,7 +127,8 @@ header {
 
 .menu_list ul li a {
     color: #fff;
-    font-size: 9vw;
+    font-size: 7vw;
+    letter-spacing: 5px;
     font-family: GT;
     font-weight: bold;
 }
@@ -145,6 +148,11 @@ header {
 
 
 /*HOME영역******************************************/
+
+/*모바일일때 그림*/
+.m_pic{
+    display: none;
+}
 
 .tit_wrap {
     position: relative;
@@ -313,7 +321,7 @@ nav li a:hover::after {
 #about_wrap {
     width: 100vw;
     height: 100vh;
-    
+
 }
 
 .about_inbox {
@@ -472,12 +480,11 @@ nav li a:hover::after {
 
 }
 
-.info_tit b::before {
-    content: "";
-    display: block;
+.aboutline {
     position: absolute;
+    left: 0;
     bottom: 1vh;
-    width: 100%;
+    width: 0;
     height: 1vh;
     border-radius: 5px;
     background-color: rgba(196, 80, 80, 0.62);
@@ -486,7 +493,7 @@ nav li a:hover::after {
 
 
 /*모바일일때 설명글*/
-.info_tit_m{
+.info_tit_m {
     display: none;
     text-align: left;
     font-family: cafe24;
@@ -494,17 +501,18 @@ nav li a:hover::after {
     padding-top: 1%;
     white-space: wrap;
     margin: 0 auto;
-    width:92%;
+    width: 92%;
     line-height: 2;
     opacity: 0;
     font-size: 3.59vw;
 }
 
 /*skill영역*******************************************************************/
-.skill_wrap{
+.skill_wrap {
     width: 100%;
     height: 100vh;
 }
+
 #skill_wrap {
     width: 100%;
     display: flex;
@@ -724,7 +732,7 @@ nav li a:hover::after {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-   
+
 }
 
 
@@ -760,7 +768,7 @@ nav li a:hover::after {
     float: left;
     width: 50%;
     height: 100%;
-    opacity: 0;
+
 }
 
 .slidewr .left img {
@@ -769,7 +777,7 @@ nav li a:hover::after {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 32vw;
-
+    opacity: 0;
 }
 
 
@@ -778,6 +786,7 @@ nav li a:hover::after {
     top: 26%;
     left: 43%;
     z-index: 10;
+    opacity: 0;
 }
 
 
@@ -831,7 +840,7 @@ nav li a:hover::after {
     margin-right: 0;
 }
 
-.sitetxt p b{
+.sitetxt p b {
     position: absolute;
     top: 0;
     right: 5%;
@@ -1047,10 +1056,10 @@ nav li a:hover::after {
 
 }
 
-.cont_box{
+.cont_box {
     position: relative;
-        margin: 0 auto;
-     top: 50%;
+    margin: 0 auto;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -1061,8 +1070,9 @@ nav li a:hover::after {
     height: 43vh;
     background: url(../images/contact_img.png)no-repeat;
     background-size: cover;
-    left: -150%;
+    left: 0;
     line-height: 469px;
+    opacity: 0;
 
 }
 
@@ -1139,6 +1149,7 @@ nav li a:hover::after {
     font-family: cafe24;
     opacity: 0;
 }
+
 
 
 /*호버시 형광펜*/
@@ -1234,7 +1245,7 @@ nav li a:hover::after {
 #btn_top {
     font-size: 10vw;
     position: absolute;
-
+opacity: 0;
     right: 0;
     bottom: -6%;
     cursor: pointer;
@@ -1243,7 +1254,7 @@ nav li a:hover::after {
 }
 
 #btn_top:hover {
-    animation: btntop 1s ease-in infinite;
+    animation: btntop 1.4s ease-in infinite;
 }
 
 @keyframes btntop {

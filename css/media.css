@@ -3,11 +3,11 @@
 
 /*피시*/
 @media only screen and (max-width: 1980px) {
-    
+
     /*홈영역***************/
     nav ul li a::after {
-    height: 10px;
-}
+        height: 10px;
+    }
 
     /*어바웃영역*******/
     .infobox {
@@ -44,6 +44,12 @@
 
         top: -11%;
     }
+    
+      .aboutline {
+        height: .7vh;
+        bottom: 7px;
+    }
+
 
     /*스킬영역************/
     .skill_desc {
@@ -82,18 +88,11 @@
 
         top: -24%;
     }
-    
-    .info_tit{
-        display: none;
-    }
 
-    .info_tit b::before {
-        height: .5vh;
-    }
 
-    .info_tit b::before {
-        bottom: 18%;
-    }
+
+  
+ 
 
     /*포트폴리오영역**********/
     .sitetxt {
@@ -241,10 +240,10 @@
     .sitetxt p {
         font-size: 1.8vmin;
     }
-    
+
     .sitetxt p b {
-    font-size: 3vw;
-}
+        font-size: 3vw;
+    }
 
     .detailTxt_box {
         top: 37%;
@@ -255,13 +254,14 @@
     .slidewr .left .tit {
         font-size: 4vmin;
     }
-    
+
     .slidewr .left a.project {
-    font-size: 2.6vw;
-}
+        font-size: 2.6vw;
+    }
+
     .slidewr .left .desc {
-    font-size: 2.5vw;
-}
+        font-size: 2.5vw;
+    }
 
     /*슬라이드양쪽버튼글씨*/
     .swiper-button-prev,
@@ -298,6 +298,19 @@
     .cta {
         left: 28%;
     }
+    
+        .cta::before {
+        width: 40px;
+        height: 40px;
+        top: 11px;
+    }
+
+    .cta:hover:before {
+        width: 40px;
+        height: 40px;
+        background: rgba(196, 80, 80, 0.24);
+    }
+
 
     /*타이핑텍스트*/
     .redtxt {
@@ -326,7 +339,7 @@
     }
 
     .bottomtit {
-        padding-bottom: 0;
+        padding-bottom: 6%;
     }
 
     /*어바웃영역************/
@@ -375,9 +388,10 @@
     }
 
     /*포트폴리오 영역**********/
-.sitetxt {
-    height: 23vh;
-}
+    .sitetxt {
+        height: 23vh;
+    }
+
     .swiper-button-prev,
     .swiper-button-next {
         top: 96%;
@@ -425,7 +439,13 @@
 
     .tit_wrap {
         height: 13vh;
+        position: relative;
     }
+    
+    /*퍼블리셔 큰 글씨 위치이동*/
+    .bottomtit {
+    padding-bottom: 0;
+}
 
     /*오른쪽 동그라미 애미네이션*/
     .double-circles {
@@ -439,48 +459,28 @@
 
     }
 
-    /*메뉴*/
+    /*메뉴없애기*/
     nav {
-        overflow: inherit;
-        top: 0;
-
-    }
-
-    nav ul {
-        top: 24vh;
-        text-align: left;
-    }
-
-    nav ul li {
-        font-family: be;
-        font-size: 18vw;
-        float: none;
-        margin-bottom: 12%;
-
-    }
-
-    nav ul li a {
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #333;
-        -webkit-text-fill-color: rgba(0, 0, 0, 0);
-        font-size: 12.5vw;
-    }
-
-    nav li a:hover::after {
         display: none;
+
     }
 
-
-    /*오른쪽 상단 메뉴팝업창*/
-    .menu_list ul li a {
-        font-size: 8vw;
-    }
-
-
-    /*어바웃영역************/
-    .info_tit_m{
+    .m_pic {
+        position: absolute;
+        top: 41vh;
         display: block;
     }
+
+    .m_pic img {
+        width: 70%;
+    }
+
+    /*어바웃영역************/
+    
+    .info_tit_m {
+        display: block;
+    }
+
 
     /*어바웃 타이틀*/
     .about_tit {
@@ -488,8 +488,9 @@
     }
 
     .about_inbox {
-    top: 38%;
-}
+        top: 33%;
+    }
+
     .atit {
         font-size: 9vw;
         margin-bottom: 0;
@@ -499,15 +500,21 @@
         font-size: 4vw;
     }
 
-    .infotit {
-        top: 67%;
-        font-size: 7vw;
-        left: 14%;
+    .info_tit {
+        display: none;
     }
-    
+
+    .infotit {
+        display: none;
+    }
+
     .minfo_img {
-    margin-top: -32px;
-}
+        display: none;
+    }
+
+    .mypic::before {
+        display: none;
+    }
 
     .mypic img {
         width: 15vw;
@@ -516,7 +523,7 @@
 
     .info {
         letter-spacing: 2px;
-        margin-top: 2%;
+        margin-top: -3%;
     }
 
     .info i {
@@ -533,6 +540,7 @@
         line-height: 26px;
         font-size: 6vw;
         padding: 5px;
+        display: none;
 
     }
 
@@ -540,21 +548,24 @@
 
     /*클릭버튼 클릭시 나오는 창*/
     .infobox {
-        text-align: center;
-    letter-spacing: 1px;
-    right: 7%;
-    width: 89vw;
-    top: 33vh;
+        text-align: left;
+        letter-spacing: 1px;
+        right: 7%;
+        width: 89vw;
+        top: 17vh;
         height: 29vh;
-/*        outline: 1px dashed blue;*/
-}
+        opacity: 1;
+        /*        outline: 1px dashed blue;*/
+    }
 
     .infobox h4 {
         font-size: 5vmin;
+            padding-top: 4vh;
     }
 
     .infobox p {
         font-size: 3.5vw;
+        padding-top: 1%;
     }
 
     /*스킬영역*************/
@@ -584,13 +595,17 @@
     .skill_list ul li {
         margin-right: 20px;
     }
-    
+
     .skill_list ul li img {
-    width: 10vw;
-}
-    
+        width: 10vw;
+    }
+
     .skill_title h3 {
         font-size: 7vw;
+    }
+
+    .left_wrap {
+        margin-top: 10%;
     }
 
 
@@ -612,6 +627,11 @@
         width: 65vw;
     }
 
+    .slidewr .left .tit {
+        font-size: 5vmin;
+        letter-spacing: 1px;
+    }
+
     .slidewr .left a.project {
         font-size: 4.6vw;
     }
@@ -623,6 +643,7 @@
     .sitetxt {
         width: 95vw;
         height: 47vh;
+        padding: 5% 4% 3% 4%;
     }
 
     .sitetxt .color_box span {
@@ -635,19 +656,19 @@
         font-size: 4vmin;
         letter-spacing: 1px;
     }
-    
+
     .sitetxt p b {
-    font-size: 5vw;
-}
+        font-size: 5vw;
+    }
 
     .detail_btn {
         width: 60px;
-    height: 10px;
-    line-height: 10px;
+        height: 10px;
+        line-height: 10px;
         background: #5c5c5c;
         color: #fff;
         border: 0;
-        font-size:4vmin;
+        font-size: 4vmin;
         letter-spacing: 1px;
         bottom: 3%;
     }
@@ -682,8 +703,9 @@
         width: 70%;
     }
 
+    /*타이핑*/
     .redtxt {
-        font-size: 12px;
+        font-size: 3.2vw;
         bottom: 17%;
     }
 
@@ -698,17 +720,16 @@
     .cta::before {
         width: 35px;
         height: 35px;
-        top: 11px;
     }
-    
-    .cta:hover:before{
-        width: 90%;
-        
+
+    .cta:hover:before {
+        width: 35px;
+        height: 35px;
     }
-    
+
     .cta svg {
-    transform: translate(-5px,1px);
-}
+        transform: translate(-5px, 1px);
+    }
 
     #btn_top {
         font-size: 20vw;

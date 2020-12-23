@@ -55,6 +55,9 @@ $(function () { // jQB ///////////////////////////
                 $(".info_tit_m").delay(2500).animate({
                     opacity: 1
                 }, 800);
+                $(".aboutline").delay(3000).animate({
+                    width: "100%"
+                }, 800);
             }
             if (index !== 2) { //해당영역아닐때 다시 밖으로빼놓기(원상복귀)
                 $(".about_tit").stop().animate({
@@ -73,7 +76,7 @@ $(function () { // jQB ///////////////////////////
                 }, 500);
                 $('.graph span')
                     .addClass('active');
-                $(".right_sub").delay(1000).animate({
+                $(".right_sub").delay(1000).stop().animate({
                     opacity: "1"
                 }, 500);
             }
@@ -81,16 +84,25 @@ $(function () { // jQB ///////////////////////////
                 $(".skill_tit").stop().animate({
                     right: "-70%"
                 }, 100);
+                
+                $('.graph span')
+                    .removeClass('active');
+                $(".right_sub").delay(1000).stop().animate({
+                    opacity: "0"
+                }, 500);
             }
             if (index == 4) { //포트폴리오부분
-        
+
                 $(".portfolio_tit").stop().animate({
                     right: "0"
                 }, 800);
                 $(".port_wrap > big").delay(500).animate({
                     right: "0"
                 }, 500);
-                $(".slidewr .left").delay(1000).animate({
+                $(".slidewr .left img").delay(1000).animate({
+                    opacity: "1"
+                }, 1000);
+                $(".detailTxt_box").delay(1500).animate({
                     opacity: "1"
                 }, 1000);
 
@@ -104,8 +116,8 @@ $(function () { // jQB ///////////////////////////
                 $(".contact_tit").stop().animate({
                     right: "0"
                 }, 800);
-                $(".cont_img").delay(600).animate({
-                    left: 0
+                $(".cont_img").delay(800).animate({
+                    opacity:1
                 }, 800);
                 $(".cont_wrap ul").delay(1200).animate({
                     opacity: 1
@@ -113,10 +125,13 @@ $(function () { // jQB ///////////////////////////
                 $(".dbtn").delay(1800).animate({
                     opacity: 1
                 }, 800);
-                $(".redtxt").delay(2000).animate({
+                $(".redtxt").delay(2500).animate({
                     opacity: 1
                 }, 800);
-                
+                $("#btn_top").delay(3000).animate({
+                    opacity: 1
+                }, 800);
+
             }
             if (index !== 5) { //해당영역아닐때 다시 밖으로빼놓기(원상복귀)
                 $(".contact_tit").stop().animate({
@@ -152,16 +167,15 @@ $(function () { // jQB ///////////////////////////
 
     var typed5 = new Typed('#typed5', {
         strings: ['이 사이트는 포트폴리오용으로 제작되었습니다.'],
-        typeSpeed: 100,
+        typeSpeed: 150,
         backSpeed: 0,
         cursorChar: '_',
         shuffle: true,
         smartBackspace: false,
         loop: true
     });
-
-
-
+    
+    
 
 
 
@@ -215,7 +229,7 @@ $(function () { // jQB ///////////////////////////
 
     });
 
-/*메뉴 타이틀 클릭시 메뉴창 닫기*/
+    /*메뉴 타이틀 클릭시 메뉴창 닫기*/
     $(".menu_list ul li").click(function () {
         $(".menu").fadeIn(300);
         $(".menu_pop").fadeOut(800);
@@ -223,7 +237,7 @@ $(function () { // jQB ///////////////////////////
             left: "170%"
         }, 600);
     });
-    
+
     /*메뉴창 외 바깥 클릭시 메뉴창 닫기*/
     $(".menu_pop").click(function () {
         $(".menu").fadeIn(300);
@@ -245,17 +259,17 @@ $(function () { // jQB ///////////////////////////
         $.fn.fullpage.setAllowScrolling(true);
         $.fn.fullpage.setKeyboardScrolling(true);
     });
-    
+
     $(document).on('click', '.menu_list ul li', function () {
         $.fn.fullpage.setAllowScrolling(true);
         $.fn.fullpage.setKeyboardScrolling(true);
     });
-    
+
     $(document).on('click', '.menu_pop', function () {
         $.fn.fullpage.setAllowScrolling(true);
         $.fn.fullpage.setKeyboardScrolling(true);
     });
-    
+
 
 }); //////////////// jQB ////////////////////////
 ///////////////////////////////////////////////
