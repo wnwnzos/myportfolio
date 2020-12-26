@@ -71,7 +71,7 @@ header {
     margin: 3% 0;
     /* outline: 1px dashed blue; */
     position: absolute;
-    right: -50%;
+    right: -60%;
     top: -6%;
     color: #ddd;
 }
@@ -147,7 +147,7 @@ header {
 
 
 
-/*HOME영역******************************************/
+/*홈 영역******************************************/
 
 /*모바일일때 그림*/
 .m_pic{
@@ -264,7 +264,7 @@ nav ul {
 
 nav ul li {
     float: left;
-    width: 20%;
+    width: 16.66%;
 
 }
 
@@ -317,7 +317,7 @@ nav li a:hover::after {
     }
 }
 
-/*ABOUT 영역******************************/
+/*어바웃 영역******************************/
 #about_wrap {
     width: 100vw;
     height: 100vh;
@@ -507,7 +507,7 @@ nav li a:hover::after {
     font-size: 3.59vw;
 }
 
-/*skill영역*******************************************************************/
+/*스킬 영역*******************************************************************/
 .skill_wrap {
     width: 100%;
     height: 100vh;
@@ -726,7 +726,7 @@ nav li a:hover::after {
     opacity: 0;
 }
 
-/*portfolio영역****************************************/
+/*포트폴리오 영역****************************************/
 .port_wrap {
     position: relative;
     width: 100%;
@@ -1045,8 +1045,93 @@ nav li a:hover::after {
 }
 
 
+/*공동 프로젝트 영역***************************/
+.joint_wrap{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.joint_left_wrap{
+    width: 35%;
+/*    outline: 1px dashed blue;*/
+    height: 100vh;
+    background: url(../images/joint1.png)no-repeat;
+        background-position: 50% 55%;
+    background-size: 80% 50%;
+    transition: all .3s ease-out;
+}
 
-/*section5 영역**************************/
+.joint_wrap ul{
+/*    outline: 1px dashed blue;*/
+    width: 60%;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    margin: 0 3%;
+}
+.joint_wrap ul li{
+   padding-top: 2.2vw;
+    padding-bottom: 1.8vw;
+    font-family: cafe24;
+    
+    position: relative;
+}
+.joint_wrap ul li a{
+    font-size: 2.5vw;
+    color: #555;
+    opacity: .35;
+}
+.joint_wrap ul li::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    background-color: #ddd;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.joint_wrap ul li span{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: GT;
+    font-size: 1vw;
+    
+}
+.joint_wrap ul li i{
+    font-style: normal;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: GT;
+    font-size: 1vw;
+}
+.joint_wrap ul li small {
+    position: absolute;
+    right: 0;
+    bottom: -21%;
+    transform: translateY(-50%);
+    font-family: GT;
+    font-size: 2vw;
+    color: #b4b4b4;
+    
+}
+.joint_wrap ul li big{
+    font-size: 1vw;
+
+}
+.joint_wrap ul li:hover a{
+    opacity: 1;
+    transition: opacity .6s ease-in-out;
+    
+}
+
+
+/*컨텍트 영역**************************/
 .cont_wrap {
     width: 100%;
     /*    outline: 1px solid #000;*/
@@ -1147,7 +1232,7 @@ nav li a:hover::after {
     color: #333;
     font-size: 1vw;
     font-family: cafe24;
-    opacity: 0;
+    display: none;
 }
 
 
@@ -1261,4 +1346,15 @@ opacity: 0;
     50% {
         bottom: -3%;
     }
+}
+
+
+/*공지*/
+.notice{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    font-family: cafe24;
+    font-size: 1vw;
 }

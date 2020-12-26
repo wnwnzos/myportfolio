@@ -5,11 +5,11 @@ $(function () { // jQB ///////////////////////////
     $("#fullpage").fullpage({
 
         // 네비게이션옵션
-        anchors: ['home', 'about', 'skill', 'portfolio', 'contact'],
+        anchors: ['home', 'about', 'skill', 'portfolio', 'joint', 'contact'],
         navigation: true,
         navigationPosition: 'right',
         /*네비블릿 오버시 나타나는 글씨*/
-        navigationTooltips: ['home', 'about', 'skill', 'portfolio', 'contact'],
+        navigationTooltips: ['home', 'about', 'skill', 'portfolio', 'joint', 'contact'],
         'afterLoad': function (anchorLink, index) {
             if (index == 1) { // 홈영역
                 $(".toptit").stop().animate({
@@ -84,7 +84,7 @@ $(function () { // jQB ///////////////////////////
                 $(".skill_tit").stop().animate({
                     right: "-70%"
                 }, 100);
-                
+
                 $('.graph span')
                     .removeClass('active');
                 $(".right_sub").delay(1000).stop().animate({
@@ -112,12 +112,29 @@ $(function () { // jQB ///////////////////////////
                     right: "-100%"
                 }, 100);
             }
-            if (index == 5) { //컨텍트부분
+            if (index == 5) { //공동크로젝트 영역
+
+                $(".joint_tit").stop().animate({
+                    right: "0"
+                }, 800);
+
+
+            }
+            if (index !== 5) { //공동크로젝트 영역
+                
+                $(".joint_tit").stop().animate({
+                    right: "-60%"
+                }, 800);
+
+
+            }
+            if (index == 6) { //컨텍트부분
+               
                 $(".contact_tit").stop().animate({
                     right: "0"
                 }, 800);
                 $(".cont_img").delay(800).animate({
-                    opacity:1
+                    opacity: 1
                 }, 800);
                 $(".cont_wrap ul").delay(1200).animate({
                     opacity: 1
@@ -125,15 +142,19 @@ $(function () { // jQB ///////////////////////////
                 $(".dbtn").delay(1800).animate({
                     opacity: 1
                 }, 800);
-                $(".redtxt").delay(2500).animate({
-                    opacity: 1
-                }, 800);
-                $("#btn_top").delay(3000).animate({
+
+                $(".redtxt ").delay(2000).fadeIn(500);
+                $("#btn_top").delay(2500).animate({
                     opacity: 1
                 }, 800);
 
+
             }
-            if (index !== 5) { //해당영역아닐때 다시 밖으로빼놓기(원상복귀)
+            if (index !== 6) { //해당영역아닐때 다시 밖으로빼놓기(원상복귀)
+             
+
+
+
                 $(".contact_tit").stop().animate({
                     right: "-80%"
                 }, 100);
@@ -161,21 +182,19 @@ $(function () { // jQB ///////////////////////////
 
 
 
+ /********** 타이핑 효과 ********/
+
+                var typed5 = new Typed('#typed5', {
+                    strings: ['끝까지 봐주셔서 감사합니다.'],
+                    typeSpeed: 150,
+                    backSpeed: 0,
+                    cursorChar: '_',
+                    shuffle: true,
+                    smartBackspace: false,
+                    loop: true,
+                });
 
 
-    /********** 타이핑 효과 ********/
-
-    var typed5 = new Typed('#typed5', {
-        strings: ['이 사이트는 포트폴리오용으로 제작되었습니다.'],
-        typeSpeed: 150,
-        backSpeed: 0,
-        cursorChar: '_',
-        shuffle: true,
-        smartBackspace: false,
-        loop: true
-    });
-    
-    
 
 
 
@@ -205,6 +224,21 @@ $(function () { // jQB ///////////////////////////
 
 
     }); /*swiper플러그인*/
+
+
+
+    /*공동 프로젝트 영역************************************/
+
+    $('.joint_wrap ul li').mouseover(function () {
+        var i = $(this).index();
+        //console.log(i);
+        $(".joint_left_wrap").css({
+            background: "url(../images/joint" + (i + 1) + ".png)no-repeat",
+            backgroundPosition: "50% 55%",
+            backgroundSize: "80% 50%"
+        });
+    });
+
 
 
 
