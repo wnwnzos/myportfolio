@@ -150,6 +150,11 @@ header {
 /*홈 영역******************************************/
 
 /*모바일일때 그림*/
+.home_wrap{
+    width: 100vw;
+    height: 100vh;
+    outline: 1px dashed blue;
+}
 .m_pic{
     display: none;
 }
