@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CGV 인트로 페이지</title>
+    <link href="css/intro.css" rel="stylesheet">
+</head>
+<body>
+    
+    <video src="images/cgv.mp4" id="muvid" autoplay muted loop></video>
+    
+    <!--비디오넣기-->
+    <!--<video src="images/cgv.mp4" id="muvid"  muted loop controls poster="images/poster.png" preload="auto"></video>-->
+    
+    <!--
+        video요소 : html5에서 지원하는 비디오 재생요소
+        - src : 파일경로
+        - preload="auto" : 비디오파일을 미리 버펑에 로딩함
+         (이 설정시 포스터가 보이지않음)
+        - autoplay : 자동재생(단, 비디오가 muted되어야함!)
+        - loop : 반복재생
+        - muted : 소리없앰
+        - controls : 비디오 제어컨트롤바 보이기
+        - poster = "이미지경로" : 비디오 재생정 이미지 미리보기
+            
+    -->
+    
+    <!--<video>
+        <source src="images/cgv.mp4" type="video/mp4">
+        <source src="images/cgv.ogg" type="video/ogg">
+        <source src="images/cgv.webm" type="video/webm">
+        당신의 브라우저는 본 비디오를 재생할  수 없습니다!
+    </video>-->
+    
+    <!--
+        video 하위 source 요소:
+        비디오 지원형식별 셋팅요소
+        - 이런형식을 쓰는 이유는 같은 비디오가 브라우저에서
+        재생되는 것을 나열하여 제시하는데 목적이 있다.
+        모든 형식을 지원하지 않을 경우 맨 마지막 글자가 출력된다.
+    -->
+    
+    <!--들어가기버튼-->
+    <div id="enter">
+        <a href="index.html">
+            <img src="images/logo_cgv.png" alt="CGV예고편 상영관들어가기">
+            <span>Click Here!</span>
+        </a>
+    </div>
+    
+</body>
+</html>

@@ -121,7 +121,7 @@ header {
 
 .menu_list li {
     text-align: left;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
     padding-left: 20%;
 }
 
@@ -1047,39 +1047,58 @@ nav li a:hover::after {
 
 /*공동 프로젝트 영역***************************/
 .joint_wrap{
+        outline: 1px dashed blue;
     width: 100%;
     height: 100vh;
     position: relative;
 }
-.joint_left_wrap{
-    width: 35%;
-/*    outline: 1px dashed blue;*/
-    height: 100vh;
-    background: url(../images/joint1.png)no-repeat;
-        background-position: 50% 55%;
-    background-size: 80% 50%;
-    transition: all .3s ease-out;
+.joint_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 58%;
+    transform: translateY(-50%);
+  outline: 1px dashed blue;
+    width: 100%;
+    height: 70vh;
 }
+.joint_left_wrap{
+    width: 38%;
+/*    outline: 1px dashed blue;*/
+    transition: all .3s ease-out;
+    position: relative;
+}
+.left_pj{
+/*    outline: 2px solid red;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25vw;
+    height: 50vh;
+    background: url(../images/joint1.png)no-repeat;
+    background-size: cover;
 
+}
+.joint_right_wrap{
+    width: 60%;
+}
 .joint_wrap ul{
 /*    outline: 1px dashed blue;*/
-    width: 60%;
-    position: absolute;
-    right: 0;
-    top: 25%;
     margin: 0 3%;
 }
 .joint_wrap ul li{
    padding-top: 2.2vw;
     padding-bottom: 1.8vw;
     font-family: cafe24;
-    
     position: relative;
 }
 .joint_wrap ul li a{
     font-size: 2.5vw;
     color: #555;
     opacity: .35;
+    letter-spacing: 3px;
 }
 .joint_wrap ul li::after{
     content: '';
@@ -1091,7 +1110,14 @@ nav li a:hover::after {
     width: 100%;
     left: 0;
 }
-
+.joint_wrap ul li sup{
+    padding-left: 10px;
+    color: #773d3d;
+    font-family: GT;
+    letter-spacing: 2px;
+    font-size: .8vw;
+    opacity: 0;
+}
 .joint_wrap ul li span{
     position: absolute;
     right: 0;
@@ -1109,8 +1135,10 @@ nav li a:hover::after {
     transform: translateY(-50%);
     font-family: GT;
     font-size: 1vw;
+    letter-spacing: 1.5px;
 }
 .joint_wrap ul li small {
+    letter-spacing: 1px;
     position: absolute;
     right: 0;
     bottom: -21%;
@@ -1354,7 +1382,8 @@ opacity: 0;
     position: absolute;
     bottom: 0;
     left: 0;
-    
+    opacity: 0;
     font-family: cafe24;
     font-size: 1vw;
+    color: #7c7979;
 }
