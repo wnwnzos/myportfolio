@@ -158,10 +158,10 @@ header {
 .m_pic{
     display: none;
      position: absolute;
-        top: 42vh;
+        top:37vh;
     width: 50%;
     height: 239px;
-    outline: 1px dashed blue;
+/*    outline: 1px dashed blue;*/
 }
 
     .m_pic img {
