@@ -493,10 +493,6 @@ height: 80vh;
         display: none;
     }
 
-    .tit_wrap {
-        top: 30%;
-    }
-
     /*타이틀공통*/
     .section h2 {
         top: -1%;
