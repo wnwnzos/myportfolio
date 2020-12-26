@@ -121,7 +121,7 @@ $(function () { // jQB ///////////////////////////
 
             }
             if (index !== 5) { //공동크로젝트 영역
-                
+
                 $(".joint_tit").stop().animate({
                     right: "-100%"
                 }, 800);
@@ -129,7 +129,7 @@ $(function () { // jQB ///////////////////////////
 
             }
             if (index == 6) { //컨텍트부분
-               
+
                 $(".contact_tit").stop().animate({
                     right: "0"
                 }, 800);
@@ -153,7 +153,7 @@ $(function () { // jQB ///////////////////////////
 
             }
             if (index !== 6) { //해당영역아닐때 다시 밖으로빼놓기(원상복귀)
-             
+
                 $(".contact_tit").stop().animate({
                     right: "-80%"
                 }, 100);
@@ -181,17 +181,17 @@ $(function () { // jQB ///////////////////////////
 
 
 
- /********** 타이핑 효과 ********/
+    /********** 타이핑 효과 ********/
 
-                var typed5 = new Typed('#typed5', {
-                    strings: ['끝까지 봐주셔서 감사합니다.'],
-                    typeSpeed: 150,
-                    backSpeed: 0,
-                    cursorChar: '_',
-                    shuffle: true,
-                    smartBackspace: false,
-                    loop: true,
-                });
+    var typed5 = new Typed('#typed5', {
+        strings: ['끝까지 봐주셔서 감사합니다.'],
+        typeSpeed: 150,
+        backSpeed: 0,
+        cursorChar: '_',
+        shuffle: true,
+        smartBackspace: false,
+        loop: true,
+    });
 
 
 
@@ -204,7 +204,7 @@ $(function () { // jQB ///////////////////////////
     new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 40,
-        speed:600, // 넘기는속도
+        speed: 600, // 넘기는속도
         loop: true, // 무한반복
         pagination: { // 페이징
 
@@ -229,20 +229,38 @@ $(function () { // jQB ///////////////////////////
 
     /*공동 프로젝트 영역************************************/
 
-    $('.joint_wrap ul li').mouseover(function () {
+    $('.joint_wrap ul li').mouseover(function () {//호버시
+
+        //li호버시 썸네일사진 보이기
         var i = $(this).index();
         //console.log(i);
         $(".left_pj").css({
             background: "url(../images/joint" + (i + 1) + ".png)no-repeat",
-backgroundSize: "cover",
-         
+            backgroundSize: "cover"
+
         });
-        $(this).find("sup").stop().animate({opacity:"1"},300);
+        
+        //li 왼쪽으로밀기
+        $(this).stop().animate({
+            right: "10%"
+        }, 300);
+        
+        // view site보이기
+        $(this).find("sup").stop().animate({
+            opacity: "1"
+        }, 300);
     });
 
-    $('.joint_wrap ul li').mouseleave(function () {
- 
-        $(this).find("sup").stop().animate({opacity:"0"});
+
+
+    $('.joint_wrap ul li').mouseleave(function () {//아웃시
+        $(this).stop().animate({
+            right: "0"
+        }, 300);
+
+        $(this).find("sup").stop().animate({
+            opacity: "0"
+        });
     });
 
 
