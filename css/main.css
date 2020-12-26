@@ -157,7 +157,17 @@ header {
 }
 .m_pic{
     display: none;
+     position: absolute;
+        top: 42vh;
+    width: 50%;
+    height: 239px;
+    outline: 1px dashed blue;
 }
+
+    .m_pic img {
+        width: 70%;
+    }
+
 
 .tit_wrap {
     position: relative;

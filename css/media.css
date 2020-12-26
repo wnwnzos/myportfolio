@@ -542,14 +542,10 @@ height: 80vh;
     }
 
     .m_pic {
-        position: absolute;
-        top: 41vh;
         display: block;
     }
 
-    .m_pic img {
-        width: 70%;
-    }
+
 
     /*어바웃영역************/
     
