@@ -285,7 +285,7 @@ width: 28vw;
     /*슬라이드양쪽버튼글씨*/
     .swiper-button-prev,
     .swiper-button-next {
-        top: 88%;
+        top: 97vh;
     }
 
     /*뷰사이트보기*/
@@ -556,7 +556,7 @@ height: 80vh;
 
     /*어바웃 타이틀*/
     .about_tit {
-        padding-right: 28%;
+        padding-right: 30vw;
     }
 
     .about_inbox {
@@ -624,7 +624,7 @@ height: 80vh;
         letter-spacing: 1px;
         right: 7%;
         width: 89vw;
-        top: 17vh;
+        top: 22vh;
         height: 29vh;
         opacity: 1;
         /*        outline: 1px dashed blue;*/
@@ -643,7 +643,7 @@ height: 80vh;
     /*스킬영역*************/
     /*스킬타이틀*/
     .skill_tit {
-        padding-right: 31%;
+        padding-right: 31vw;
     }
 
     .skill_box {
@@ -686,7 +686,7 @@ height: 80vh;
     /*포트폴리오영역*************/
     /*포트폴리오 타이틀*/
     .portfolio_tit {
-        padding-right: 14%;
+        padding-right: 19vw;
     }
 
     .port_wrap > big {
@@ -749,6 +749,8 @@ height: 80vh;
     /*공동프로젝트영역*********************/
     .joint_tit{
         padding-right: 8%;
+        
+        
     }
     .joint_left_wrap {
     width: 50%;
@@ -761,6 +763,7 @@ height: 80vh;
     .joint_wrap ul li {
     padding-top: 6.2vw;
     padding-bottom: 5.8vw;
+    
 }
     .joint_wrap ul li a {
     font-size: 4vw;
@@ -777,7 +780,7 @@ height: 80vh;
     .joint_wrap ul li::after {
     height: 1px;
 }
-
+ 
 
     /*컨텍트영역*************************/
     /*컨텐트 타이틀*/
@@ -843,7 +846,12 @@ height: 80vh;
     }
 
 
-
+.notice {
+    left: 95%;
+    bottom: 10%;
+    writing-mode: vertical-lr;
+    font-size: 3.8vw;
+}
 
 
 
