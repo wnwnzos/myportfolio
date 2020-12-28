@@ -464,10 +464,11 @@ width: 28vw;
     
     /*공동프로젝트영역*****************/
     .joint_box {
-height: 80vh;
     top: 50%;
 }
-    
+    .left_pj {
+        top: 74%;
+    }
     
     .joint_wrap ul li i, .joint_wrap ul li span {
     font-size: 1.7vw;
@@ -692,7 +693,7 @@ height: 80vh;
     .port_wrap > big {
         font-size: 12vw;
         -webkit-text-stroke: 1px;
-        -webkit-text-stroke-color: rgb(198, 198, 198);
+        -webkit-text-stroke-color: #4b4b4b;
     }
 
     .slidewr .left img {
@@ -745,6 +746,10 @@ height: 80vh;
         bottom: 3%;
     }
     
+    .prevt,.nextt{
+        font-size: 20vw;
+    }
+    
     
     /*공동프로젝트영역*********************/
     .joint_tit{
@@ -757,36 +762,36 @@ height: 80vh;
         top: 10%;
     width: 50%;
 }
+    .left_pj {
+        top: 50%;
+    }
     
     .joint_right_wrap {
     width: 95vw;
         position: absolute;
-        bottom: 0;
+        bottom: 1vh;
 }
-    .joint_box {
-    height: 100vh;
-}
-    
-    .joint_wrap ul li {
+  
+    .joint_right_wrap ul li {
     padding-top: 6.2vw;
     padding-bottom: 5.8vw;
     
 }
-    .joint_wrap ul li a {
+    .joint_right_wrap ul li a {
     font-size: 6vw;
     letter-spacing: 1px;
 }
-    .joint_wrap ul li i, .joint_wrap ul li span {
+    .joint_right_wrap ul li i, .joint_right_wrap ul li span {
     font-size: 2.9vw;
         
 }
-    .joint_wrap ul li i{
+    .joint_right_wrap ul li i{
         right: 34%;
     }
-    .joint_wrap ul li sup{
+    .joint_right_wrap ul li sup{
         display: none;
     }
-    .joint_wrap ul li small {
+    .joint_right_wrap ul li small {
     bottom: -15%;
     font-size: 4vw;
 }
@@ -794,10 +799,12 @@ height: 80vh;
     font-size: 1.5vw;
 }
     
-    .joint_wrap ul li::after {
+    .joint_right_wrap ul li::after {
     height: 1px;
 }
- 
+    .joint_right_wrap ul li:last-child::after{
+        height: 0;
+    }
 
     /*컨텍트영역*************************/
     /*컨텐트 타이틀*/
@@ -858,8 +865,8 @@ height: 80vh;
 
     #btn_top {
         font-size: 20vw;
-        bottom: -3%;
-        right: -1%;
+        bottom: -2vh;
+        right: 1vw;
     }
 
 
