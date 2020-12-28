@@ -350,16 +350,19 @@ $(function () { // jQB ///////////////////////////
 
 
 
-    if ($(window).width() < 400) {
-
+    if ($(window).width() <= 375) {
+console.log("모바일이냐");
         $('.joint_right_wrap ul li').click(function () {
-//            console.log("클릭되냐");
+           $(".left_pj").animate({
+               opacity:"1"
+           },500);
             //li호버시 클릭시사진 보이기
             var i = $(this).index();
             console.log(i);
             $(".left_pj").css({
-                backgroundImage: "url(../images/joint" + (i) + ".png)no-repeat"
-
+                backgroundImage: "url(../images/joint" + (i+1) + ".png)no-repeat",
+                backgroundSize:"cover",
+                
             });
 
         });
