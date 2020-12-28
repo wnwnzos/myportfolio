@@ -330,6 +330,8 @@ $(function () { // jQB ///////////////////////////
 
     
     
+    
+    
     if ($(window).width() < 400) {
         
         $('.joint_right_wrap ul li').click(function(){
@@ -337,7 +339,7 @@ $(function () { // jQB ///////////////////////////
         var i = $(this).index();
         //console.log(i);
         $(".left_pj").css({
-            background: "url(../images/joint" + (i + 1) + ".png)no-repeat",
+            backgroundImage: "url(../images/joint" + (i) + ".png)no-repeat",
             backgroundSize: "cover"
 
         });
