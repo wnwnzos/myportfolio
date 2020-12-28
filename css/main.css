@@ -1101,6 +1101,7 @@ nav li a:hover::after {
     width: 25vw;
     height: 50vh;
     background: url(../images/joint1.png)no-repeat;
+    background-image: url(../images/joint1.png)no-repeat;
     background-size: cover;
 /*    opacity: 0;*/
 

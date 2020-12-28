@@ -237,7 +237,7 @@ $(function () { // jQB ///////////////////////////
             background: "url(/images/joint" + (i + 1) + ".png)no-repeat",
             backgroundSize: "cover"
 
-        },300);
+        });
         
     });
 
@@ -251,7 +251,7 @@ $(function () { // jQB ///////////////////////////
             background: "url(/images/joint" + (i + 1) + ".png)no-repeat",
             backgroundSize: "cover"
 
-        },300);
+        });
 
         //li 왼쪽으로밀기
         $(this).stop().animate({
