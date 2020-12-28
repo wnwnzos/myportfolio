@@ -348,50 +348,50 @@ $(function () { // jQB ///////////////////////////
 
 
 
-//
-//    if ($(window).width() <= 375) {
-//console.log("모바일이냐");
-//        $('.joint_right_wrap ul li').click(function () {
-//           $(".left_pj").animate({
-//               opacity:"1"
-//           },500);
-//            //li호버시 클릭시사진 보이기
-//            var i = $(this).index();
-//            console.log(i);
-//            $(".left_pj").css({
-//                backgroundImage: "url(../images/joint" + (i+1) + ".png)no-repeat",
-//                backgroundSize:"cover",
-//                
-//            });
-//
-//        });
-//
-//
-//
-//
-//
-//        $('.joint_right_wrap ul li').mouseenter(function () { //호버시
-//
-//
-//            //li 왼쪽으로밀기 없애기
-//            $(this).stop().animate({
-//                right: "0"
-//            }, 300);
-//
-//
-//        });
-//
-//
-//
-//        $('.joint_right_wrap li').mouseleave(function () { //아웃시
-//            //li 왼쪽으로밀기 없애기
-//            $(this).stop().animate({
-//                right: "0"
-//            }, 300);
-//
-//        });
-//
-//    }
+
+    if ($(window).width() <= 375) {
+console.log("모바일이냐");
+        $('.joint_right_wrap ul li').click(function () {
+           $(".left_pj").animate({
+               opacity:"1"
+           },500);
+            //li호버시 클릭시사진 보이기
+            var i = $(this).index();
+            console.log(i);
+            $(".left_pj").css({
+                background: "url(../images/joint" + (i+1) + ".png)no-repeat",
+                backgroundSize:"cover",
+                
+            });
+
+        });
+
+
+
+
+
+        $('.joint_right_wrap ul li').mouseenter(function () { //호버시
+
+
+            //li 왼쪽으로밀기 없애기
+            $(this).stop().animate({
+                right: "0"
+            }, 300);
+
+
+        });
+
+
+
+        $('.joint_right_wrap li').mouseleave(function () { //아웃시
+            //li 왼쪽으로밀기 없애기
+            $(this).stop().animate({
+                right: "0"
+            }, 300);
+
+        });
+
+    }
 
 
 }); //////////////// jQB ////////////////////////

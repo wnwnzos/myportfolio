@@ -761,10 +761,14 @@ width: 28vw;
     .joint_left_wrap {
         position: absolute;
         top: 10%;
-    width: 50%;
+    width:100%;
+        height: 39vh;
 }
     .left_pj {
         top: 50%;
+        width: 75vw;
+    height: 37vh;
+    background-size: cover;
     }
     
     .joint_right_wrap {
