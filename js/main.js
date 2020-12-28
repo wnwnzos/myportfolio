@@ -229,17 +229,17 @@ $(function () { // jQB ///////////////////////////
 
 
     /*공동 프로젝트 영역************************************/
-//    $('.joint_right_wrap ul li').click(function(){
-//        
-//        var i = $(this).index();
-//        $(".left_pj").css({
-//            
-//            background: "url(../images/joint" + (i + 1) + ".png)no-repeat",
-//            backgroundSize: "cover"
-//
-//        },300);
-//        
-//    });
+    $('.joint_right_wrap ul li').click(function(){
+        
+        var i = $(this).index();
+        $(".left_pj").css({
+            
+            background: "url(../images/joint" + (i + 1) + ".png)no-repeat",
+            backgroundSize: "cover"
+
+        },300);
+        
+    });
 
     $('.joint_right_wrap ul li').mouseenter(function () { //호버시
 
