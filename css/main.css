@@ -36,10 +36,9 @@ body {
     background-color: #f4f4f4;
     height: 100%;
     width: 100%;
-min-height:640px;
+
 }
-body[orient="portrait"] { min-height:640px; }
-body[orient="landscape"] { min-height:480px; }
+
 
 header {
     position: fixed;
@@ -276,7 +275,6 @@ nav {
     transform: translate(-50%, -50%);
     font-size: 1.12vw;
     text-align: center;
-    overflow: hidden;
 }
 
 nav ul {
@@ -1096,7 +1094,7 @@ nav li a:hover::after {
 /*    outline: 1px solid red;*/
     position: absolute;
     top: 50%;
-    left: -50%;
+    left: -150%;
     transform: translate(-50%,-50%);
     width: 25vw;
     height: 50vh;

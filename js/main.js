@@ -245,36 +245,38 @@ $(function () { // jQB ///////////////////////////
         "images/joint5.png"
     ];
 
-    
+
     ///////////// each ///////////////
     $(".left_pj li").each(function (idx, ele) {
         $(ele).css({
             background: "url(" + bgi[idx] + ") no-repeat",
-            backgroundSize:"cover"
+            backgroundSize: "cover"
         });
     }); ///////////// each ///////////////
 
-    
-    
+
+
     //// mouseenter ///////////////////////////////////////////////
-    $(".joint_right_wrap ul li").mouseenter(function(){
+    $(".joint_right_wrap ul li").mouseenter(function () {
+        //li호버시 li왼쪽으로 밀기
         $(this).stop().animate({
-            right:"10%"
-        },500);
+            right: "10%"
+        }, 500);
+
         var idx = $(this).index();
-        
+
         $(".left_pj li").eq(idx).addClass("on").siblings().removeClass("on");
-        
-        
-    });//// mouseenter ///////////////////////////////////////////////
-    
+
+
+    }); //// mouseenter ///////////////////////////////////////////////
+
     //// mouseeleave ///////////////////////////////////////////////
-    $(".joint_right_wrap ul li").mouseleave(function(){
+    $(".joint_right_wrap ul li").mouseleave(function () {
         $(this).stop().animate({
-            right:"0"
-        },500);
-    });//// mouseeleave ///////////////////////////////////////////////
-    
+            right: "0"
+        }, 500);
+    }); //// mouseeleave ///////////////////////////////////////////////
+
 
 
     /*모바일일때 메뉴창옵션*******************************/
@@ -342,24 +344,14 @@ $(function () { // jQB ///////////////////////////
 
 
 
-
-
-
+    // 모바일일때(화면375이하)
     if ($(window).width() <= 375) {
-
-
-
-
-
         $('.joint_right_wrap ul li').mouseenter(function () { //호버시
-
 
             //li 왼쪽으로밀기 없애기
             $(this).stop().animate({
                 right: "0"
             }, 300);
-
-
         });
 
 
@@ -370,6 +362,44 @@ $(function () { // jQB ///////////////////////////
                 right: "0"
             }, 300);
 
+        });
+
+
+
+    }
+    // 모바일일때(화면375이하)
+    else if ($(window).width() <= 1024) {
+        //        console.log("1024");
+       
+           
+    
+
+        $('.joint_right_wrap ul li').mouseenter(function () { //호버시
+
+            //li 왼쪽으로밀기 없애기
+            $(this).stop().animate({
+                right: "0"
+            }, 300);
+        });
+
+
+
+        $('.joint_right_wrap li').mouseleave(function () { //아웃시
+            //li 왼쪽으로밀기 없애기
+            $(this).stop().animate({
+                right: "0"
+            }, 300);
+
+        });
+
+    }
+    // 화면1980이하일때
+    else if ($(window).width() <= 1980) {
+        //            console.log("1980");
+        $('.joint_right_wrap ul li').mouseenter(function () {
+            $(this).stop().animate({
+                right: "5%"
+            }, 500);
         });
 
     }

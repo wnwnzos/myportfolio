@@ -16,6 +16,11 @@
         right: 22%;
     }
     
+    
+    /*공동프로젝트영역*****************/
+    .left_pj {
+    width: 30vw;
+}
 
 
 
@@ -140,9 +145,25 @@ width: 28vw;
 /*아이패드프로*/
 @media only screen and (max-width: 1024px) {
 
-    /*홈영역*/
+    /*홈영역************/
+
+/*메뉴바*/
+    .menu {
+        display: block;
+    }
+    .menu img {
+    width: 3.5vw;
+}
+
+    /*메뉴없애기*/
     nav {
-        font-size: 2vw;
+        display: none;
+
+    }
+    
+    /*동그라미애니메이션 없애기*/
+    .double-circles{
+        display: none;
     }
 
 
@@ -150,14 +171,26 @@ width: 28vw;
     .section h2 {
     top: -2.5%;
 }
+    
+      .tit_wrap {
+    height: 28vh;
+    
+}
 
     .bottomtit {
         padding-bottom: 14%;
+    }
+    
+    .menu_list ul li a, .m_cbtn{
+    font-size: 5vw;
     }
 
     /*어바웃영역********/
     .atit {
         font-size: 6vw;
+    }
+    .about_tit{
+        padding-right: 4%;
     }
 
     .atit small {
@@ -200,6 +233,10 @@ width: 28vw;
 
 
     /*스킬영역**********/
+      .skill_tit{
+        padding-right: 4%;
+    }
+    
     .skill_box {
         width: 400px;
 
@@ -232,6 +269,9 @@ width: 28vw;
     }
 
     /*포트폴리오 영역*************/
+      .portfolio_tit{
+        padding-right: 4%;
+    }
     .slidewr .left {
         float: none;
         width: 100%;
@@ -253,7 +293,7 @@ width: 28vw;
     /*민트색배경색*/
     .sitetxt {
         width: 78vw;
-        height: 21vh;
+        height: 23vh;
     }
 
     .sitetxt p {
@@ -285,7 +325,7 @@ width: 28vw;
     /*슬라이드양쪽버튼글씨*/
     .swiper-button-prev,
     .swiper-button-next {
-        top: 97vh;
+        top: 88vh;
     }
 
     /*뷰사이트보기*/
@@ -297,6 +337,9 @@ width: 28vw;
     
     
     /*공동프로젝트영역***********************/
+      .joint_tit{
+        padding-right: 4%;
+    }
     .joint_box{
         flex-direction: column;
         top: 45%;
@@ -307,10 +350,12 @@ width: 28vw;
     .left_pj {
     width: 100%;
     height: 100%;
+    top: 26vh;
 }
     
     .joint_right_wrap {
     width: 90vw;
+        padding-left: 3%;
 }
     
     .joint_wrap ul li {
@@ -334,6 +379,9 @@ width: 28vw;
     
 
     /*컨텍트영역*************/
+      .contact_tit{
+        padding-right: 4%;
+    }
 
     .cont_wrap ul {
         margin: 1% auto 0 auto;
@@ -346,7 +394,7 @@ width: 28vw;
 
     /*스크롤탑*/
     #btn_top {
-        font-size: 22vw;
+        font-size: 18vw;
         animation: none;
         bottom: 4%;
     }
@@ -399,13 +447,6 @@ width: 28vw;
         width: 5vw;
     }
 
-    .tit_wrap {
-        height: 102vh;
-    }
-
-    .bottomtit {
-        padding-bottom: 6%;
-    }
 
     /*어바웃영역************/
 
@@ -466,9 +507,11 @@ width: 28vw;
     .joint_box {
     top: 50%;
 }
-    .left_pj {
-        top: 74%;
-    }
+    .joint_left_wrap {
+    height: 40vh;
+        width: 50vw;
+}
+
     
     .joint_wrap ul li i, .joint_wrap ul li span {
     font-size: 1.7vw;
@@ -510,9 +553,6 @@ width: 28vw;
         width: 2vw;
     }
 
-    .double-circles {
-        width: 8vw;
-    }
 
     .tit_wrap {
         height: 13vh;
@@ -530,11 +570,9 @@ width: 28vw;
     }
 
     /*메뉴바*/
-    .menu {
-        display: block;
-
-
-    }
+.menu img {
+    width: 5.5vw;
+}
 
     /*메뉴없애기*/
     nav {
@@ -544,7 +582,12 @@ width: 28vw;
 
     .m_pic {
         display: block;
+        top: 33vh;
     }
+    
+    .menu_list ul li a, .m_cbtn {
+    font-size: 7vw;
+}
 
 
 
