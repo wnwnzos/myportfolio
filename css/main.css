@@ -1087,16 +1087,16 @@ nav li a:hover::after {
 }
 .joint_left_wrap{
     width: 38%;
-    outline: 1px dashed blue;
+/*    outline: 1px dashed blue;*/
     transition: all .3s ease-out;
     position: relative;
     height: 100vh;
 }
 .left_pj{
-    outline: 1px solid red;
+/*    outline: 1px solid red;*/
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: -50%;
     transform: translate(-50%,-50%);
     width: 25vw;
     height: 50vh;
@@ -1117,6 +1117,8 @@ nav li a:hover::after {
 }
 .joint_right_wrap{
     width: 60%;
+    position: relative;
+    left: 100%;
 }
 .joint_right_wrap ul{
 /*    outline: 1px dashed blue;*/
@@ -1190,9 +1192,10 @@ nav li a:hover::after {
 }
 .joint_right_wrap ul li:hover a{
     opacity: 1;
-    transition: opacity .6s ease-in-out;
+    transition: opacity .3s ease-in-out;
     
 }
+/*li호버 했을때 view site 보이기*/
 .joint_right_wrap ul li:hover sup{
     opacity: 1;
 }

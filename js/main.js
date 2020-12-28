@@ -118,6 +118,12 @@ $(function () { // jQB ///////////////////////////
                 $(".joint_tit").stop().animate({
                     right: "0"
                 }, 800);
+                $(".left_pj").delay(500).animate({
+                    left: "50%"
+                }, 800);
+                $(".joint_right_wrap").delay(1000).animate({
+                    left: "0"
+                }, 800);
 
 
             }
@@ -243,7 +249,8 @@ $(function () { // jQB ///////////////////////////
     ///////////// each ///////////////
     $(".left_pj li").each(function (idx, ele) {
         $(ele).css({
-            background: "url(" + bgi[idx] + ") no-repeat center/cover"
+            background: "url(" + bgi[idx] + ") no-repeat",
+            backgroundSize:"cover"
         });
     }); ///////////// each ///////////////
 
