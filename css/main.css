@@ -1084,9 +1084,10 @@ nav li a:hover::after {
 }
 .joint_left_wrap{
     width: 38%;
-/*    outline: 1px dashed blue;*/
+    outline: 1px dashed blue;
     transition: all .3s ease-out;
     position: relative;
+    height: 100vh;
 }
 .left_pj{
 /*    outline: 2px solid red;*/
@@ -1098,6 +1099,7 @@ nav li a:hover::after {
     height: 50vh;
     background: url(../images/joint1.png)no-repeat;
     background-size: cover;
+    opacity: 0;
 
 }
 .joint_right_wrap{
@@ -1112,7 +1114,6 @@ nav li a:hover::after {
     padding-bottom: 1.8vw;
     font-family: cafe24;
     position: relative;
-    
 }
 
 
