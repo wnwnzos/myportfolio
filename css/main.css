@@ -1099,7 +1099,7 @@ nav li a:hover::after {
     height: 50vh;
     background: url(../images/joint1.png)no-repeat;
     background-size: cover;
-    opacity: 0;
+/*    opacity: 0;*/
 
 }
 .joint_right_wrap{
