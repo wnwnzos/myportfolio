@@ -229,7 +229,7 @@ $(function () { // jQB ///////////////////////////
 
     /*공동 프로젝트 영역************************************/
 
-    $('.joint_wrap ul li').mouseover(function () {//호버시
+    $('.joint_right_wrap ul li').mouseover(function () {//호버시
 
         //li호버시 썸네일사진 보이기
         var i = $(this).index();
@@ -253,7 +253,7 @@ $(function () { // jQB ///////////////////////////
 
 
 
-    $('.joint_wrap ul li').mouseleave(function () {//아웃시
+    $('.joint_right_wrap li').mouseleave(function () {//아웃시
         $(this).stop().animate({
             right: "0"
         }, 300);
@@ -328,6 +328,45 @@ $(function () { // jQB ///////////////////////////
         $.fn.fullpage.setKeyboardScrolling(true);
     });
 
+    
+    
+    if ($(window).width() < 400) {
+     $('.joint_right_wrap ul li').mouseover(function () {//호버시
+
+        //li호버시 썸네일사진 보이기
+        var i = $(this).index();
+        //console.log(i);
+        $(".left_pj").css({
+            background: "url(../images/joint" + (i + 1) + ".png)no-repeat",
+            backgroundSize: "cover"
+
+        });
+        
+        //li 왼쪽으로밀기
+        $(this).stop().animate({
+            right: "0"
+        }, 300);
+        
+        // view site보이기
+        $(this).find("sup").stop().animate({
+            opacity: "1"
+        }, 300);
+    });
+
+
+
+    $('.joint_right_wrap li').mouseleave(function () {//아웃시
+        $(this).stop().animate({
+            right: "0"
+        }, 300);
+
+        $(this).find("sup").stop().animate({
+            opacity: "0"
+        });
+    });
+
+}
+    
 
 }); //////////////// jQB ////////////////////////
 ///////////////////////////////////////////////
