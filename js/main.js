@@ -352,17 +352,10 @@ $(function () { // jQB ///////////////////////////
     if ($(window).width() <= 375) {
 console.log("모바일이냐");
         $('.joint_right_wrap ul li').click(function () {
-           $(".left_pj").animate({
-               opacity:"1"
-           },500);
             //li호버시 클릭시사진 보이기
             var i = $(this).index();
             console.log(i);
-            $(".left_pj").css({
-                background: "url(../images/joint" + (i+1) + ".png)no-repeat",
-                backgroundSize:"cover",
-                
-            });
+            $(".left_pj").css({"background-image":"url(../images/joint" + (i+1) + ".png)no-repeat"});
 
         });
 
