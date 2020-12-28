@@ -363,10 +363,11 @@ $(function () { // jQB ///////////////////////////
 
     if ($(window).width() < 400) {
 
-        $('.joint_right_wrap ul li').mouseenter(function () {
+        $('.joint_right_wrap ul li').click(function () {
+//            console.log("클릭되냐");
             //li호버시 클릭시사진 보이기
             var i = $(this).index();
-            //console.log(i);
+            console.log(i);
             $(".left_pj").css({
                 backgroundImage: "url(../images/joint" + (i) + ".png)no-repeat"
 
