@@ -1100,10 +1100,20 @@ nav li a:hover::after {
     transform: translate(-50%,-50%);
     width: 25vw;
     height: 50vh;
-    
-/*    background: url(/images/joint1.png)no-repeat;*/
-    background-size: cover;
 
+}
+.left_pj li{
+     position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity .9s ease-out;
+}
+.left_pj li.on{
+    opacity: 1;
+    z-index: 1;
 }
 .joint_right_wrap{
     width: 60%;
@@ -1182,6 +1192,9 @@ nav li a:hover::after {
     opacity: 1;
     transition: opacity .6s ease-in-out;
     
+}
+.joint_right_wrap ul li:hover sup{
+    opacity: 1;
 }
 
 

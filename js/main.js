@@ -229,56 +229,45 @@ $(function () { // jQB ///////////////////////////
 
 
     /*공동 프로젝트 영역************************************/
-    $('.joint_right_wrap ul li').click(function(){
-        console.log("클릭");
-        var i = $(this).index();
-        $(".left_pj").css({
-            
-            background: "url(/images/joint" + (i + 1) + ".png)no-repeat",
-            backgroundSize: "cover"
 
+    /*li호버시 왼쪽영역 배경 썸네일 바뀌게*/
+    var bgi = [
+        "images/joint1.png",
+        "images/joint2.png",
+        "images/joint3.png",
+        "images/joint4.png",
+        "images/joint5.png"
+    ];
+
+    
+    ///////////// each ///////////////
+    $(".left_pj li").each(function (idx, ele) {
+        $(ele).css({
+            background: "url(" + bgi[idx] + ") no-repeat center/cover"
         });
+    }); ///////////// each ///////////////
+
+    
+    
+    //// mouseenter ///////////////////////////////////////////////
+    $(".joint_right_wrap ul li").mouseenter(function(){
+        $(this).stop().animate({
+            right:"10%"
+        },500);
+        var idx = $(this).index();
         
-    });
-
-    $('.joint_right_wrap ul li').mouseenter(function () { //호버시
-
-        //li호버시 썸네일사진 보이기
-        var i = $(this).index();
-//        console.log(i);
-        $(".left_pj").css({
-            
-            background: "url(/images/joint" + (i + 1) + ".png)no-repeat",
-            backgroundSize: "cover"
-
-        });
-
-        //li 왼쪽으로밀기
+        $(".left_pj li").eq(idx).addClass("on").siblings().removeClass("on");
+        
+        
+    });//// mouseenter ///////////////////////////////////////////////
+    
+    //// mouseeleave ///////////////////////////////////////////////
+    $(".joint_right_wrap ul li").mouseleave(function(){
         $(this).stop().animate({
-            right: "10%"
-        }, 300);
-
-        // view site보이기
-        $(this).find("sup").stop().animate({
-            opacity: "1"
-        }, 300);
-    });
-
-
-
-    $('.joint_right_wrap li').mouseleave(function () { //아웃시
-        $(this).stop().animate({
-            right: "0"
-        }, 300);
-
-        $(this).find("sup").stop().animate({
-            opacity: "0"
-        });
-    });
-
-
-
-
+            right:"0"
+        },500);
+    });//// mouseeleave ///////////////////////////////////////////////
+    
 
 
     /*모바일일때 메뉴창옵션*******************************/
