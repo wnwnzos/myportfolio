@@ -234,7 +234,7 @@ $(function () { // jQB ///////////////////////////
         var i = $(this).index();
         $(".left_pj").css({
             
-            background: "url(../images/joint" + (i + 1) + ".png)no-repeat",
+            background: "url(/images/joint" + (i + 1) + ".png)no-repeat",
             backgroundSize: "cover"
 
         },300);
@@ -248,7 +248,7 @@ $(function () { // jQB ///////////////////////////
 //        console.log(i);
         $(".left_pj").css({
             
-            background: "url(../images/joint" + (i + 1) + ".png)no-repeat",
+            background: "url(/images/joint" + (i + 1) + ".png)no-repeat",
             backgroundSize: "cover"
 
         },300);
@@ -350,14 +350,6 @@ $(function () { // jQB ///////////////////////////
 
 
     if ($(window).width() <= 375) {
-console.log("모바일이냐");
-        $('.joint_right_wrap ul li').click(function () {
-            //li호버시 클릭시사진 보이기
-            var i = $(this).index();
-            console.log(i);
-            $(".left_pj").css({"background-image":"url(../images/joint" + (i+1) + ".png)no-repeat"});
-
-        });
 
 
 
