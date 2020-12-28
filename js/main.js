@@ -331,9 +331,9 @@ $(function () { // jQB ///////////////////////////
     
     
     if ($(window).width() < 400) {
-     $('.joint_right_wrap ul li').mouseenter(function () {//호버시
-
-        //li호버시 썸네일사진 보이기
+        
+        $('.joint_right_wrap ul li').click(function(){
+               //li호버시 클릭시사진 보이기
         var i = $(this).index();
         //console.log(i);
         $(".left_pj").css({
@@ -342,6 +342,15 @@ $(function () { // jQB ///////////////////////////
 
         });
         
+        });
+        
+        
+        
+        
+        
+     $('.joint_right_wrap ul li').mouseenter(function () {//호버시
+
+     
         //li 왼쪽으로밀기
         $(this).stop().animate({
             right: "0"
