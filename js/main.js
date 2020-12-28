@@ -229,7 +229,7 @@ $(function () { // jQB ///////////////////////////
 
     /*공동 프로젝트 영역************************************/
 
-    $('.joint_right_wrap ul li').mouseover(function () {//호버시
+    $('.joint_right_wrap ul li').mouseenter(function () {//호버시
 
         //li호버시 썸네일사진 보이기
         var i = $(this).index();
@@ -331,7 +331,7 @@ $(function () { // jQB ///////////////////////////
     
     
     if ($(window).width() < 400) {
-     $('.joint_right_wrap ul li').mouseover(function () {//호버시
+     $('.joint_right_wrap ul li').mouseenter(function () {//호버시
 
         //li호버시 썸네일사진 보이기
         var i = $(this).index();
