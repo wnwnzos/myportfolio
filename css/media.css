@@ -459,7 +459,7 @@ width: 28vw;
 
     .swiper-button-prev,
     .swiper-button-next {
-        top: 96%;
+        top: 95vh;
     }
     
     /*공동프로젝트영역*****************/
@@ -747,7 +747,8 @@ width: 28vw;
     }
     
     .prevt,.nextt{
-        font-size: 20vw;
+        font-size: 22vw;
+        top: 94vh;
     }
     
     
@@ -789,7 +790,7 @@ width: 28vw;
         right: 34%;
     }
     .joint_right_wrap ul li sup{
-        display: none;
+      display: none;
     }
     .joint_right_wrap ul li small {
     bottom: -15%;
@@ -872,7 +873,7 @@ width: 28vw;
 
 .notice {
     left: 95%;
-    bottom: 10%;
+    bottom: 10vh;
     writing-mode: vertical-lr;
     font-size: 3.8vw;
 }

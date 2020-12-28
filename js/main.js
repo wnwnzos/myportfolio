@@ -229,7 +229,7 @@ $(function () { // jQB ///////////////////////////
 
     /*공동 프로젝트 영역************************************/
 
-    $('.joint_right_wrap ul li').mouseenter(function () {//호버시
+    $('.joint_right_wrap ul li').mouseenter(function () { //호버시
 
         //li호버시 썸네일사진 보이기
         var i = $(this).index();
@@ -239,12 +239,12 @@ $(function () { // jQB ///////////////////////////
             backgroundSize: "cover"
 
         });
-        
+
         //li 왼쪽으로밀기
         $(this).stop().animate({
             right: "10%"
         }, 300);
-        
+
         // view site보이기
         $(this).find("sup").stop().animate({
             opacity: "1"
@@ -253,7 +253,7 @@ $(function () { // jQB ///////////////////////////
 
 
 
-    $('.joint_right_wrap li').mouseleave(function () {//아웃시
+    $('.joint_right_wrap li').mouseleave(function () { //아웃시
         $(this).stop().animate({
             right: "0"
         }, 300);
@@ -328,56 +328,70 @@ $(function () { // jQB ///////////////////////////
         $.fn.fullpage.setKeyboardScrolling(true);
     });
 
-    
-    
-    
-    
+
+
+
+
+    function hideAddressBar() {
+
+        if (document.height <= window.outerHeight) return; // 웹페이지의 높이가 화면높이보다 작을 때는 실행할 필요가 없으므로 종료
+
+        var scrollTimer = setInterval(function () {
+            if (!pageYOffset) { // 모바일 브라우저에서 주소창이 보이고 있을 때는 pageYOffset = 0 이므로 이때만 실행
+                scrollTo(0, 1); // 웹페이지를 x축 0, y축 1의 위치로 끌어올림
+            } else {
+                clearInterval(scrollTimer); // pageYOffset !=0 인 경우 반복 종료: scrollTo(0, 1) 이 실행되었거나 사용자가 스크롤을 움직인 경우
+            }
+        }, 100); // 100 밀리세컨드마다 반복 실행
+
+    };
+
+    window.addEventListener('load', hideAddressBar, false); // 페이지 로드 되었을 때 실행
+    window.addEventListener('orientationchange', hideAddressBar, false);
+
+
+
+
     if ($(window).width() < 400) {
-        
-        $('.joint_right_wrap ul li').click(function(){
-               //li호버시 클릭시사진 보이기
-        var i = $(this).index();
-        //console.log(i);
-        $(".left_pj").css({
-            backgroundImage: "url(../images/joint" + (i) + ".png)no-repeat",
-            backgroundSize: "cover"
+
+        $('.joint_right_wrap ul li').mouseenter(function () {
+            //li호버시 클릭시사진 보이기
+            var i = $(this).index();
+            //console.log(i);
+            $(".left_pj").css({
+                backgroundImage: "url(../images/joint" + (i) + ".png)no-repeat"
+
+            });
 
         });
-        
+
+
+
+
+
+        $('.joint_right_wrap ul li').mouseenter(function () { //호버시
+
+
+            //li 왼쪽으로밀기 없애기
+            $(this).stop().animate({
+                right: "0"
+            }, 300);
+
+
         });
-        
-        
-        
-        
-        
-     $('.joint_right_wrap ul li').mouseenter(function () {//호버시
-
-     
-        //li 왼쪽으로밀기
-        $(this).stop().animate({
-            right: "0"
-        }, 300);
-        
-        // view site보이기
-        $(this).find("sup").stop().animate({
-            opacity: "1"
-        }, 300);
-    });
 
 
 
-    $('.joint_right_wrap li').mouseleave(function () {//아웃시
-        $(this).stop().animate({
-            right: "0"
-        }, 300);
+        $('.joint_right_wrap li').mouseleave(function () { //아웃시
+            //li 왼쪽으로밀기 없애기
+            $(this).stop().animate({
+                right: "0"
+            }, 300);
 
-        $(this).find("sup").stop().animate({
-            opacity: "0"
         });
-    });
 
-}
-    
+    }
+
 
 }); //////////////// jQB ////////////////////////
 ///////////////////////////////////////////////
