@@ -230,7 +230,7 @@ $(function () { // jQB ///////////////////////////
 
     /*공동 프로젝트 영역************************************/
     $('.joint_right_wrap ul li').click(function(){
-        
+        console.log("클릭");
         var i = $(this).index();
         $(".left_pj").css({
             
