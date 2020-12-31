@@ -143,6 +143,7 @@ $(function () { // jQB ///////////////////////////
                 $(".cont_img").delay(800).animate({
                     opacity: 1
                 }, 800);
+
                 $(".cont_wrap ul").delay(1200).animate({
                     opacity: 1
                 }, 800);
@@ -156,6 +157,7 @@ $(function () { // jQB ///////////////////////////
                 $("#btn_top").delay(3000).animate({
                     opacity: 1
                 }, 800);
+
 
 
             }
@@ -172,6 +174,17 @@ $(function () { // jQB ///////////////////////////
     });
 
 
+    /********** 타이핑 효과 ********/
+
+    var typed5 = new Typed('#typed5', {
+        strings: ['끝까지 봐주셔서 감사합니다:-)'],
+        typeSpeed: 150,
+        backSpeed: 0,
+        cursorChar: '_',
+        shuffle: true,
+        smartBackspace: false,
+        loop: true,
+    });
 
 
 
@@ -187,18 +200,6 @@ $(function () { // jQB ///////////////////////////
 
 
 
-
-    /********** 타이핑 효과 ********/
-
-    var typed5 = new Typed('#typed5', {
-        strings: ['끝까지 봐주셔서 감사합니다.'],
-        typeSpeed: 150,
-        backSpeed: 0,
-        cursorChar: '_',
-        shuffle: true,
-        smartBackspace: false,
-        loop: true,
-    });
 
 
 
@@ -250,7 +251,8 @@ $(function () { // jQB ///////////////////////////
     $(".left_pj li").each(function (idx, ele) {
         $(ele).css({
             background: "url(" + bgi[idx] + ") no-repeat",
-            backgroundSize: "cover"
+            backgroundSize: "cover",
+
         });
     }); ///////////// each ///////////////
 
@@ -263,12 +265,14 @@ $(function () { // jQB ///////////////////////////
             right: "10%"
         }, 500);
 
+        // li호버시 해당 썸네일 보이기
         var idx = $(this).index();
 
         $(".left_pj li").eq(idx).addClass("on").siblings().removeClass("on");
 
 
     }); //// mouseenter ///////////////////////////////////////////////
+    
 
     //// mouseeleave ///////////////////////////////////////////////
     $(".joint_right_wrap ul li").mouseleave(function () {
@@ -346,8 +350,24 @@ $(function () { // jQB ///////////////////////////
 
     // 모바일일때(화면375이하)
     if ($(window).width() <= 375) {
-        $('.joint_right_wrap ul li').mouseenter(function () { //호버시
-
+         $(".mypic").animate({
+                    opacity: 1
+                }, 800);
+        
+                $(".info_tit_m").delay(3500).animate({
+                    opacity: "1"
+                }, 800);
+        $(".infobox").delay(4000).animate({
+                    opacity: "1"
+                }, 800);
+        
+                $(".click").delay(3000).animate({
+                    left: "0"
+                }, 800);
+        
+        
+        $('.joint_right_wrap ul li').mouseenter(function (e) { //호버시
+            e.preventDefault();
             //li 왼쪽으로밀기 없애기
             $(this).stop().animate({
                 right: "0"
@@ -367,12 +387,12 @@ $(function () { // jQB ///////////////////////////
 
 
     }
-    // 모바일일때(화면375이하)
+    // 태블릿일때(화면1024이하)
     else if ($(window).width() <= 1024) {
         //        console.log("1024");
-       
-           
-    
+
+
+
 
         $('.joint_right_wrap ul li').mouseenter(function () { //호버시
 

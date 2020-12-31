@@ -111,7 +111,7 @@ header {
     height: 100vh;
     left: 170%;
     background-color: rgb(157, 153, 153);
-
+    box-shadow: 1px 0px 6px 1px;
 }
 
 .menu_list ul {
@@ -522,6 +522,7 @@ nav li a:hover::after {
     white-space: wrap;
     margin: 0 auto;
     width: 92%;
+    letter-spacing: 1px;
     line-height: 2;
     opacity: 0;
     font-size: 3.59vw;
@@ -1198,6 +1199,21 @@ nav li a:hover::after {
     opacity: 1;
 }
 
+/*모바일일때 사이트보기 셋팅*/
+.click{
+     width: 100%;
+    position: absolute;
+    z-index: 1;
+   top: -16%;
+    left: -90%;
+    font-size: 12vw;
+    letter-spacing:10px;
+    
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(100, 93, 93);
+    display: none;
+}
 
 
 /*컨텍트 영역**************************/
@@ -1213,7 +1229,7 @@ nav li a:hover::after {
 .cont_box {
     position: relative;
     margin: 0 auto;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
 }
 
@@ -1301,7 +1317,7 @@ nav li a:hover::after {
     color: #333;
     font-size: 1vw;
     font-family: cafe24;
-    display: none;
+
 }
 
 
@@ -1401,7 +1417,7 @@ nav li a:hover::after {
     position: absolute;
 opacity: 0;
     right: 0;
-    bottom: -6%;
+    bottom: -5%;
     cursor: pointer;
     color: rgba(208, 208, 208, 0.76);
     font-family: GT;

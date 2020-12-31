@@ -643,7 +643,9 @@ width: 28vw;
     }
 
     .info i {
-        font-size: 4.5vw;
+        font-size: 5.3vw;
+        letter-spacing: 1px;
+        color: #b25656;
     }
 
 
@@ -664,13 +666,14 @@ width: 28vw;
 
     /*클릭버튼 클릭시 나오는 창*/
     .infobox {
-        text-align: left;
+        text-align: center;
+        opacity: 0;
         letter-spacing: 1px;
         right: 7%;
         width: 89vw;
         top: 22vh;
         height: 29vh;
-        opacity: 1;
+      
         /*        outline: 1px dashed blue;*/
     }
 
@@ -734,26 +737,36 @@ width: 28vw;
     }
 
     .port_wrap > big {
-        font-size: 12vw;
-        -webkit-text-stroke: 1px;
-        -webkit-text-stroke-color: #4b4b4b;
+        display: none;
     }
+    .detailTxt_box {
+    top: 41%;
+}
 
+    .slidewr .left {
+    height: 90%;
+}
     .slidewr .left img {
         width: 65vw;
     }
 
     .slidewr .left .tit {
+/*
         font-size: 5vmin;
         letter-spacing: 1px;
+*/
+        display: none;
     }
 
     .slidewr .left a.project {
-        font-size: 4.6vw;
+        font-size: 6.6vw;
+        padding-bottom: 2vh;
+        text-align: center;
     }
 
     .slidewr .left .desc {
         font-size: 3.5vw;
+        display: none;
     }
 
     .sitetxt {
@@ -784,14 +797,14 @@ width: 28vw;
         background: #5c5c5c;
         color: #fff;
         border: 0;
-        font-size: 4vmin;
+        font-size: 3.5vmin;
         letter-spacing: 1px;
         bottom: 3%;
     }
     
     .prevt,.nextt{
-        font-size: 22vw;
-        top: 94vh;
+        font-size: 20vw;
+        top: 95vh;
     }
     
     
@@ -804,14 +817,27 @@ width: 28vw;
     .joint_left_wrap {
         position: absolute;
         top: 10%;
-    width:100%;
-        height: 39vh;
+    width:75%;
+        height: 36vh;
+/*        outline: 1px solid blue;*/
 }
+    /*클릭문구*/
+    .click{
+        display: block;
+    }
     .left_pj {
-        top: 43%;
-        width: 75vw;
-    height: 37vh;
+        top: 50%;
     background-size: cover;
+        position: relative;
+    }
+  
+    .left_pj li a{
+        position: absolute;
+        top: 0;
+        left: 0;
+/*        outline: 1px dashed blue;*/
+        width: 100%;
+        height: 100%;
     }
     
     .joint_right_wrap {
@@ -828,6 +854,7 @@ width: 28vw;
     .joint_right_wrap ul li a {
     font-size: 6vw;
     letter-spacing: 1px;
+        pointer-events: none;
 }
     .joint_right_wrap ul li i, .joint_right_wrap ul li span {
     font-size: 2.9vw;
