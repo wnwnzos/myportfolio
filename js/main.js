@@ -58,7 +58,7 @@ $(function () { // jQB ///////////////////////////
                 }, 800);
                 $(".aboutline").delay(3000).animate({
                     width: "100%"
-                }, 800);
+                }, 950);
             }
             if (index !== 2) { //해당영역아닐때 다시 밖으로빼놓기(원상복귀)
                 $(".about_tit").stop().animate({

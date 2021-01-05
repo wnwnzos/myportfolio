@@ -741,6 +741,7 @@ nav li a:hover::after {
 
 .skill_list ul li:hover {
     transform: scale(1.5);
+    transition: all .4s ease;
 }
 
 .right_sub {
