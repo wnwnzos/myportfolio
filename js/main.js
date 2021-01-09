@@ -113,7 +113,7 @@ $(function () { // jQB ///////////////////////////
                     right: "-100%"
                 }, 100);
             }
-            if (index == 5) { //공동크로젝트 영역
+            if (index == 5) { //공동프로젝트 영역
 
                 $(".joint_tit").stop().animate({
                     right: "0"

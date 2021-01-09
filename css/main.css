@@ -1051,7 +1051,7 @@ nav li a:hover::after {
     /*    outline: 1px dashed blue;*/
     text-align: center;
     font-size: 12vw;
-    color: #ddd;
+    color: #767676;
     line-height: .5;
     font-family: GT;
 
@@ -1061,7 +1061,7 @@ nav li a:hover::after {
     /*    outline: 1px dashed blue;*/
     text-align: center;
     font-size: 12vw;
-    color: #ddd;
+    color: #767676;
     line-height: .5;
     font-family: GT;
 }
