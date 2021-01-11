@@ -916,15 +916,31 @@ nav li a:hover::after {
 }
 
 /*슬라이드4*/
-.sitetxt .point4 span.color1 {
-    background: #9DCEFE;
-}
-
-.sitetxt .point4 span.color2 {
+.sitetxt .point3 span.color1 {
     background: #fff;
 }
 
-.sitetxt .point4 span.color3 {
+.sitetxt .point3 span.color2 {
+    background: #333;
+}
+
+.sitetxt .point3 span.color3 {
+
+    background: rgba(153, 212, 239, 0.49);
+}
+
+
+
+/*슬라이드5*/
+.sitetxt .point5 span.color1 {
+    background: #9DCEFE;
+}
+
+.sitetxt .point5 span.color2 {
+    background: #fff;
+}
+
+.sitetxt .point5 span.color3 {
 
     background: linear-gradient(to right, #305cf1 0%, #1e2e63 100%);
 }
