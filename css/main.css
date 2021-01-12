@@ -2,7 +2,6 @@
 /* athe 메인 페이지 CSS - main.css */
 
 /*파일머징(합치기)*/
-@import url(jquery.fullPage.css);
 @import url(reset.css);
 @import url(core.css);
 
