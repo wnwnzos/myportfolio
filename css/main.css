@@ -939,10 +939,7 @@ nav li a:hover::after {
     background: #fff;
 }
 
-.sitetxt .point5 span.color3 {
 
-    background: linear-gradient(to right, #305cf1 0%, #1e2e63 100%);
-}
 
 
 /*오른쪽*/
