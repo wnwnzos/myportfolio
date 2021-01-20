@@ -871,73 +871,71 @@ nav li a:hover::after {
 
 
 
-/*슬라이드1*/
+/*슬라이드1(인트로)*/
 .sitetxt .point1 span.color1 {
-    background: #FFDF50;
-}
-
-.sitetxt .point1 span.color2 {
-    background: #4FCBF7;
-}
-
-.sitetxt .point1 span.color3 {
-    background: #041F54;
-}
-
-
-/*슬라이드2*/
-.sitetxt .point2 span.color1 {
-    background: #AF655A;
-}
-
-.sitetxt .point2 span.color2 {
-    background: #F0F1F1;
-}
-
-.sitetxt .point2 span.color3 {
-    background: #FEE5E1;
-}
-
-
-
-/*슬라이드3*/
-.sitetxt .point3 span.color1 {
+ 
     background: #f4f4f4;
 }
 
-.sitetxt .point3 span.color2 {
-    background: rgba(196, 80, 80, 0.62);
+.sitetxt .point1 span.color2 {
+    
+      background: rgba(196, 80, 80, 0.62);
 }
 
-.sitetxt .point3 span.color3 {
-
+.sitetxt .point1 span.color3 {
+    
     background: #ddd;
 }
 
-/*슬라이드4*/
-.sitetxt .point3 span.color1 {
+
+/*슬라이드2(태민)*/
+.sitetxt .point2 span.color1 {
+   background: #333;
+   
+}
+
+.sitetxt .point2 span.color2 {
+  background: rgba(153, 212, 239, 0.49);
+     
+}
+
+.sitetxt .point2 span.color3{
     background: #fff;
+}
+
+
+
+
+/*슬라이드3(자동차극장)*/
+.sitetxt .point3 span.color1 {
+       background: #FFDF50;
 }
 
 .sitetxt .point3 span.color2 {
-    background: #333;
+  background: #4FCBF7;
 }
 
 .sitetxt .point3 span.color3 {
+background: #041F54;
+    
+}
 
-    background: rgba(153, 212, 239, 0.49);
+/*슬라이드4(아떼)*/
+.sitetxt .point4 span.color1 {
+    background: #AF655A;
+}
+
+.sitetxt .point4 span.color2 {
+   background: #FEE5E1;
+}
+
+.sitetxt .point4 span.color3 {
+ background: #F0F1F1;
+   
 }
 
 
 
-/*슬라이드5*/
-.sitetxt .point5 span.color1 {
-    background: #9DCEFE;
-}
-
-.sitetxt .point5 span.color2 {
-    background: #fff;
-}
 
 
 
@@ -1386,6 +1384,19 @@ nav li a:hover::after {
     height: 56px;
     transition: all 0.3s ease;
 }
+.git::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(80, 196, 147, 0.24);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+}
+
 
 .cta span {
     position: relative;
@@ -1413,6 +1424,10 @@ nav li a:hover::after {
 .cta:hover:before {
     width: 100%;
     background: rgba(196, 80, 80, 0.44);
+}
+.git:hover:before {
+    width: 100%;
+    background: rgba(80, 196, 147, 0.24);
 }
 
 .cta:hover svg {
