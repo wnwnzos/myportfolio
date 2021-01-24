@@ -607,7 +607,7 @@ nav li a:hover::after {
 }
 
 
-#bar1 span.active {
+.bar1 span.active {
     width: 90%;
     animation: bar1 2s ease;
 
@@ -623,7 +623,7 @@ nav li a:hover::after {
     }
 }
 
-#bar2 span.active {
+.bar2 span.active {
     width: 30%;
     animation: bar2 2s ease;
 
@@ -640,7 +640,7 @@ nav li a:hover::after {
 }
 
 
-#bar3 span.active {
+.bar3 span.active {
     width: 50%;
     animation: bar3 2s ease;
 }
@@ -656,7 +656,7 @@ nav li a:hover::after {
 }
 
 
-#bar4 span.active {
+.bar4 span.active {
     width: 70%;
     animation: bar4 2s ease;
 
@@ -673,7 +673,7 @@ nav li a:hover::after {
 }
 
 
-#bar5 span.active {
+.bar5 span.active {
     width: 40%;
     animation: bar5 2s ease;
 
@@ -690,7 +690,7 @@ nav li a:hover::after {
 }
 
 
-#bar6 span.active {
+.bar6 span.active {
     width: 80%;
     animation: bar6 2s ease;
 
@@ -961,20 +961,7 @@ background: #041F54;
     border-radius: 20px;
 }
 
-.port_wrap > big {
-    opacity: .3;
-    text-align: right;
-    position: absolute;
-    z-index: -1;
-    top: 20%;
-    right: -95%;
-    font-size: 7vw;
-    color: transparent;
-    -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: rgb(198, 198, 198);
-    line-height: 1;
-    font-family: be;
-}
+
 
 
 .sitetxt p {
@@ -1185,7 +1172,7 @@ background: #041F54;
     font-size: 1vw;
     letter-spacing: 1.5px;
 }
-.joint_right_wrap ul li small {
+.joint_right_wrap ul li b{
     letter-spacing: 1px;
     position: absolute;
     right: 0;
@@ -1194,9 +1181,9 @@ background: #041F54;
     font-family: GT;
     font-size: 2vw;
     color: #b4b4b4;
-    
+    font-weight: 100;
 }
-.joint_right_wrap ul li big{
+.joint_right_wrap ul li strong{
     font-size: 1vw;
 
 }
