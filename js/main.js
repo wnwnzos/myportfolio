@@ -97,13 +97,10 @@ $(function () { // jQB ///////////////////////////
                 $(".portfolio_tit").stop().animate({
                     right: "0"
                 }, 800);
-                $(".port_wrap > big").delay(500).animate({
-                    right: "0"
-                }, 500);
-                $(".slidewr .left img").delay(1000).animate({
+                $(".slidewr .left img").delay(500).animate({
                     opacity: "1"
                 }, 1000);
-                $(".detailTxt_box").delay(1500).animate({
+                $(".detailTxt_box").delay(1000).animate({
                     opacity: "1"
                 }, 1000);
 

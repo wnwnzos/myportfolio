@@ -904,35 +904,40 @@ nav li a:hover::after {
 }
 
 
-
-
-/*슬라이드3(자동차극장)*/
+/*슬라이드3(레스토랑 오늘)*/
 .sitetxt .point3 span.color1 {
-       background: #FFDF50;
+   background: #333;
+   
 }
 
 .sitetxt .point3 span.color2 {
+  background: #A8894C;
+     
+}
+
+.sitetxt .point3 span.color3{
+    background: #E2E1DC;
+}
+
+
+
+
+
+
+/*슬라이드4(자동차극장)*/
+.sitetxt .point4 span.color1 {
+       background: #FFDF50;
+}
+
+.sitetxt .point4 span.color2 {
   background: #4FCBF7;
 }
 
-.sitetxt .point3 span.color3 {
+.sitetxt .point4 span.color3 {
 background: #041F54;
     
 }
 
-/*슬라이드4(아떼)*/
-.sitetxt .point4 span.color1 {
-    background: #AF655A;
-}
-
-.sitetxt .point4 span.color2 {
-   background: #FEE5E1;
-}
-
-.sitetxt .point4 span.color3 {
- background: #F0F1F1;
-   
-}
 
 
 
