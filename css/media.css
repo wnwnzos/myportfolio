@@ -377,6 +377,10 @@ width: 28vw;
     font-size: 3vw;
 }
     
+    .joint_right_wrap ul li b {
+    bottom: -14%;
+}
+    
 
     /*컨텍트영역*************/
       .contact_tit{
@@ -420,7 +424,7 @@ width: 28vw;
     /*타이핑텍스트*/
     .redtxt {
         position: absolute;
-        bottom: 23%;
+        bottom: 18%;
         left: 50%;
         transform: translateX(-50%);
         margin-top: 0;
@@ -525,6 +529,10 @@ width: 28vw;
     #btn_top {
         bottom: -4%;
     }
+    
+    .redtxt {
+    bottom: 14%;
+}
 
 
 
@@ -877,9 +885,11 @@ width: 28vw;
     .joint_right_wrap ul li::after {
     height: 1px;
 }
-    .joint_right_wrap ul li:last-child::after{
-        height: 0;
-    }
+
+    
+    .joint_right_wrap ul li b {
+    bottom: -10%;
+}
 
     /*컨텍트영역*************************/
     /*컨텐트 타이틀*/
@@ -913,7 +923,7 @@ width: 28vw;
     /*타이핑*/
     .redtxt {
         font-size: 3.2vw;
-        bottom: 17%;
+        bottom: 13%;
     }
 
     .cta {
