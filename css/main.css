@@ -127,7 +127,8 @@ header {
     margin-bottom: 20%;
     padding-left: 20%;
 }
-.menu_list li:last-child{
+
+.menu_list li:last-child {
     margin-bottom: 0;
 }
 
@@ -156,23 +157,24 @@ header {
 /*홈 영역******************************************/
 
 /*모바일일때 그림*/
-.home_wrap{
+.home_wrap {
     width: 100vw;
     height: 100vh;
     outline: 1px dashed blue;
 }
-.m_pic{
+
+.m_pic {
     display: none;
-     position: absolute;
-        top:37vh;
+    position: absolute;
+    top: 37vh;
     width: 50%;
     height: 239px;
-/*    outline: 1px dashed blue;*/
+    /*    outline: 1px dashed blue;*/
 }
 
-    .m_pic img {
-        width: 70%;
-    }
+.m_pic img {
+    width: 70%;
+}
 
 
 .tit_wrap {
@@ -815,6 +817,48 @@ nav li a:hover::after {
     line-height: 1.3;
 }
 
+/*업데이팅 글자셋팅*/
+.update {
+    font-size: 20px;
+    color: #d35656;
+    letter-spacing: 3px;
+    padding-top: 10px;
+    -webkit-animation: blink 1.5s ease-in-out infinite alternate;
+    -moz-animation: blink 1.5s ease-in-out infinite alternate;
+    animation: blink 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 .slidewr .left .tit {
     display: block;
     font-size: 3vmin;
@@ -873,49 +917,49 @@ nav li a:hover::after {
 
 /*슬라이드1(인트로)*/
 .sitetxt .point1 span.color1 {
- 
+
     background: #f4f4f4;
 }
 
 .sitetxt .point1 span.color2 {
-    
-      background: rgba(196, 80, 80, 0.62);
+
+    background: rgba(196, 80, 80, 0.62);
 }
 
 .sitetxt .point1 span.color3 {
-    
+
     background: #ddd;
 }
 
 
 /*슬라이드2(태민)*/
 .sitetxt .point2 span.color1 {
-   background: #333;
-   
+    background: #333;
+
 }
 
 .sitetxt .point2 span.color2 {
-  background: rgba(153, 212, 239, 0.49);
-     
+    background: rgba(153, 212, 239, 0.49);
+
 }
 
-.sitetxt .point2 span.color3{
+.sitetxt .point2 span.color3 {
     background: #fff;
 }
 
 
 /*슬라이드3(레스토랑 오늘)*/
 .sitetxt .point3 span.color1 {
-   background: #333;
-   
+    background: #333;
+
 }
 
 .sitetxt .point3 span.color2 {
-  background: #A8894C;
-     
+    background: #A8894C;
+
 }
 
-.sitetxt .point3 span.color3{
+.sitetxt .point3 span.color3 {
     background: #E2E1DC;
 }
 
@@ -926,32 +970,32 @@ nav li a:hover::after {
 
 /*슬라이드4(자동차극장)*/
 .sitetxt .point4 span.color1 {
-       background: #FFDF50;
+    background: #FFDF50;
 }
 
 .sitetxt .point4 span.color2 {
-  background: #4FCBF7;
+    background: #4FCBF7;
 }
 
 .sitetxt .point4 span.color3 {
-background: #041F54;
-    
+    background: #041F54;
+
 }
 
 
 
 /*슬라이드5(도원)*/
 .sitetxt .point5 span.color1 {
-       background: #4b4b4b;
+    background: #4b4b4b;
 }
 
 .sitetxt .point5 span.color2 {
-  background: #999;
+    background: #999;
 }
 
 .sitetxt .point5 span.color3 {
-background: #797979;
-    
+    background: #797979;
+
 }
 
 
@@ -1087,42 +1131,46 @@ background: #797979;
 
 
 /*공동 프로젝트 영역***************************/
-.joint_wrap{
-        outline: 1px dashed blue;
+.joint_wrap {
+    outline: 1px dashed blue;
     width: 100%;
     height: 100vh;
     position: relative;
 }
-.joint_box{
+
+.joint_box {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: absolute;
     top: 58%;
     transform: translateY(-50%);
-/*  outline: 1px dashed blue;*/
+    /*  outline: 1px dashed blue;*/
     width: 100%;
     height: 100vh;
 }
-.joint_left_wrap{
+
+.joint_left_wrap {
     width: 38%;
-/*    outline: 1px dashed blue;*/
+    /*    outline: 1px dashed blue;*/
     transition: all .3s ease-out;
     position: relative;
     height: 100vh;
 }
-.left_pj{
-/*    outline: 1px solid red;*/
+
+.left_pj {
+    /*    outline: 1px solid red;*/
     position: absolute;
     top: 50%;
     left: -150%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 25vw;
     height: 50vh;
 
 }
-.left_pj li{
-     position: absolute;
+
+.left_pj li {
+    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -1130,34 +1178,39 @@ background: #797979;
     opacity: 0;
     transition: opacity .9s ease-out;
 }
-.left_pj li.on{
+
+.left_pj li.on {
     opacity: 1;
     z-index: 1;
 }
-.joint_right_wrap{
+
+.joint_right_wrap {
     width: 60%;
     position: relative;
     left: 100%;
 }
-.joint_right_wrap ul{
-/*    outline: 1px dashed blue;*/
+
+.joint_right_wrap ul {
+    /*    outline: 1px dashed blue;*/
     margin: 0 3%;
 }
-.joint_right_wrap ul li{
-   padding-top: 2.2vw;
+
+.joint_right_wrap ul li {
+    padding-top: 2.2vw;
     padding-bottom: 1.8vw;
     font-family: cafe24;
     position: relative;
 }
 
 
-.joint_right_wrap ul li a{
+.joint_right_wrap ul li a {
     font-size: 2.5vw;
     color: #555;
     opacity: .35;
     letter-spacing: 3px;
 }
-.joint_right_wrap ul li::after{
+
+.joint_right_wrap ul li::after {
     content: '';
     display: block;
     position: absolute;
@@ -1167,7 +1220,8 @@ background: #797979;
     width: 100%;
     left: 0;
 }
-.joint_right_wrap ul li sup{
+
+.joint_right_wrap ul li sup {
     padding-left: 10px;
     color: #773d3d;
     font-family: GT;
@@ -1175,16 +1229,18 @@ background: #797979;
     font-size: .8vw;
     opacity: 0;
 }
-.joint_right_wrap ul li span{
+
+.joint_right_wrap ul li span {
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     font-family: GT;
     font-size: 1vw;
-    
+
 }
-.joint_right_wrap ul li i{
+
+.joint_right_wrap ul li i {
     font-style: normal;
     position: absolute;
     right: 50%;
@@ -1194,7 +1250,8 @@ background: #797979;
     font-size: 1vw;
     letter-spacing: 1.5px;
 }
-.joint_right_wrap ul li b{
+
+.joint_right_wrap ul li b {
     letter-spacing: 1px;
     position: absolute;
     right: 0;
@@ -1205,30 +1262,33 @@ background: #797979;
     color: #b4b4b4;
     font-weight: 100;
 }
-.joint_right_wrap ul li strong{
+
+.joint_right_wrap ul li strong {
     font-size: 1vw;
 
 }
-.joint_right_wrap ul li:hover a{
+
+.joint_right_wrap ul li:hover a {
     opacity: 1;
     transition: opacity .3s ease-in-out;
-    
+
 }
+
 /*li호버 했을때 view site 보이기*/
-.joint_right_wrap ul li:hover sup{
+.joint_right_wrap ul li:hover sup {
     opacity: 1;
 }
 
 /*모바일일때 사이트보기 셋팅*/
-.click{
-     width: 100%;
+.click {
+    width: 100%;
     position: absolute;
     z-index: 1;
-   top: -16%;
+    top: -16%;
     left: -90%;
     font-size: 12vw;
-    letter-spacing:10px;
-    
+    letter-spacing: 10px;
+
     color: rgba(255, 255, 255, 0);
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: rgb(100, 93, 93);
@@ -1393,6 +1453,7 @@ background: #797979;
     height: 56px;
     transition: all 0.3s ease;
 }
+
 .git::before {
     content: "";
     position: absolute;
@@ -1434,6 +1495,7 @@ background: #797979;
     width: 100%;
     background: rgba(196, 80, 80, 0.44);
 }
+
 .git:hover:before {
     width: 100%;
     background: rgba(80, 196, 147, 0.24);
@@ -1452,7 +1514,7 @@ background: #797979;
 #btn_top {
     font-size: 10vw;
     position: absolute;
-opacity: 0;
+    opacity: 0;
     right: 0;
     bottom: -5%;
     cursor: pointer;
@@ -1472,7 +1534,7 @@ opacity: 0;
 
 
 /*공지*/
-.notice{
+.notice {
     position: absolute;
     bottom: 0;
     left: 0;
